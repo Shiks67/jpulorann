@@ -138,11 +138,11 @@ class ViewFrame extends JFrame implements KeyListener {
 	/**
 	 * Prints the message.
 	 *
-	 * @param message
+	 * @param map
 	 *          the message
 	 */
-	public void printMessage(final String message) {
-		JOptionPane.showMessageDialog(null, message);
+	public void printMap(final String map) {
+		JOptionPane.showMessageDialog(null, map);
 	}
 
 	/*

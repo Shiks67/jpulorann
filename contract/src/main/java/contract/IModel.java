@@ -30,4 +30,19 @@ public interface IModel {
 	 * @return the observable
 	 */
 	Observable getObservable();
+
+	/**
+	 * Gets the map content.
+	 *
+	 * @return the content
+	 */
+	String getMap();
+
+	/**
+	 * Load the map.
+	 *
+	 * @param key
+	 *          the key
+	 */
+	void loadMap(String key);
 }
