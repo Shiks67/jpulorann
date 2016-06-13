@@ -2,28 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69e7211a-abd9-46ca-9785-cd2ef29c1473" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/src/main/java/model/DAOLoadMap.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/src/main/java/model/LoadMap.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/src/test/java/model/DAOEntityTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/src/test/java/model/DAOHelloWorldTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/src/test/java/model/DAOLoadMapTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/src/test/java/model/DBConnectionTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/src/test/java/model/DBPropertiesTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/src/test/java/model/HelloWorldTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/src/test/java/model/LoadMapTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contract/src/main/java/contract/ControllerOrder.java" afterPath="$PROJECT_DIR$/contract/src/main/java/contract/ControllerOrder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contract/src/main/java/contract/IModel.java" afterPath="$PROJECT_DIR$/contract/src/main/java/contract/IModel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contract/src/main/java/contract/IView.java" afterPath="$PROJECT_DIR$/contract/src/main/java/contract/IView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/src/main/java/controller/Controller.java" afterPath="$PROJECT_DIR$/controller/src/main/java/controller/Controller.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/src/main/java/model/DBConnection.java" afterPath="$PROJECT_DIR$/model/src/main/java/model/DBConnection.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/src/main/java/model/DBProperties.java" afterPath="$PROJECT_DIR$/model/src/main/java/model/DBProperties.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/src/main/java/model/Model.java" afterPath="$PROJECT_DIR$/model/src/main/java/model/Model.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/src/test/java/model/ModelTest.java" afterPath="$PROJECT_DIR$/model/src/test/java/model/ModelTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/src/main/java/view/View.java" afterPath="$PROJECT_DIR$/view/src/main/java/view/View.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/src/main/java/view/ViewFrame.java" afterPath="$PROJECT_DIR$/view/src/main/java/view/ViewFrame.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/src/main/java/view/ViewPanel.java" afterPath="$PROJECT_DIR$/view/src/main/java/view/ViewPanel.java" />
     </list>
     <ignored path="masterpom.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -827,12 +806,20 @@
       <option name="presentableId" value="Default" />
       <updated>1465802529371</updated>
       <workItem from="1465802532576" duration="2350000" />
-      <workItem from="1465805160530" duration="10567000" />
+      <workItem from="1465805160530" duration="10636000" />
     </task>
+    <task id="LOCAL-00001" summary="Direct display of the map from de DB">
+      <created>1465819491343</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1465819491343</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12917000" />
+    <option name="totallyTimeSpent" value="12986000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -867,6 +854,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Direct display of the map from de DB" />
+    <option name="LAST_COMMIT_MESSAGE" value="Direct display of the map from de DB" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
