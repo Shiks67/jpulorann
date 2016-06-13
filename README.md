@@ -1,2 +1,8 @@
-# JPU-BlankProject
-Base de démarrage pour le projet Jave/POO/UML des 1ières années Exia-Cesi
+# Java Project : LORANN
+
+Shiks67 : SAIDOULAEV Ahmed
+grimms1337 : GRIMM Sylvain
+l0ic68 : OULERICH Loic
+me-cedric : MEYER CÃ©dric
+
+OOP project, lorann re-created with Java
