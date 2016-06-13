@@ -3,7 +3,7 @@ package model;
 /**
  * The Class LoadMap.
  *
- * @author cyril SNIADACH
+ * @author Cedric Meyer
  */
 class LoadMap extends Entity {
 
