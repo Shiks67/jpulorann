@@ -36,7 +36,7 @@ public class Controller implements IController {
 	 * @see contract.IController#control()
 	 */
 	public void control() {
-		this.view.printMessage("Appuyer sur les touches 'E', 'F', 'D' ou 'I', pour afficher Hello world dans la langue d votre choix.");
+		this.view.printMap("Appuyer sur les touches '1', '2', '3' '4' ou '5', pour charger le niveau de votre choix.");
 	}
 
 	/**
@@ -64,19 +64,27 @@ public class Controller implements IController {
 	 *
 	 * @see contract.IController#orderPerform(contract.ControllerOrder)
 	 */
+
+	/** the loading the map in function of the map_name on the database*/
 	public void orderPerform(final ControllerOrder controllerOrder) {
 		switch (controllerOrder) {
-			case English:
-				this.model.loadMessage("GB");
+			case MAP1:
+				this.model.loadMap("MAP1");
 				break;
-			case Francais:
-				this.model.loadMessage("FR");
+			case MAP2:
+				this.model.loadMap("MAP2");
 				break;
-			case Deutsch:
-				this.model.loadMessage("DE");
+			case MAP3:
+				this.model.loadMap("MAP3");
 				break;
-			case Indonesia:
-				this.model.loadMessage("ID");
+			case MAP4:
+				this.model.loadMap("MAP4");
+				break;
+			case MAP5:
+				this.model.loadMap("MAP5");
+				break;
+			case test:
+				this.model.loadMap("MAP6");
 				break;
 
 			default:

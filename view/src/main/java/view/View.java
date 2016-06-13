@@ -3,10 +3,7 @@ package view;
 import java.awt.event.KeyEvent;
 
 import javax.swing.SwingUtilities;
-import java.util.Observable;
 
-import javax.swing.JOptionPane;
-import javax.swing.SwingUtilities;
 import contract.ControllerOrder;
 import contract.IController;
 import contract.IModel;
@@ -18,6 +15,7 @@ import contract.IView;
  * @author Jean-Aymeric Diet
  */
 public class View implements IView, Runnable {
+
 	/** The frame. */
 	private final ViewFrame viewFrame;
 
@@ -41,16 +39,20 @@ public class View implements IView, Runnable {
 	 */
 	protected static ControllerOrder keyCodeToControllerOrder(final int keyCode) {
 		switch (keyCode) {
-			case KeyEvent.VK_UP:
-				return ControllerOrder.English;
-			case KeyEvent.VK_RIGHT:
-				return ControllerOrder.Francais;
-			case KeyEvent.VK_LEFT:
-				return ControllerOrder.Deutsch;
-			case KeyEvent.VK_DOWN:
-				return ControllerOrder.Indonesia;
+			case KeyEvent.VK_1:
+				return ControllerOrder.MAP1;
+			case KeyEvent.VK_2:
+				return ControllerOrder.MAP2;
+			case KeyEvent.VK_3:
+				return ControllerOrder.MAP3;
+			case KeyEvent.VK_4:
+				return ControllerOrder.MAP4;
+			case KeyEvent.VK_5:
+				return ControllerOrder.MAP5;
+			case KeyEvent.VK_T:
+				return ControllerOrder.test;
 			default:
-				return ControllerOrder.English;
+				return ControllerOrder.MAP1;
 		}
 	}
 
@@ -59,8 +61,8 @@ public class View implements IView, Runnable {
 	 *
 	 * @see contract.IView#printMessage(java.lang.String)
 	 */
-	public void printMessage(final String message) {
-		this.viewFrame.printMessage(message);
+	public void printMap(final String map) {
+		this.viewFrame.printMap(map);
 	}
 
 	/*

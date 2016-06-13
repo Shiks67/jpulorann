@@ -13,5 +13,12 @@ public interface IView {
 	 * @param message
 	 *          the message
 	 */
-	void printMessage(final String message);
+	//void printMessage(final String message);
+	/**
+	 * Prints the map.
+	 *
+	 * @param map
+	 *          the map
+	 */
+	void printMap(final String map);
 }

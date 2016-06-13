@@ -60,26 +60,28 @@ public class ModelTest {
 	}
 
 	/**
-	 * Test method for {@link model.Model#getMessage()}.
+	 * Test method for {@link model.Model#getMap()}.
 	 */
 	@Test
 	public void testGetMessage() {
-		Assert.assertEquals("", this.model.getMessage());
+		Assert.assertEquals("", this.model.getMap());
 	}
 
 	/**
-	 * Test method for {@link model.Model#loadMessage(java.lang.String)}.
+	 * Test method for {@link model.Model#loadMap(java.lang.String)}.
 	 */
 	@Test
 	public void testGetMessageString() {
-		this.model.loadMessage("GB");
-		Assert.assertEquals("Hello world", this.model.getMessage());
-		this.model.loadMessage("FR");
-		Assert.assertEquals("Bonjour le monde", this.model.getMessage());
-		this.model.loadMessage("DE");
-		Assert.assertEquals("Hallo Welt", this.model.getMessage());
-		this.model.loadMessage("ID");
-		Assert.assertEquals("Salamat pagi dunia", this.model.getMessage());
+		this.model.loadMap("MAP1");
+		Assert.assertEquals("Hello world", this.model.getMap());
+		this.model.loadMap("MAP2");
+		Assert.assertEquals("Bonjour le monde", this.model.getMap());
+		this.model.loadMap("MAP3");
+		Assert.assertEquals("Hallo Welt", this.model.getMap());
+		this.model.loadMap("MAP4");
+		Assert.assertEquals("Salamat pagi dunia", this.model.getMap());
+		this.model.loadMap("MAP5");
+		Assert.assertEquals("Salamat pagi dunia", this.model.getMap());
 	}
 
 }
