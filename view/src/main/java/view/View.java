@@ -3,7 +3,10 @@ package view;
 import java.awt.event.KeyEvent;
 
 import javax.swing.SwingUtilities;
+import java.util.Observable;
 
+import javax.swing.JOptionPane;
+import javax.swing.SwingUtilities;
 import contract.ControllerOrder;
 import contract.IController;
 import contract.IModel;
@@ -15,7 +18,6 @@ import contract.IView;
  * @author Jean-Aymeric Diet
  */
 public class View implements IView, Runnable {
-
 	/** The frame. */
 	private final ViewFrame viewFrame;
 
@@ -39,13 +41,13 @@ public class View implements IView, Runnable {
 	 */
 	protected static ControllerOrder keyCodeToControllerOrder(final int keyCode) {
 		switch (keyCode) {
-			case KeyEvent.VK_G:
+			case KeyEvent.VK_UP:
 				return ControllerOrder.English;
-			case KeyEvent.VK_F:
+			case KeyEvent.VK_RIGHT:
 				return ControllerOrder.Francais;
-			case KeyEvent.VK_D:
+			case KeyEvent.VK_LEFT:
 				return ControllerOrder.Deutsch;
-			case KeyEvent.VK_I:
+			case KeyEvent.VK_DOWN:
 				return ControllerOrder.Indonesia;
 			default:
 				return ControllerOrder.English;
