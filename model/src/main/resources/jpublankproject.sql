@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  127.0.0.1
--- Généré le :  Lun 13 Juin 2016 à 12:54
+-- Généré le :  Lun 13 Juin 2016 à 13:43
 -- Version du serveur :  5.7.9
 -- Version de PHP :  5.6.16
 
@@ -97,7 +97,7 @@ CREATE TABLE IF NOT EXISTS `map` (
   `map_name` varchar(50) NOT NULL,
   `map` text NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
 
 --
 -- Contenu de la table `map`
@@ -108,7 +108,8 @@ INSERT INTO `map` (`id`, `map_name`, `map`) VALUES
   (2, 'MAP2', '        BHHB        \r\n        VP V        \r\nBHHHHHB V  BHHHHHHB \r\nV4    BHB L  B   2V \r\nV   K      BHBHBBHB \r\nV     BHB  V V VV V \r\nVP    V V  BHBHBBHB \r\nV P   V V  BHBHBBHB \r\nVP    V V  V V VV V \r\nV PBHHBHB  BHBHBBHBB\r\nV               3 CV\r\nBHHHHHHHHHHHHHHHHHHB'),
   (3, 'MAP3', 'BHHHHHHHB    BHHHHHB\r\nVP      V    V1   3V\r\nV BHHHB V    V  B  V\r\nV H     V    V  P  V\r\nB H BHHHBHHHHB  P  V\r\nC H V   V  L V BPB V\r\nB H B B B    V  P  V\r\nV H   V      V  P  V\r\nV BHHHHHBHHHHB  P  V\r\nV               B  V\r\nV       BHHHHB2   4V\r\nBHHHHHHHB    BHHHHHB'),
   (4, 'MAP4', 'BHHHHHHHHHHHHHHHHHB \r\nV                 BB\r\nV BHHHHHHHHHHHHHB  V\r\nV P          2  BB V\r\nV BHHHHHHHHHHHB  V V\r\nV V4           B V V\r\nVKV            B V V\r\nV BHHHHHHHHHHHB  V V\r\nV P   1         BB V\r\nV BHHHHHHHHHHHHHBL B\r\nBB                 C\r\n BHHHHHHHHHHHHHHHHHB'),
-  (5, 'MAP5', 'BHHHHHHHHHHHBHHHHB  \r\nVP P        V    BB \r\nV  B  B3 B  V     V \r\nV  V4 P  P1 V   B V \r\nV  V  P  P  V   V V \r\nV  V  P  P  V   V V \r\nV  V  B  B  V   V V \r\nV  V        V   V V \r\nV  BHHHHHHHHB   V V \r\nV  K        L BHB V \r\nBB               CBB\r\n BHHHHHHHHHHHHHHHHHB');
+  (5, 'MAP5', 'BHHHHHHHHHHHBHHHHB  \r\nVP P        V    BB \r\nV  B  B3 B  V     V \r\nV  V4 P  P1 V   B V \r\nV  V  P  P  V   V V \r\nV  V  P  P  V   V V \r\nV  V  B  B  V   V V \r\nV  V        V   V V \r\nV  BHHHHHHHHB   V V \r\nV  K        L BHB V \r\nBB               CBB\r\n BHHHHHHHHHHHHHHHHHB'),
+  (6, 'MAP6', 'BHHBHHHHHHHHHHHHBHHB\r\nV1 B            B 2V\r\nV  B            B  V\r\nBBBB      C     BBBB\r\nV                  V\r\nV       P L P      V\r\nV                  V\r\nV         K        V\r\nBBBB            BBBB\r\nV  B            B  V\r\nV4 B            B 3V\r\nBHHBHHHHHHHHHHHHBHHB');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

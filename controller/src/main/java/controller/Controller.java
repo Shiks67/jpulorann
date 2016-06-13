@@ -36,7 +36,7 @@ public class Controller implements IController {
 	 * @see contract.IController#control()
 	 */
 	public void control() {
-		this.view.printMap("Appuyer sur les touches '1', '2', '3' '4' ou '5', pour charger le niveau de votre choix.");
+		this.view.printMap("Press the key '1', '2', '3' '4' ou '5', to load the level of your choice.\nPress 't' to load a test level.");
 	}
 
 	/**
