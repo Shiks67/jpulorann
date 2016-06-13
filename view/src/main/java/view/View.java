@@ -4,6 +4,7 @@ import java.awt.event.KeyEvent;
 
 import javax.swing.SwingUtilities;
 
+import com.sun.javafx.scene.traversal.Direction;
 import contract.ControllerOrder;
 import contract.IController;
 import contract.IModel;

@@ -84,6 +84,7 @@ class LoadMap extends Entity {
      */
     public String getMap() {
         return this.map;
+
     }
 
     /**
@@ -95,6 +96,5 @@ class LoadMap extends Entity {
     public void setMap(final String map) {
         this.map = map;
     }
-
 }
 
