@@ -35,46 +35,58 @@ public class NettleWorld extends Observable implements INettleWorld {
 
     @Override
     public int getWidth() {
-        return 0;
+        return this.width;
     }
 
     @Override
     public int getHeight() {
-        return 0;
+        return this.height;
     }
 
     @Override
-    public MotionlessElement getElements(int x, int y) {
-        return null;
+    public MotionlessElement getElements(final int x, final int y) {
+        if((x<0 || (y<0) || (x>=this.getWidth() || (y>=this.getHeight())))){
+            return null;
+        }
+        return this.elements[x][y];
     }
 
     @Override
     public Hero getHero() {
-        return null;
+        return this.hero;
     }
 
     @Override
-    public void addMobile(Mobile mobile, int x, int y) {
-
+    public void addMobile(final Mobile mobile, final int x, final int y) {
+        this.mobiles.add(mobile);
+        mobile.setNettleWorld(this, x, y);
+        this.setChanged();
+        this.notifyObservers();
     }
 
     @Override
-    public void addMobile(Hero hero, int x, int y) {
-
+    public void addMobile(final Hero hero, final int x, final int y) {
+        this.setHero(hero);
+        this.addMobile((Mobile) hero, x, y);
     }
 
     @Override
     public void setMobileHasChanged() {
+        this.setChanged();
+        this.notifyObservers();
+    }
 
+    public void notifyObservers() {
+        super.notifyObservers();
     }
 
     @Override
     public Element[][] getElements() {
-        return new Element[0][];
+        return this.elements;
     }
 
     @Override
     public ArrayList<Mobile> getMobiles() {
-        return null;
+        return this.mobiles;
     }
 }

@@ -4,6 +4,7 @@ import aedt.showboard.IPawn;
 import element.Element;
 import element.ISprite;
 import element.Permeability;
+import model.INettleWorld;
 
 import java.awt.*;
 
@@ -24,32 +25,35 @@ public class Mobile extends Element implements IPawn {
     }
 
     protected void setX(final int x) {
-       /* if ((x >= 0) && (x < this.getNettleWorld().getWidth())) {
+        if ((x >= 0) && (x < this.getNettleWorld().getWidth())) {
             this.position.x = x;
-            this.getNettleWorld().setMobileHasChanged();*/
+            this.getNettleWorld().setMobileHasChanged();
         }
+    }
+
     @Override
     public int getY() {
         return this.position.y;
     }
 
     protected void setY(final int y) {
-        /*if ((y >= 0) && (y < this.getNettleWorld().getHeight())) {
+        if ((y >= 0) && (y < this.getNettleWorld().getHeight())) {
             this.position.y = y;
-            this.getNettleWorld().setMobileHasChanged();*/
+            this.getNettleWorld().setMobileHasChanged();
         }
+    }
+
     @Override
     public Point getPosition(){ return this.position;}
 
-   /* public void setNettleWorld(final INettleWorld nettleWorld, final int x, final int y) {
+   public void setNettleWorld(final INettleWorld nettleWorld, final int x, final int y) {
         super.setNettleWorld(nettleWorld);
         this.setX(x);
         this.setY(y);
-    }*/
+    }
 
     private boolean isMovePossible(final int x, final int y) {
-       // return (this.getNettleWorld().getElements(x, y).getPermeability() != Permeability.BLOCKING);
-        return false;
+        return (this.getNettleWorld().getElements(x, y).getPermeability() != Permeability.BLOCKING);
     }
 
     public void moveUp() {
