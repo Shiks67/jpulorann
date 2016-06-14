@@ -4,6 +4,7 @@ import contract.ControllerOrder;
 import contract.IController;
 import contract.IModel;
 import contract.IView;
+import model.Model;
 
 /**
  * The Class Controller.
@@ -91,7 +92,19 @@ public class Controller implements IController {
 		}
 	}
 
-	public void displayMap() {
-		model.getMapInTab();
+	public char[][] displayMap() {
+		char[][] map = model.getMap();
+
+		for (int i = 0; i < model.getHeight(); i++)
+		{
+			for (int j = 0; j < model.getWidth(); j++)
+			{
+				System.out.print(map[i][j]);
+			}
+
+			System.out.println();
+		}
+
+		return map;
 	}
 }

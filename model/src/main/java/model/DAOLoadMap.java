@@ -74,8 +74,7 @@ class DAOLoadMap extends DAOEntity<LoadMap> {
             final ResultSet resultSet = call.getResultSet();
             if (resultSet.first()) {
                 loadmap = new LoadMap(id, resultSet.getString("key"), resultSet.getString("map"));
-                Model model = new Model();
-                model.getMapInTab();
+
             }
             return loadmap;
         } catch (final SQLException e) {

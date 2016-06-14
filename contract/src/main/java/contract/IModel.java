@@ -31,14 +31,22 @@ public interface IModel {
 	 */
 	Observable getObservable();
 
+
+
+	int getHeight();
+	int getWidth();
+
+
+
+
 	/**
 	 * Gets the map content.
 	 *
 	 * @return the content
 	 */
-	char[][] getMapInTab();
+	void getMapInTab();
 
-	String getMap();
+	char[][] getMap();
 
 	/**
 	 * Load the map.
