@@ -29,9 +29,8 @@ class ViewPanel extends JPanel implements Observer {
 	public ViewPanel(final ViewFrame viewFrame) {
 		this.setViewFrame(viewFrame);
 		viewFrame.getModel().getObservable().addObserver(this);
+		viewFrame.setBackground(Color.BLACK);
 	}
-
-	//public char[][] map = new char[12][21];
 
 	/**
 	 * Gets the view frame.
@@ -70,23 +69,16 @@ class ViewPanel extends JPanel implements Observer {
 	@Override
 	protected void paintComponent(final Graphics graphics) {
 		graphics.clearRect(0, 0, this.getWidth(), this.getHeight());
-		//graphics.drawString(this.getViewFrame().getModel().getMap(), 10, 20);
+		graphics.setColor(Color.BLACK);
+		graphics.fillRect(0, 0, this.getWidth(), this.getHeight());
 
-		/**for(int i=0; i<this.viewFrame.getModel().getMap().length; i++)
-		{
-			for (int j = 0; j < this.viewFrame.getModel().getMap()[i].length; j++)
-			{
-				this.map[i][j] = this.viewFrame.getModel().getMap()[i][j];
-			}
-		}**/
+
+
 		this.viewFrame.getModel().getMapInTab();
 
 
 		char[][] map = this.viewFrame.getModel().getMap();
-		/**for (int i = 0; i < 21; i++) {
-			System.arraycopy(this.viewFrame.getModel().getMap()[i], 0, map[i], 0, this.viewFrame.getModel().getMap()[i].length);
-		}**/
-		JLabel imageLabel = new JLabel();
+
 		for(int i = 0; i < map.length; i++)
 		{
 			for (int j = 0; j < map[i].length; j++)
@@ -138,14 +130,18 @@ class ViewPanel extends JPanel implements Observer {
 						break;
 					case 'L' :
 						System.out.print(map[i][j]);
-						try {
+						/**Image imagine;
+						imagine = Toolkit.getDefaultToolkit().createImage("sprite/lorann.gif");
+						if (imagine != null) {
+							graphics.drawImage(imagine, 32*j, 32*i, this);
+							break;
+						}**/
 
+						try {
 							Image img = ImageIO.read(new File("sprite/lorann.gif"));
 							graphics.drawImage(img, 32*j, 32*i, this);
 						} catch (IOException e) {
-
 							e.printStackTrace();
-
 						}
 						break;
 					case 'C' :
