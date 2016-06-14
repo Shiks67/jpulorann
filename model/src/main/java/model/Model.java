@@ -10,14 +10,17 @@ import contract.IModel;
 
 import javax.imageio.ImageIO;
 
+import static sun.swing.SwingUtilities2.drawChars;
+
 /**
  * The Class Model.
  *
  * @author Jean-Aymeric Diet
  */
 public class Model extends Observable implements IModel {
-    /** the image **/
-    Image image;
+    /** The array of objects **/
+    String[][] pngArray = new String[1000][1000];
+
     /** The message. */
     private String message;
 
@@ -80,62 +83,71 @@ public class Model extends Observable implements IModel {
 
     /** i added the map functions in general here*/
 
+    public void putPngName(int i, int j, String pngName) {
+        pngArray[i][j]= pngName;
+    }
+
     public String getMap() {
         String[] tabmap = this.map.split("\n");     /** beginning of the parser **/
-        for (String i : tabmap)
+        for (int i =0; i < tabmap.length; i++)
         {
             //System.out.println(i);
-            for (int j = 0; j < i.length(); j++)
+            for (int j = 0; j < tabmap[i].length(); j++)
             {
-                System.out.print(i.charAt(j));
-                switch (i.charAt(j)){
+                //System.out.print(tabmap[i].charAt(j));
+                switch (tabmap[i].charAt(j)){
                     case 'B' :
-                        /**String image ="bone.png";
-                        try {
-                            this.image = ImageIO.read(new File("sprite/" + image));
-                        } catch (final IOException e) {
-                            e.printStackTrace();
-                        }
-                        return this.image;**/
-
-
-                        /** don't forget to delete Image image from class if above has to be deleted **/
-
-
-
+                        putPngName(i,j,"bone.png");
+                        //System.out.print(this.pngArray[i][j]);
+                        break;
                     case 'H' :
-
+                        putPngName(i,j,"horizontal_bone.png");
+                        //System.out.print(this.pngArray[i][j]);
                         break;
                     case 'V' :
-
+                        putPngName(i,j,"vertical_bone.png");
+                        //System.out.print(this.pngArray[i][j]);
                         break;
                     case 'P' :
-
-                    break;
+                        putPngName(i,j,"purse.png");
+                        //System.out.print(this.pngArray[i][j]);
+                        break;
                     case 'L' :
-
+                        putPngName(i,j,"lorann.gif");
+                        //System.out.print(this.pngArray[i][j]);
                         break;
                     case 'C' :
-
+                        putPngName(i,j,"gate_closed.png");
+                        //System.out.print(this.pngArray[i][j]);
+                        break;
+                    case 'K' :
+                        putPngName(i,j,"crystal_ball.png");
+                        //System.out.print(this.pngArray[i][j]);
                         break;
                     case '1' :
-
+                        putPngName(i,j,"monster_1.png");
+                        //System.out.print(this.pngArray[i][j]);
                         break;
                     case '2' :
-
+                        putPngName(i,j,"monster_2.png");
+                        //System.out.print(this.pngArray[i][j]);
                         break;
                     case '3' :
-
+                        putPngName(i,j,"monster_3.png");
+                        //System.out.print(this.pngArray[i][j]);
                         break;
                     case '4' :
-
+                        putPngName(i,j,"monster_4.png");
+                        //System.out.print(this.pngArray[i][j]);
                         break;
                     default :
+                        putPngName(i,j,"noimage.png");
+                        //System.out.print(this.pngArray[i][j]);
                         break;
 
                 }
             }
-            System.out.println();
+            //System.out.println();
         }
         return "";
     }
