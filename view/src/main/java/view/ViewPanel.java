@@ -5,9 +5,8 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Observable;
 import java.util.Observer;
-
 import javax.imageio.ImageIO;
-import javax.swing.JPanel;
+import javax.swing.*;
 
 /**
  * The Class ViewPanel.
@@ -87,7 +86,7 @@ class ViewPanel extends JPanel implements Observer {
 		/**for (int i = 0; i < 21; i++) {
 			System.arraycopy(this.viewFrame.getModel().getMap()[i], 0, map[i], 0, this.viewFrame.getModel().getMap()[i].length);
 		}**/
-
+		JLabel imageLabel = new JLabel();
 		for(int i = 0; i < map.length; i++)
 		{
 			for (int j = 0; j < map[i].length; j++)
@@ -140,6 +139,7 @@ class ViewPanel extends JPanel implements Observer {
 					case 'L' :
 						System.out.print(map[i][j]);
 						try {
+
 							Image img = ImageIO.read(new File("sprite/lorann.gif"));
 							graphics.drawImage(img, 32*j, 32*i, this);
 						} catch (IOException e) {
