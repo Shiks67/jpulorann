@@ -19,7 +19,7 @@ import static sun.swing.SwingUtilities2.drawChars;
  */
 public class Model extends Observable implements IModel {
     /** The array of objects **/
-    String[][] pngArray = new String[1000][1000];
+    private char[][] pngArray = new char[12][21];
 
     /** The message. */
     private String message;
@@ -83,71 +83,132 @@ public class Model extends Observable implements IModel {
 
     /** i added the map functions in general here*/
 
-    public void putPngName(int i, int j, String pngName) {
+    public void putPngName(int i, int j, char pngName) {
         pngArray[i][j]= pngName;
     }
+
+    /**public char[][] getMapInTab() {
+        String[] tabmap = this.map.split("\n");
+        for (int i =0; i < tabmap.length; i++)
+        {
+            for (int j = 0; j < tabmap[i].length(); j++)
+            {
+                switch (tabmap[i].charAt(j)){
+                    case 'B' :
+                        putPngName(i,j,'B');
+                        System.out.print(this.pngArray[i][j]);
+                        break;
+                    case 'H' :
+                        putPngName(i,j,'H');
+                        System.out.print(this.pngArray[i][j]);
+                        break;
+                    case 'V' :
+                        putPngName(i,j,'V');
+                        System.out.print(this.pngArray[i][j]);
+                        break;
+                    case 'P' :
+                        putPngName(i,j,'P');
+                        System.out.print(this.pngArray[i][j]);
+                        break;
+                    case 'L' :
+                        putPngName(i,j,'L');
+                        System.out.print(this.pngArray[i][j]);
+                        break;
+                    case 'C' :
+                        putPngName(i,j,'C');
+                        System.out.print(this.pngArray[i][j]);
+                        break;
+                    case 'K' :
+                        putPngName(i,j,'K');
+                        System.out.print(this.pngArray[i][j]);
+                        break;
+                    case '1' :
+                        putPngName(i,j,'1');
+                        System.out.print(this.pngArray[i][j]);
+                        break;
+                    case '2' :
+                        putPngName(i,j,'2');
+                        System.out.print(this.pngArray[i][j]);
+                        break;
+                    case '3' :
+                        putPngName(i,j,'3');
+                        System.out.print(this.pngArray[i][j]);
+                        break;
+                    case '4' :
+                        putPngName(i,j,'4');
+                        System.out.print(this.pngArray[i][j]);
+                        break;
+                    default :
+                        putPngName(i,j,' ');
+                        System.out.print(this.pngArray[i][j]);
+                        break;
+
+                }
+            }
+            System.out.println();
+        }
+        return this.pngArray;
+    }**/
 
     public String getMap() {
         String[] tabmap = this.map.split("\n");     /** beginning of the parser **/
         for (int i =0; i < tabmap.length; i++)
         {
-            //System.out.println(i);
             for (int j = 0; j < tabmap[i].length(); j++)
             {
-                //System.out.print(tabmap[i].charAt(j));
                 switch (tabmap[i].charAt(j)){
                     case 'B' :
-                        putPngName(i,j,"bone.png");
-                        //System.out.print(this.pngArray[i][j]);
+                        putPngName(i,j,'B');
+                        System.out.print(this.pngArray[i][j]);
                         break;
                     case 'H' :
-                        putPngName(i,j,"horizontal_bone.png");
-                        //System.out.print(this.pngArray[i][j]);
+                        putPngName(i,j,'H');
+                        System.out.print(this.pngArray[i][j]);
                         break;
                     case 'V' :
-                        putPngName(i,j,"vertical_bone.png");
-                        //System.out.print(this.pngArray[i][j]);
+                        putPngName(i,j,'V');
+                        System.out.print(this.pngArray[i][j]);
                         break;
                     case 'P' :
-                        putPngName(i,j,"purse.png");
-                        //System.out.print(this.pngArray[i][j]);
+                        putPngName(i,j,'P');
+                        System.out.print(this.pngArray[i][j]);
                         break;
                     case 'L' :
-                        putPngName(i,j,"lorann.gif");
-                        //System.out.print(this.pngArray[i][j]);
+                        putPngName(i,j,'L');
+                        System.out.print(this.pngArray[i][j]);
                         break;
                     case 'C' :
-                        putPngName(i,j,"gate_closed.png");
-                        //System.out.print(this.pngArray[i][j]);
+                        putPngName(i,j,'C');
+                        System.out.print(this.pngArray[i][j]);
                         break;
                     case 'K' :
-                        putPngName(i,j,"crystal_ball.png");
-                        //System.out.print(this.pngArray[i][j]);
+                        putPngName(i,j,'K');
+                        System.out.print(this.pngArray[i][j]);
                         break;
                     case '1' :
-                        putPngName(i,j,"monster_1.png");
-                        //System.out.print(this.pngArray[i][j]);
+                        putPngName(i,j,'1');
+                        System.out.print(this.pngArray[i][j]);
                         break;
                     case '2' :
-                        putPngName(i,j,"monster_2.png");
-                        //System.out.print(this.pngArray[i][j]);
+                        putPngName(i,j,'2');
+                        System.out.print(this.pngArray[i][j]);
                         break;
                     case '3' :
-                        putPngName(i,j,"monster_3.png");
-                        //System.out.print(this.pngArray[i][j]);
+                        putPngName(i,j,'3');
+                        System.out.print(this.pngArray[i][j]);
                         break;
                     case '4' :
-                        putPngName(i,j,"monster_4.png");
-                        //System.out.print(this.pngArray[i][j]);
+                        putPngName(i,j,'4');
+                        System.out.print(this.pngArray[i][j]);
                         break;
                     default :
-                        putPngName(i,j,"noimage.png");
-                        //System.out.print(this.pngArray[i][j]);
+                        putPngName(i,j,' ');
+                        System.out.print(this.pngArray[i][j]);
                         break;
 
                 }
             }
-            //System.out.println();
+            System.out.println();
         }
         return "";
     }

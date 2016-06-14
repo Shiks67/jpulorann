@@ -5,10 +5,16 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/src/main/java/element/motionless/ActionOnHeroes.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/src/main/java/element/motionless/IDoActionOnHeroes.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+<<<<<<< 014c86d3c43bd621aac861269b77143b8dbedf7d
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/src/main/java/element/motionless/Crystal.java" afterPath="$PROJECT_DIR$/model/src/main/java/element/motionless/Crystal.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/src/main/java/element/motionless/GateO.java" afterPath="$PROJECT_DIR$/model/src/main/java/element/motionless/GateO.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/src/main/java/element/motionless/MotionlessElement.java" afterPath="$PROJECT_DIR$/model/src/main/java/element/motionless/MotionlessElement.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/src/main/java/element/motionless/Purse.java" afterPath="$PROJECT_DIR$/model/src/main/java/element/motionless/Purse.java" />
+=======
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/src/main/java/model/Model.java" afterPath="$PROJECT_DIR$/model/src/main/java/model/Model.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/src/main/java/view/ViewPanel.java" afterPath="$PROJECT_DIR$/view/src/main/java/view/ViewPanel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/view.iml" afterPath="$PROJECT_DIR$/view/view.iml" />
+>>>>>>> small update getmap gettable[][]
     </list>
     <ignored path="masterpom.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,6 +45,7 @@
       <file leaf-file-name="ViewPanel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view/src/main/java/view/ViewPanel.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< 014c86d3c43bd621aac861269b77143b8dbedf7d
             <state relative-caret-position="969">
               <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
               <folding>
@@ -50,6 +57,11 @@
                 <element signature="e#1130#1131#0" expanded="false" />
                 <element signature="e#1151#1152#0" expanded="false" />
               </folding>
+=======
+            <state relative-caret-position="451">
+              <caret line="67" column="77" selection-start-line="67" selection-start-column="77" selection-end-line="67" selection-end-column="77" />
+              <folding />
+>>>>>>> small update getmap gettable[][]
             </state>
           </provider>
         </entry>
@@ -57,6 +69,7 @@
       <file leaf-file-name="Model.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model/src/main/java/model/Model.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< 014c86d3c43bd621aac861269b77143b8dbedf7d
             <state relative-caret-position="17">
               <caret line="21" column="47" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
               <folding>
@@ -134,7 +147,24 @@
               <folding>
                 <element signature="e#589#590#0" expanded="true" />
                 <element signature="e#630#631#0" expanded="true" />
+=======
+            <state relative-caret-position="2059">
+              <caret line="208" column="8" selection-start-line="208" selection-start-column="8" selection-end-line="208" selection-end-column="8" />
+              <folding>
+                <element signature="e#1753#1754#0" expanded="true" />
+                <element signature="e#1792#1793#0" expanded="true" />
+>>>>>>> small update getmap gettable[][]
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ViewFrame.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/view/src/main/java/view/ViewFrame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="393">
+              <caret line="134" column="41" selection-start-line="134" selection-start-column="41" selection-end-line="134" selection-end-column="41" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -170,11 +200,11 @@
         <option value="$PROJECT_DIR$/controller/src/main/java/controller/Controller.java" />
         <option value="$PROJECT_DIR$/model/src/main/java/element/ISprite.java" />
         <option value="$PROJECT_DIR$/view/src/main/java/view/ViewFrame.java" />
-        <option value="$PROJECT_DIR$/view/src/main/java/view/ViewPanel.java" />
         <option value="$PROJECT_DIR$/contract/src/main/java/contract/IModel.java" />
         <option value="$PROJECT_DIR$/model/src/main/java/element/Element.java" />
         <option value="$PROJECT_DIR$/contract/src/main/java/contract/ControllerOrder.java" />
         <option value="$PROJECT_DIR$/view/src/main/java/view/View.java" />
+        <option value="$PROJECT_DIR$/view/src/main/java/view/ViewPanel.java" />
         <option value="$PROJECT_DIR$/model/src/main/java/model/Model.java" />
         <option value="$PROJECT_DIR$/model/src/main/java/element/motionless/ActionOnHeroes.java" />
         <option value="$PROJECT_DIR$/model/src/main/java/element/motionless/IDoActionOnHeroes.java" />
@@ -199,10 +229,17 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
+<<<<<<< 014c86d3c43bd621aac861269b77143b8dbedf7d
     <option name="x" value="1912" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
+=======
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1616" />
+    <option name="height" value="876" />
+>>>>>>> small update getmap gettable[][]
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -401,7 +438,7 @@
   <component name="PropertiesComponent">
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/aedt.showboard.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Prosit/38 POO 5/Ressources/jpu2016_sequence5" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -858,8 +895,12 @@
       <workItem from="1465843043429" duration="4054000" />
       <workItem from="1465886850691" duration="885000" />
       <workItem from="1465889708050" duration="29000" />
+<<<<<<< 014c86d3c43bd621aac861269b77143b8dbedf7d
       <workItem from="1465890129587" duration="3978000" />
       <workItem from="1465894179750" duration="871000" />
+=======
+      <workItem from="1465890129587" duration="7712000" />
+>>>>>>> small update getmap gettable[][]
     </task>
     <task id="LOCAL-00001" summary="Push test">
       <created>1465804918356</created>
@@ -903,34 +944,58 @@
       <option name="project" value="LOCAL" />
       <updated>1465890835852</updated>
     </task>
+<<<<<<< 014c86d3c43bd621aac861269b77143b8dbedf7d
     <task id="LOCAL-00007" summary="Some edits for mobile, element and NettleWorld&#10;NettleWorld need to display the map and it's done">
       <created>1465894221859</created>
       <option name="number" value="00007" />
       <option name="presentableId" value="LOCAL-00007" />
       <option name="project" value="LOCAL" />
       <updated>1465894221859</updated>
+=======
+    <task id="LOCAL-00007" summary="change the possible key press to load a map">
+      <created>1465894128192</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1465894128192</updated>
+>>>>>>> small update getmap gettable[][]
     </task>
     <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< 014c86d3c43bd621aac861269b77143b8dbedf7d
     <option name="totallyTimeSpent" value="22952000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+=======
+    <option name="totallyTimeSpent" value="25815000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+>>>>>>> small update getmap gettable[][]
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+<<<<<<< 014c86d3c43bd621aac861269b77143b8dbedf7d
+=======
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32767624" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+>>>>>>> small update getmap gettable[][]
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+<<<<<<< 014c86d3c43bd621aac861269b77143b8dbedf7d
+=======
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40600523" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+>>>>>>> small update getmap gettable[][]
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20729166" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24875" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -978,6 +1043,59 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< 014c86d3c43bd621aac861269b77143b8dbedf7d
+=======
+    <entry file="file://$PROJECT_DIR$/model/src/main/java/model/Model.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1650">
+          <caret line="89" column="0" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+          <folding>
+            <element signature="e#1753#1754#0" expanded="true" />
+            <element signature="e#1792#1793#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contract/src/main/java/contract/IModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="858">
+          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/src/main/java/view/ViewPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="969">
+          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/src/main/java/controller/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="52" column="6" selection-start-line="52" selection-start-column="6" selection-end-line="52" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/src/main/java/view/ViewFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1972">
+          <caret line="133" column="18" selection-start-line="133" selection-start-column="18" selection-end-line="133" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contract/src/main/java/contract/IController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+>>>>>>> small update getmap gettable[][]
     <entry file="file://$PROJECT_DIR$/model/src/main/java/element/Element.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -1016,6 +1134,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+<<<<<<< 014c86d3c43bd621aac861269b77143b8dbedf7d
             <element signature="imports" expanded="false" />
             <element signature="e#619#620#0" expanded="false" />
             <element signature="e#648#649#0" expanded="false" />
@@ -1025,6 +1144,10 @@
             <element signature="e#1641#1642#0" expanded="false" />
             <element signature="e#1755#1756#0" expanded="false" />
             <element signature="e#1794#1795#0" expanded="false" />
+=======
+            <element signature="e#1753#1754#0" expanded="true" />
+            <element signature="e#1792#1793#0" expanded="true" />
+>>>>>>> small update getmap gettable[][]
           </folding>
         </state>
       </provider>
@@ -1109,6 +1232,7 @@
         <state relative-caret-position="510">
           <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
           <folding>
+<<<<<<< 014c86d3c43bd621aac861269b77143b8dbedf7d
             <element signature="imports" expanded="false" />
             <element signature="e#619#620#0" expanded="false" />
             <element signature="e#648#649#0" expanded="false" />
@@ -1118,6 +1242,10 @@
             <element signature="e#1641#1642#0" expanded="false" />
             <element signature="e#1755#1756#0" expanded="false" />
             <element signature="e#1794#1795#0" expanded="false" />
+=======
+            <element signature="e#1753#1754#0" expanded="true" />
+            <element signature="e#1792#1793#0" expanded="true" />
+>>>>>>> small update getmap gettable[][]
           </folding>
         </state>
       </provider>
@@ -1317,14 +1445,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/src/main/java/view/ViewFrame.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_77/src.zip!/java/awt/Graphics.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1989">
-          <caret line="134" column="41" selection-start-line="134" selection-start-column="41" selection-end-line="134" selection-end-column="41" />
+        <state relative-caret-position="442">
+          <caret line="820" column="16" selection-start-line="820" selection-start-column="16" selection-end-line="820" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< 014c86d3c43bd621aac861269b77143b8dbedf7d
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_77/src.zip!/java/awt/Graphics.java" />
     <entry file="file://$PROJECT_DIR$/view/src/main/java/view/ViewPanel.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1339,19 +1468,32 @@
             <element signature="e#1130#1131#0" expanded="false" />
             <element signature="e#1151#1152#0" expanded="false" />
           </folding>
+=======
+    <entry file="file://$PROJECT_DIR$/view/src/main/java/view/ViewFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="134" column="41" selection-start-line="134" selection-start-column="41" selection-end-line="134" selection-end-column="41" />
+          <folding />
+>>>>>>> small update getmap gettable[][]
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/model/src/main/java/element/motionless/IDoActionOnHeroes.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< 014c86d3c43bd621aac861269b77143b8dbedf7d
         <state relative-caret-position="119">
           <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+=======
+        <state relative-caret-position="451">
+          <caret line="67" column="77" selection-start-line="67" selection-start-column="77" selection-end-line="67" selection-end-column="77" />
+>>>>>>> small update getmap gettable[][]
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/model/src/main/java/model/Model.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< 014c86d3c43bd621aac861269b77143b8dbedf7d
         <state relative-caret-position="17">
           <caret line="21" column="47" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
           <folding>
@@ -1419,6 +1561,13 @@
           <folding>
             <element signature="e#589#590#0" expanded="true" />
             <element signature="e#630#631#0" expanded="true" />
+=======
+        <state relative-caret-position="2059">
+          <caret line="208" column="8" selection-start-line="208" selection-start-column="8" selection-end-line="208" selection-end-column="8" />
+          <folding>
+            <element signature="e#1753#1754#0" expanded="true" />
+            <element signature="e#1792#1793#0" expanded="true" />
+>>>>>>> small update getmap gettable[][]
           </folding>
         </state>
       </provider>
