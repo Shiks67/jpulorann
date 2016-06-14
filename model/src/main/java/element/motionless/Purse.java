@@ -11,4 +11,8 @@ class Purse extends MotionlessElement{
     public Purse(){
         super(new Sprite("P","purse.png"), Permeability.PENETRABLE, 'C');
     }
+
+    public ActionOnHeroes getActionOnHeroes() {
+        return ActionOnHeroes.PURSE;
+    }
 }

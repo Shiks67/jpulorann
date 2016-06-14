@@ -11,4 +11,8 @@ class GateO extends MotionlessElement{
     public GateO(){
         super(new Sprite("O","gate_open.png"), Permeability.PENETRABLE, 'C');
     }
+
+    public ActionOnHeroes getActionOnHeroes() {
+        return ActionOnHeroes.DOOR;
+    }
 }
