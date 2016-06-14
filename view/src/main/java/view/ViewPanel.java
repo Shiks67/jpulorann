@@ -2,10 +2,13 @@ package view;
 
 import model.Model;
 
-import java.awt.Graphics;
+import java.awt.*;
+import java.io.File;
+import java.io.IOException;
 import java.util.Observable;
 import java.util.Observer;
 
+import javax.imageio.ImageIO;
 import javax.swing.JPanel;
 
 /**
@@ -94,39 +97,135 @@ class ViewPanel extends JPanel implements Observer {
 				switch (map[i][j]){
 					case 'B':
 						System.out.print(map[i][j]);
+						try {
+							Image img = ImageIO.read(new File("G:/CESI/A1/Projets et devoir/6 Lorann/jpulorann/sprite/bone.png"));
+							graphics.drawImage(img, 32*j, 32*i, this);
+						} catch (IOException e) {
+
+							e.printStackTrace();
+
+						}
 						break;
 					case 'H':
 						System.out.print(map[i][j]);
+						try {
+							Image img = ImageIO.read(new File("G:/CESI/A1/Projets et devoir/6 Lorann/jpulorann/sprite/horizontal_bone.png"));
+							graphics.drawImage(img, 32*j, 32*i, this);
+						} catch (IOException e) {
+
+							e.printStackTrace();
+
+						}
 						break;
 					case 'V':
 						System.out.print(map[i][j]);
+						try {
+							Image img = ImageIO.read(new File("G:/CESI/A1/Projets et devoir/6 Lorann/jpulorann/sprite/vertical_bone.png"));
+							graphics.drawImage(img, 32*j, 32*i, this);
+						} catch (IOException e) {
+
+							e.printStackTrace();
+
+						}
 						break;
 					case 'P':
 						System.out.print(map[i][j]);
+						try {
+							Image img = ImageIO.read(new File("G:/CESI/A1/Projets et devoir/6 Lorann/jpulorann/sprite/purse.png"));
+							graphics.drawImage(img, 32*j, 32*i, this);
+						} catch (IOException e) {
+
+							e.printStackTrace();
+
+						}
 						break;
 					case 'L' :
 						System.out.print(map[i][j]);
+						try {
+							Image img = ImageIO.read(new File("G:/CESI/A1/Projets et devoir/6 Lorann/jpulorann/sprite/lorann.gif"));
+							graphics.drawImage(img, 32*j, 32*i, this);
+						} catch (IOException e) {
+
+							e.printStackTrace();
+
+						}
 						break;
 					case 'C' :
 						System.out.print(map[i][j]);
+						try {
+							Image img = ImageIO.read(new File("G:/CESI/A1/Projets et devoir/6 Lorann/jpulorann/sprite/gate_closed.png"));
+							graphics.drawImage(img, 32*j, 32*i, this);
+						} catch (IOException e) {
+
+							e.printStackTrace();
+
+						}
 						break;
 					case 'K' :
 						System.out.print(map[i][j]);
+						try {
+							Image img = ImageIO.read(new File("G:/CESI/A1/Projets et devoir/6 Lorann/jpulorann/sprite/crystal_ball.png"));
+							graphics.drawImage(img, 32*j, 32*i, this);
+						} catch (IOException e) {
+
+							e.printStackTrace();
+
+						}
 						break;
 					case '1' :
 						System.out.print(map[i][j]);
+						try {
+							Image img = ImageIO.read(new File("G:/CESI/A1/Projets et devoir/6 Lorann/jpulorann/sprite/monster_1.png"));
+							graphics.drawImage(img, 32*j, 32*i, this);
+						} catch (IOException e) {
+
+							e.printStackTrace();
+
+						}
 						break;
 					case '2' :
 						System.out.print(map[i][j]);
+						try {
+							Image img = ImageIO.read(new File("G:/CESI/A1/Projets et devoir/6 Lorann/jpulorann/sprite/monster_2.png"));
+							graphics.drawImage(img, 32*j, 32*i, this);
+						} catch (IOException e) {
+
+							e.printStackTrace();
+
+						}
 						break;
 					case '3' :
 						System.out.print(map[i][j]);
+						try {
+							Image img = ImageIO.read(new File("G:/CESI/A1/Projets et devoir/6 Lorann/jpulorann/sprite/monster_3.png"));
+							graphics.drawImage(img, 32*j, 32*i, this);
+						} catch (IOException e) {
+
+							e.printStackTrace();
+
+						}
 						break;
 					case '4' :
 						System.out.print(map[i][j]);
+						try {
+							Image img = ImageIO.read(new File("G:/CESI/A1/Projets et devoir/6 Lorann/jpulorann/sprite/monster_4.png"));
+							graphics.drawImage(img, 32*j, 32*i, this);
+						} catch (IOException e) {
+
+							e.printStackTrace();
+
+						}
 						break;
 					default:
 						System.out.print(" ");
+						try {
+							Image img = ImageIO.read(new File("G:/CESI/A1/Projets et devoir/6 Lorann/jpulorann/sprite/noimage.png"));
+							graphics.drawImage(img, 32*j, 32*i, this);
+						} catch (IOException e) {
+
+							e.printStackTrace();
+
+						}
 						break;
 				}
 			}
