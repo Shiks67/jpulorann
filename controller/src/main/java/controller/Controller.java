@@ -11,10 +11,10 @@ import contract.IView;
 public class Controller implements IController {
 
 	/** The view. */
-	private IView	view;
+	private IView view;
 
 	/** The model. */
-	private IModel	model;
+	private IModel model;
 
 	/**
 	 * Instantiates a new controller.
@@ -91,4 +91,7 @@ public class Controller implements IController {
 		}
 	}
 
+	public void displayMap() {
+		model.getMapInTab();
+	}
 }

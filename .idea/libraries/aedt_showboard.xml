@@ -1,7 +1,6 @@
 <component name="libraryTable">
   <library name="aedt.showboard">
     <CLASSES>
-      <root url="jar://$USER_HOME$/Downloads/aedt.showboard.jar!/" />
       <root url="jar://$PROJECT_DIR$/aedt.showboard.jar!/" />
     </CLASSES>
     <JAVADOC />

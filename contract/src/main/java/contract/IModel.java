@@ -36,6 +36,8 @@ public interface IModel {
 	 *
 	 * @return the content
 	 */
+	char[][] getMapInTab();
+
 	String getMap();
 
 	/**

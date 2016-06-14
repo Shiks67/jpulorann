@@ -3,14 +3,13 @@ package element;
 
 import aedt.showboard.ISquare;
 import model.INettleWorld;
-import model.NettleWorld;
 
 import java.awt.*;
 
 /**
  * Created by Ahmed on 13/06/2016.
  */
-public abstract class Element implements ISquare{
+public abstract class Element implements ISquare {
     private ISprite				sprite;
     private Permeability permeability;
     private INettleWorld nettleWorld;

@@ -2,19 +2,92 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69e7211a-abd9-46ca-9785-cd2ef29c1473" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/src/main/java/element/motionless/ActionOnHeroes.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/src/main/java/element/motionless/IDoActionOnHeroes.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/controller/src/main/java/controller/IOrderPerformed.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/controller/src/main/java/controller/NettlePlay.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/controller/src/main/java/controller/UserOrder.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/model/src/main/java/element/motionless/MotionlessElements.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_39.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_39.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/aedt_showboard.xml" afterPath="$PROJECT_DIR$/.idea/libraries/aedt_showboard.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-<<<<<<< 014c86d3c43bd621aac861269b77143b8dbedf7d
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/src/main/java/element/motionless/Crystal.java" afterPath="$PROJECT_DIR$/model/src/main/java/element/motionless/Crystal.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/src/main/java/element/motionless/GateO.java" afterPath="$PROJECT_DIR$/model/src/main/java/element/motionless/GateO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/src/main/java/element/motionless/MotionlessElement.java" afterPath="$PROJECT_DIR$/model/src/main/java/element/motionless/MotionlessElement.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.project" afterPath="$PROJECT_DIR$/.project" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.settings/org.eclipse.core.resources.prefs" afterPath="$PROJECT_DIR$/.settings/org.eclipse.core.resources.prefs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.settings/org.eclipse.m2e.core.prefs" afterPath="$PROJECT_DIR$/.settings/org.eclipse.m2e.core.prefs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contract/.classpath" afterPath="$PROJECT_DIR$/contract/.classpath" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contract/.gitignore" afterPath="$PROJECT_DIR$/contract/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contract/.project" afterPath="$PROJECT_DIR$/contract/.project" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contract/.settings/org.eclipse.core.resources.prefs" afterPath="$PROJECT_DIR$/contract/.settings/org.eclipse.core.resources.prefs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contract/.settings/org.eclipse.jdt.core.prefs" afterPath="$PROJECT_DIR$/contract/.settings/org.eclipse.jdt.core.prefs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contract/.settings/org.eclipse.m2e.core.prefs" afterPath="$PROJECT_DIR$/contract/.settings/org.eclipse.m2e.core.prefs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contract/contract.iml" afterPath="$PROJECT_DIR$/contract/contract.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contract/pom.xml" afterPath="$PROJECT_DIR$/contract/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contract/src/main/java/contract/IModel.java" afterPath="$PROJECT_DIR$/contract/src/main/java/contract/IModel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/.classpath" afterPath="$PROJECT_DIR$/controller/.classpath" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/.gitignore" afterPath="$PROJECT_DIR$/controller/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/.project" afterPath="$PROJECT_DIR$/controller/.project" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/.settings/org.eclipse.core.resources.prefs" afterPath="$PROJECT_DIR$/controller/.settings/org.eclipse.core.resources.prefs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/.settings/org.eclipse.jdt.core.prefs" afterPath="$PROJECT_DIR$/controller/.settings/org.eclipse.jdt.core.prefs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/.settings/org.eclipse.m2e.core.prefs" afterPath="$PROJECT_DIR$/controller/.settings/org.eclipse.m2e.core.prefs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/controller.iml" afterPath="$PROJECT_DIR$/controller/controller.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/pom.xml" afterPath="$PROJECT_DIR$/controller/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/src/main/java/controller/Controller.java" afterPath="$PROJECT_DIR$/controller/src/main/java/controller/Controller.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/.classpath" afterPath="$PROJECT_DIR$/main/.classpath" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/.gitignore" afterPath="$PROJECT_DIR$/main/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/.project" afterPath="$PROJECT_DIR$/main/.project" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/.settings/org.eclipse.core.resources.prefs" afterPath="$PROJECT_DIR$/main/.settings/org.eclipse.core.resources.prefs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/.settings/org.eclipse.jdt.core.prefs" afterPath="$PROJECT_DIR$/main/.settings/org.eclipse.jdt.core.prefs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/.settings/org.eclipse.m2e.core.prefs" afterPath="$PROJECT_DIR$/main/.settings/org.eclipse.m2e.core.prefs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/dependency-reduced-pom.xml" afterPath="$PROJECT_DIR$/main/dependency-reduced-pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/main.iml" afterPath="$PROJECT_DIR$/main/main.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/pom.xml" afterPath="$PROJECT_DIR$/main/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/src/main/java/main/Main.java" afterPath="$PROJECT_DIR$/main/src/main/java/main/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/masterpom.iml" afterPath="$PROJECT_DIR$/masterpom.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/.classpath" afterPath="$PROJECT_DIR$/model/.classpath" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/.gitignore" afterPath="$PROJECT_DIR$/model/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/.project" afterPath="$PROJECT_DIR$/model/.project" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/.settings/org.eclipse.core.resources.prefs" afterPath="$PROJECT_DIR$/model/.settings/org.eclipse.core.resources.prefs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/.settings/org.eclipse.jdt.core.prefs" afterPath="$PROJECT_DIR$/model/.settings/org.eclipse.jdt.core.prefs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/.settings/org.eclipse.m2e.core.prefs" afterPath="$PROJECT_DIR$/model/.settings/org.eclipse.m2e.core.prefs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/model.iml" afterPath="$PROJECT_DIR$/model/model.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/pom.xml" afterPath="$PROJECT_DIR$/model/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/src/main/java/element/Element.java" afterPath="$PROJECT_DIR$/model/src/main/java/element/Element.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/src/main/java/element/motionless/Purse.java" afterPath="$PROJECT_DIR$/model/src/main/java/element/motionless/Purse.java" />
-=======
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/src/main/java/element/motionless/VBone.java" afterPath="$PROJECT_DIR$/model/src/main/java/element/motionless/VBone.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/src/main/java/model/DAOLoadMap.java" afterPath="$PROJECT_DIR$/model/src/main/java/model/DAOLoadMap.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/src/main/java/model/DBConnection.java" afterPath="$PROJECT_DIR$/model/src/main/java/model/DBConnection.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/src/main/java/model/Model.java" afterPath="$PROJECT_DIR$/model/src/main/java/model/Model.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/src/main/resources/jpublankproject.sql" afterPath="$PROJECT_DIR$/model/src/main/resources/jpublankproject.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/src/main/resources/model.properties" afterPath="$PROJECT_DIR$/model/src/main/resources/model.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/src/test/java/model/DAOEntityTest.java" afterPath="$PROJECT_DIR$/model/src/test/java/model/DAOEntityTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/src/test/java/model/DAOHelloWorldTest.java" afterPath="$PROJECT_DIR$/model/src/test/java/model/DAOHelloWorldTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/src/test/java/model/DAOLoadMapTest.java" afterPath="$PROJECT_DIR$/model/src/test/java/model/DAOLoadMapTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/src/test/java/model/DBConnectionTest.java" afterPath="$PROJECT_DIR$/model/src/test/java/model/DBConnectionTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/src/test/java/model/DBPropertiesTest.java" afterPath="$PROJECT_DIR$/model/src/test/java/model/DBPropertiesTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/src/test/java/model/HelloWorldTest.java" afterPath="$PROJECT_DIR$/model/src/test/java/model/HelloWorldTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/src/test/java/model/LoadMapTest.java" afterPath="$PROJECT_DIR$/model/src/test/java/model/LoadMapTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/src/test/java/model/ModelTest.java" afterPath="$PROJECT_DIR$/model/src/test/java/model/ModelTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/.classpath" afterPath="$PROJECT_DIR$/view/.classpath" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/.gitignore" afterPath="$PROJECT_DIR$/view/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/.project" afterPath="$PROJECT_DIR$/view/.project" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/.settings/org.eclipse.core.resources.prefs" afterPath="$PROJECT_DIR$/view/.settings/org.eclipse.core.resources.prefs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/.settings/org.eclipse.jdt.core.prefs" afterPath="$PROJECT_DIR$/view/.settings/org.eclipse.jdt.core.prefs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/.settings/org.eclipse.m2e.core.prefs" afterPath="$PROJECT_DIR$/view/.settings/org.eclipse.m2e.core.prefs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/pom.xml" afterPath="$PROJECT_DIR$/view/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/src/main/java/view/View.java" afterPath="$PROJECT_DIR$/view/src/main/java/view/View.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/src/main/java/view/ViewFrame.java" afterPath="$PROJECT_DIR$/view/src/main/java/view/ViewFrame.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/src/main/java/view/ViewPanel.java" afterPath="$PROJECT_DIR$/view/src/main/java/view/ViewPanel.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/view.iml" afterPath="$PROJECT_DIR$/view/view.iml" />
->>>>>>> small update getmap gettable[][]
     </list>
     <ignored path="masterpom.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,129 +115,54 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ViewPanel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view/src/main/java/view/ViewPanel.java">
+      <file leaf-file-name="IController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/contract/src/main/java/contract/IController.java">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< 014c86d3c43bd621aac861269b77143b8dbedf7d
-            <state relative-caret-position="969">
-              <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#749#750#0" expanded="false" />
-                <element signature="e#777#778#0" expanded="false" />
-                <element signature="e#926#927#0" expanded="false" />
-                <element signature="e#959#960#0" expanded="false" />
-                <element signature="e#1130#1131#0" expanded="false" />
-                <element signature="e#1151#1152#0" expanded="false" />
-              </folding>
-=======
-            <state relative-caret-position="451">
-              <caret line="67" column="77" selection-start-line="67" selection-start-column="77" selection-end-line="67" selection-end-column="77" />
+            <state relative-caret-position="255">
+              <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
               <folding />
->>>>>>> small update getmap gettable[][]
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Model.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main/src/main/java/main/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jpublankproject.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/model/src/main/resources/jpublankproject.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="105" column="50" selection-start-line="105" selection-start-column="50" selection-end-line="105" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IModel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/contract/src/main/java/contract/IModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Model.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/model/src/main/java/model/Model.java">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< 014c86d3c43bd621aac861269b77143b8dbedf7d
-            <state relative-caret-position="17">
-              <caret line="21" column="47" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
+            <state relative-caret-position="-1173">
+              <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#619#620#0" expanded="false" />
-                <element signature="e#648#649#0" expanded="false" />
-                <element signature="e#768#769#0" expanded="false" />
-                <element signature="e#803#804#0" expanded="false" />
-                <element signature="e#1614#1615#0" expanded="false" />
-                <element signature="e#1641#1642#0" expanded="false" />
-                <element signature="e#1755#1756#0" expanded="false" />
-                <element signature="e#1794#1795#0" expanded="false" />
+                <element signature="e#652#653#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Crystal.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/model/src/main/java/element/motionless/Crystal.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#323#324#0" expanded="true" />
-                <element signature="e#368#369#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GateO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/model/src/main/java/element/motionless/GateO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="16" selection-end-column="5" />
-              <folding>
-                <element signature="e#183#184#0" expanded="true" />
-                <element signature="e#267#268#0" expanded="true" />
-                <element signature="e#316#317#0" expanded="true" />
-                <element signature="e#358#359#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Purse.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/model/src/main/java/element/motionless/Purse.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
-              <folding>
-                <element signature="e#312#313#0" expanded="true" />
-                <element signature="e#355#356#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ActionOnHeroes.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/model/src/main/java/element/motionless/ActionOnHeroes.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MotionlessElement.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/model/src/main/java/element/motionless/MotionlessElement.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-              <folding>
-                <element signature="e#589#590#0" expanded="true" />
-                <element signature="e#630#631#0" expanded="true" />
-=======
-            <state relative-caret-position="2059">
-              <caret line="208" column="8" selection-start-line="208" selection-start-column="8" selection-end-line="208" selection-end-column="8" />
-              <folding>
-                <element signature="e#1753#1754#0" expanded="true" />
-                <element signature="e#1792#1793#0" expanded="true" />
->>>>>>> small update getmap gettable[][]
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ViewFrame.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view/src/main/java/view/ViewFrame.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
-              <caret line="134" column="41" selection-start-line="134" selection-start-column="41" selection-end-line="134" selection-end-column="41" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -174,8 +172,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Class" />
         <option value="Enum" />
-        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -193,25 +191,29 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/contract/src/main/java/contract/ControllerOrder.java" />
         <option value="$PROJECT_DIR$/model/src/main/java/model/DBProperties.java" />
         <option value="$PROJECT_DIR$/model/src/main/java/model/DAOLoadMap.java" />
         <option value="$PROJECT_DIR$/model/src/main/java/model/LoadMap.java" />
         <option value="$PROJECT_DIR$/model/src/main/resources/jpublankproject.sql" />
-        <option value="$PROJECT_DIR$/controller/src/main/java/controller/Controller.java" />
-        <option value="$PROJECT_DIR$/model/src/main/java/element/ISprite.java" />
-        <option value="$PROJECT_DIR$/view/src/main/java/view/ViewFrame.java" />
-        <option value="$PROJECT_DIR$/contract/src/main/java/contract/IModel.java" />
-        <option value="$PROJECT_DIR$/model/src/main/java/element/Element.java" />
-        <option value="$PROJECT_DIR$/contract/src/main/java/contract/ControllerOrder.java" />
-        <option value="$PROJECT_DIR$/view/src/main/java/view/View.java" />
-        <option value="$PROJECT_DIR$/view/src/main/java/view/ViewPanel.java" />
-        <option value="$PROJECT_DIR$/model/src/main/java/model/Model.java" />
         <option value="$PROJECT_DIR$/model/src/main/java/element/motionless/ActionOnHeroes.java" />
         <option value="$PROJECT_DIR$/model/src/main/java/element/motionless/IDoActionOnHeroes.java" />
+        <option value="$PROJECT_DIR$/model/src/main/java/element/motionless/MotionlessElement.java" />
         <option value="$PROJECT_DIR$/model/src/main/java/element/motionless/Crystal.java" />
         <option value="$PROJECT_DIR$/model/src/main/java/element/motionless/GateO.java" />
         <option value="$PROJECT_DIR$/model/src/main/java/element/motionless/Purse.java" />
-        <option value="$PROJECT_DIR$/model/src/main/java/element/motionless/MotionlessElement.java" />
+        <option value="$PROJECT_DIR$/model/src/main/java/element/motionless/VBone.java" />
+        <option value="$PROJECT_DIR$/model/src/main/java/element/motionless/Bone.java" />
+        <option value="$PROJECT_DIR$/model/src/main/java/element/motionless/GateC.java" />
+        <option value="$PROJECT_DIR$/model/src/main/java/element/motionless/HBone.java" />
+        <option value="$PROJECT_DIR$/model/src/main/java/element/Permeability.java" />
+        <option value="$PROJECT_DIR$/model/src/main/java/element/Element.java" />
+        <option value="$PROJECT_DIR$/view/src/main/java/view/View.java" />
+        <option value="$PROJECT_DIR$/view/src/main/java/view/ViewFrame.java" />
+        <option value="$PROJECT_DIR$/view/src/main/java/view/ViewPanel.java" />
+        <option value="$PROJECT_DIR$/controller/src/main/java/controller/Controller.java" />
+        <option value="$PROJECT_DIR$/contract/src/main/java/contract/IController.java" />
+        <option value="$PROJECT_DIR$/main/src/main/java/main/Main.java" />
       </list>
     </option>
   </component>
@@ -228,18 +230,35 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Master POM" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Lifecycle" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
+        </PATH_ELEMENT>
+      </PATH>
+    </treeState>
+  </component>
   <component name="ProjectFrameBounds">
-<<<<<<< 014c86d3c43bd621aac861269b77143b8dbedf7d
-    <option name="x" value="1912" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
-=======
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1616" />
     <option name="height" value="876" />
->>>>>>> small update getmap gettable[][]
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -266,9 +285,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -366,6 +385,10 @@
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -392,8 +415,18 @@
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="element" />
+              <option name="myItemId" value="masterpom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jpulorann" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="contract" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -407,7 +440,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
+              <option name="myItemId" value="contract" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -423,11 +456,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="element" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="motionless" />
+              <option name="myItemId" value="contract" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -438,13 +467,24 @@
   <component name="PropertiesComponent">
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Prosit/38 POO 5/Ressources/jpu2016_sequence5" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="project.structure.last.edited" value="Libraries" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="SearchEverywhereHistoryKey" value="drawchar&#9;PSI&#9;JAVA://java.awt.Graphics#drawChars&#10;KEYLI&#9;PSI&#9;JAVA://java.awt.event.KeyListener" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.19407408" />
+    <property name="SearchEverywhereHistoryKey" value="KEYLI&#9;PSI&#9;JAVA://java.awt.event.KeyListener" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="controller" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\CESI\A1\Projets et devoir\6 Lorann\jpulorann-master\contract\src\main\java" />
+      <recent name="G:\CESI\A1\Projets et devoir\6 Lorann\jpulorann-master\model\src\main\java" />
+      <recent name="G:\CESI\A1\Projets et devoir\6 Lorann\jpulorann-master\sprite" />
+      <recent name="G:\CESI\A1\Projets et devoir\6 Lorann\jpulorann-master" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -776,6 +816,28 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method />
+    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -892,15 +954,12 @@
       <updated>1465802529371</updated>
       <workItem from="1465802532576" duration="10339000" />
       <workItem from="1465820399186" duration="2796000" />
-      <workItem from="1465843043429" duration="4054000" />
-      <workItem from="1465886850691" duration="885000" />
-      <workItem from="1465889708050" duration="29000" />
-<<<<<<< 014c86d3c43bd621aac861269b77143b8dbedf7d
-      <workItem from="1465890129587" duration="3978000" />
-      <workItem from="1465894179750" duration="871000" />
-=======
-      <workItem from="1465890129587" duration="7712000" />
->>>>>>> small update getmap gettable[][]
+      <workItem from="1465827983666" duration="3002000" />
+      <workItem from="1465842563486" duration="556000" />
+      <workItem from="1465902818285" duration="281000" />
+      <workItem from="1465903139946" duration="214000" />
+      <workItem from="1465903494346" duration="32000" />
+      <workItem from="1465903690184" duration="27000" />
     </task>
     <task id="LOCAL-00001" summary="Push test">
       <created>1465804918356</created>
@@ -930,72 +989,34 @@
       <option name="project" value="LOCAL" />
       <updated>1465822882653</updated>
     </task>
-    <task id="LOCAL-00005" summary="Small update bud fix in LoadMap">
-      <created>1465890277619</created>
+    <task id="LOCAL-00005" summary="Beginning sprites implement">
+      <created>1465828256261</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1465890277619</updated>
+      <updated>1465828256261</updated>
     </task>
-    <task id="LOCAL-00006" summary="change the possible key press to load a map">
-      <created>1465890835852</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1465890835852</updated>
-    </task>
-<<<<<<< 014c86d3c43bd621aac861269b77143b8dbedf7d
-    <task id="LOCAL-00007" summary="Some edits for mobile, element and NettleWorld&#10;NettleWorld need to display the map and it's done">
-      <created>1465894221859</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1465894221859</updated>
-=======
-    <task id="LOCAL-00007" summary="change the possible key press to load a map">
-      <created>1465894128192</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1465894128192</updated>
->>>>>>> small update getmap gettable[][]
-    </task>
-    <option name="localTasksCounter" value="8" />
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-<<<<<<< 014c86d3c43bd621aac861269b77143b8dbedf7d
-    <option name="totallyTimeSpent" value="22952000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
-=======
-    <option name="totallyTimeSpent" value="25815000" />
+    <option name="totallyTimeSpent" value="17247000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
->>>>>>> small update getmap gettable[][]
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-<<<<<<< 014c86d3c43bd621aac861269b77143b8dbedf7d
-=======
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32767624" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
->>>>>>> small update getmap gettable[][]
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-<<<<<<< 014c86d3c43bd621aac861269b77143b8dbedf7d
-=======
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40600523" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
->>>>>>> small update getmap gettable[][]
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16710183" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24875" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.175625" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1006,19 +1027,11 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32875264" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32767624" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32875264" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32898173" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
-  </component>
-  <component name="Vcs.Log.UiProperties">
-    <option name="RECENTLY_FILTERED_USER_GROUPS">
-      <collection />
-    </option>
-    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-      <collection />
-    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -1028,13 +1041,12 @@
     <MESSAGE value="Comit + push Direct display map from DB" />
     <MESSAGE value="Add complete DataBase" />
     <MESSAGE value="Small update bud fix in LoadMap" />
-    <MESSAGE value="change the possible key press to load a map" />
-    <MESSAGE value="Some edits for mobile, element and NettleWorld&#10;NettleWorld need to display the map and it's done" />
-    <option name="LAST_COMMIT_MESSAGE" value="Some edits for mobile, element and NettleWorld&#10;NettleWorld need to display the map and it's done" />
+    <MESSAGE value="Beginning sprites implement" />
+    <option name="LAST_COMMIT_MESSAGE" value="Beginning sprites implement" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="5" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1043,119 +1055,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-<<<<<<< 014c86d3c43bd621aac861269b77143b8dbedf7d
-=======
-    <entry file="file://$PROJECT_DIR$/model/src/main/java/model/Model.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1650">
-          <caret line="89" column="0" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
-          <folding>
-            <element signature="e#1753#1754#0" expanded="true" />
-            <element signature="e#1792#1793#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contract/src/main/java/contract/IModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="858">
-          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/src/main/java/view/ViewPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="969">
-          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/src/main/java/controller/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="52" column="6" selection-start-line="52" selection-start-column="6" selection-end-line="52" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/src/main/java/view/ViewFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1972">
-          <caret line="133" column="18" selection-start-line="133" selection-start-column="18" selection-end-line="133" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contract/src/main/java/contract/IController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
->>>>>>> small update getmap gettable[][]
     <entry file="file://$PROJECT_DIR$/model/src/main/java/element/Element.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/src/main/java/element/ISprite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/src/main/java/view/View.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="52" column="5" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/src/main/resources/jpublankproject.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/src/main/java/model/Model.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-<<<<<<< 014c86d3c43bd621aac861269b77143b8dbedf7d
-            <element signature="imports" expanded="false" />
-            <element signature="e#619#620#0" expanded="false" />
-            <element signature="e#648#649#0" expanded="false" />
-            <element signature="e#768#769#0" expanded="false" />
-            <element signature="e#803#804#0" expanded="false" />
-            <element signature="e#1614#1615#0" expanded="false" />
-            <element signature="e#1641#1642#0" expanded="false" />
-            <element signature="e#1755#1756#0" expanded="false" />
-            <element signature="e#1794#1795#0" expanded="false" />
-=======
-            <element signature="e#1753#1754#0" expanded="true" />
-            <element signature="e#1792#1793#0" expanded="true" />
->>>>>>> small update getmap gettable[][]
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contract/src/main/java/contract/IModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+        <state relative-caret-position="204">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1170,7 +1073,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1185,7 +1087,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1193,7 +1094,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="833">
           <caret line="53" column="5" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1215,7 +1115,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
           <caret line="31" column="33" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1223,7 +1122,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1258">
           <caret line="84" column="8" selection-start-line="84" selection-start-column="8" selection-end-line="84" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1231,22 +1129,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding>
-<<<<<<< 014c86d3c43bd621aac861269b77143b8dbedf7d
-            <element signature="imports" expanded="false" />
-            <element signature="e#619#620#0" expanded="false" />
-            <element signature="e#648#649#0" expanded="false" />
-            <element signature="e#768#769#0" expanded="false" />
-            <element signature="e#803#804#0" expanded="false" />
-            <element signature="e#1614#1615#0" expanded="false" />
-            <element signature="e#1641#1642#0" expanded="false" />
-            <element signature="e#1755#1756#0" expanded="false" />
-            <element signature="e#1794#1795#0" expanded="false" />
-=======
-            <element signature="e#1753#1754#0" expanded="true" />
-            <element signature="e#1792#1793#0" expanded="true" />
->>>>>>> small update getmap gettable[][]
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1254,15 +1136,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="26" column="49" selection-start-line="26" selection-start-column="49" selection-end-line="26" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#749#750#0" expanded="false" />
-            <element signature="e#777#778#0" expanded="false" />
-            <element signature="e#926#927#0" expanded="false" />
-            <element signature="e#959#960#0" expanded="false" />
-            <element signature="e#1130#1131#0" expanded="false" />
-            <element signature="e#1151#1152#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1270,7 +1143,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2584">
           <caret line="171" column="0" selection-start-line="171" selection-start-column="0" selection-end-line="171" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1278,7 +1150,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1287,22 +1158,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/src/main/java/model/DAOEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-891">
-          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contract/src/main/java/contract/IView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -1310,7 +1165,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="833">
           <caret line="53" column="5" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1328,6 +1182,144 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/model/src/main/java/model/HelloWorld.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="33" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/src/main/java/model/DAOLoadMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/src/main/java/element/motionless/ActionOnHeroes.java" />
+    <entry file="file://$PROJECT_DIR$/model/src/main/java/element/ISprite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Downloads/aedt.showboard.jar!/aedt/showboard/ISquare.class" />
+    <entry file="file://$PROJECT_DIR$/model/src/main/java/element/motionless/Purse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/src/main/java/element/motionless/VBone.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/src/main/java/element/motionless/MotionlessElement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/src/main/java/element/Permeability.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/src/main/java/element/motionless/HBone.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/src/main/java/element/motionless/GateC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/src/main/java/element/motionless/Bone.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/src/main/java/view/View.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="695">
+          <caret line="92" column="0" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/src/main/java/view/ViewFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="647">
+          <caret line="174" column="0" selection-start-line="174" selection-start-column="0" selection-end-line="174" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/src/main/java/view/ViewPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="695">
+          <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/src/main/java/element/Element.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/src/main/java/element/motionless/GateO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/src/main/java/element/mobile/Hero.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/src/main/java/model/DAOEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/src/main/java/element/motionless/Crystal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/src/main/java/element/Sprite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/model/src/main/java/model/LoadMap.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1258">
@@ -1336,65 +1328,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main/src/main/java/main/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="26" column="1" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/src/main/resources/jpublankproject.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/src/main/java/element/ISprite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/src/main/java/element/Element.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/src/main/java/element/Sprite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/model/src/main/java/model/INettleWorld.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/src/main/java/element/motionless/IDoActionOnHeroes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/src/main/java/controller/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model/src/main/java/element/Permeability.java">
+    <entry file="file://$PROJECT_DIR$/contract/src/main/java/contract/ControllerOrder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        <state relative-caret-position="119">
+          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/contract/src/main/java/contract/IModel.java">
+    <entry file="file://$PROJECT_DIR$/contract/src/main/java/contract/IView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="573">
-          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+        <state relative-caret-position="119">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -1402,172 +1368,40 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contract/src/main/java/contract/ControllerOrder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/src/main/java/view/View.java">
+    <entry file="file://$PROJECT_DIR$/main/src/main/java/main/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="57" column="31" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
+        <state relative-caret-position="238">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model/src/main/java/model/HelloWorld.java">
+    <entry file="file://$PROJECT_DIR$/model/src/main/resources/jpublankproject.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-413">
-          <caret line="31" column="33" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
+        <state relative-caret-position="435">
+          <caret line="105" column="50" selection-start-line="105" selection-start-column="50" selection-end-line="105" selection-end-column="50" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model/src/main/java/model/DAOLoadMap.java">
+    <entry file="file://$PROJECT_DIR$/contract/src/main/java/contract/IModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1212">
-          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/src/main/java/controller/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-73">
-          <caret line="52" column="6" selection-start-line="52" selection-start-column="6" selection-end-line="52" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_77/src.zip!/java/awt/Graphics.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="820" column="16" selection-start-line="820" selection-start-column="16" selection-end-line="820" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< 014c86d3c43bd621aac861269b77143b8dbedf7d
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_77/src.zip!/java/awt/Graphics.java" />
-    <entry file="file://$PROJECT_DIR$/view/src/main/java/view/ViewPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="969">
-          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#749#750#0" expanded="false" />
-            <element signature="e#777#778#0" expanded="false" />
-            <element signature="e#926#927#0" expanded="false" />
-            <element signature="e#959#960#0" expanded="false" />
-            <element signature="e#1130#1131#0" expanded="false" />
-            <element signature="e#1151#1152#0" expanded="false" />
-          </folding>
-=======
-    <entry file="file://$PROJECT_DIR$/view/src/main/java/view/ViewFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="134" column="41" selection-start-line="134" selection-start-column="41" selection-end-line="134" selection-end-column="41" />
-          <folding />
->>>>>>> small update getmap gettable[][]
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/src/main/java/element/motionless/IDoActionOnHeroes.java">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< 014c86d3c43bd621aac861269b77143b8dbedf7d
-        <state relative-caret-position="119">
-          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
-=======
-        <state relative-caret-position="451">
-          <caret line="67" column="77" selection-start-line="67" selection-start-column="77" selection-end-line="67" selection-end-column="77" />
->>>>>>> small update getmap gettable[][]
+        <state relative-caret-position="153">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/model/src/main/java/model/Model.java">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< 014c86d3c43bd621aac861269b77143b8dbedf7d
-        <state relative-caret-position="17">
-          <caret line="21" column="47" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
+        <state relative-caret-position="-1173">
+          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#619#620#0" expanded="false" />
-            <element signature="e#648#649#0" expanded="false" />
-            <element signature="e#768#769#0" expanded="false" />
-            <element signature="e#803#804#0" expanded="false" />
-            <element signature="e#1614#1615#0" expanded="false" />
-            <element signature="e#1641#1642#0" expanded="false" />
-            <element signature="e#1755#1756#0" expanded="false" />
-            <element signature="e#1794#1795#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/src/main/java/element/motionless/Crystal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#323#324#0" expanded="true" />
-            <element signature="e#368#369#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/src/main/java/element/motionless/GateO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="16" selection-end-column="5" />
-          <folding>
-            <element signature="e#183#184#0" expanded="true" />
-            <element signature="e#267#268#0" expanded="true" />
-            <element signature="e#316#317#0" expanded="true" />
-            <element signature="e#358#359#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/src/main/java/element/motionless/Purse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
-          <folding>
-            <element signature="e#312#313#0" expanded="true" />
-            <element signature="e#355#356#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/src/main/java/element/motionless/ActionOnHeroes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/src/main/java/element/motionless/MotionlessElement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding>
-            <element signature="e#589#590#0" expanded="true" />
-            <element signature="e#630#631#0" expanded="true" />
-=======
-        <state relative-caret-position="2059">
-          <caret line="208" column="8" selection-start-line="208" selection-start-column="8" selection-end-line="208" selection-end-column="8" />
-          <folding>
-            <element signature="e#1753#1754#0" expanded="true" />
-            <element signature="e#1792#1793#0" expanded="true" />
->>>>>>> small update getmap gettable[][]
+            <element signature="e#652#653#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1628,7 +1462,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.19407408" />
               </list>
             </option>
           </splitter-proportions>

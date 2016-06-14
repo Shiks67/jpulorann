@@ -1,16 +1,9 @@
 package model;
 
-import java.awt.*;
-import java.io.File;
-import java.io.IOException;
-import java.sql.SQLException;
-import java.util.Observable;
-
 import contract.IModel;
 
-import javax.imageio.ImageIO;
-
-import static sun.swing.SwingUtilities2.drawChars;
+import java.sql.SQLException;
+import java.util.Observable;
 
 /**
  * The Class Model.
@@ -87,9 +80,9 @@ public class Model extends Observable implements IModel {
         pngArray[i][j]= pngName;
     }
 
-    /**public char[][] getMapInTab() {
+    public char[][] getMapInTab() {
         String[] tabmap = this.map.split("\n");
-        for (int i =0; i < tabmap.length; i++)
+        for (int i =0; i < tabmap.length; i++)      /** beginning of the parser **/
         {
             for (int j = 0; j < tabmap[i].length(); j++)
             {
@@ -148,10 +141,10 @@ public class Model extends Observable implements IModel {
             System.out.println();
         }
         return this.pngArray;
-    }**/
+    }
 
     public String getMap() {
-        String[] tabmap = this.map.split("\n");     /** beginning of the parser **/
+        /**String[] tabmap = this.map.split("\n");
         for (int i =0; i < tabmap.length; i++)
         {
             for (int j = 0; j < tabmap[i].length(); j++)
@@ -209,7 +202,7 @@ public class Model extends Observable implements IModel {
                 }
             }
             System.out.println();
-        }
+        }**/
         return "";
     }
 

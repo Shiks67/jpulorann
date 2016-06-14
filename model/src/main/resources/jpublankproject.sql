@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  127.0.0.1
--- Généré le :  Lun 13 Juin 2016 à 18:15
+-- Généré le :  Lun 13 Juin 2016 à 13:43
 -- Version du serveur :  5.7.9
 -- Version de PHP :  5.6.16
 
@@ -38,7 +38,7 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `HelloworldByKey` (IN `p_key` VARCHA
 
 DROP PROCEDURE IF EXISTS `loadmapById`$$
 CREATE DEFINER=`root`@`localhost` PROCEDURE `loadmapById` (IN `idmap` INT(11))  NO SQL
-  SELECT * FROM map WHERE id = idmap$$
+  SELECT * FROM map WHERE map_id = idmap$$
 
 DROP PROCEDURE IF EXISTS `loadmapByKey`$$
 CREATE DEFINER=`root`@`localhost` PROCEDURE `loadmapByKey` (IN `namemap` VARCHAR(50))  NO SQL
