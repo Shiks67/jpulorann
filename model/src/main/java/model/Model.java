@@ -85,7 +85,7 @@ public class Model extends Observable implements IModel {
         for (String i : tabmap)
         {
             //System.out.println(i);
-            for (int j = 0; j < 20; j++)
+            for (int j = 0; j < i.length(); j++)
             {
                 System.out.print(i.charAt(j));
                 switch (i.charAt(j)){
@@ -137,7 +137,7 @@ public class Model extends Observable implements IModel {
             }
             System.out.println();
         }
-        return null;
+        return "";
     }
 
     private void setMap(final String map) {

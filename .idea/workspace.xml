@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69e7211a-abd9-46ca-9785-cd2ef29c1473" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/aedt_showboard.xml" afterPath="$PROJECT_DIR$/.idea/libraries/aedt_showboard.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/src/main/java/element/Element.java" afterPath="$PROJECT_DIR$/model/src/main/java/element/Element.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/src/main/java/element/ISprite.java" afterPath="$PROJECT_DIR$/model/src/main/java/element/ISprite.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/src/main/java/model/Model.java" afterPath="$PROJECT_DIR$/model/src/main/java/model/Model.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/src/main/java/view/ViewFrame.java" afterPath="$PROJECT_DIR$/view/src/main/java/view/ViewFrame.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/src/main/java/view/ViewPanel.java" afterPath="$PROJECT_DIR$/view/src/main/java/view/ViewPanel.java" />
     </list>
     <ignored path="masterpom.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,10 +32,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ViewPanel.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ViewPanel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view/src/main/java/view/ViewPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
+            <state relative-caret-position="969">
               <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
               <folding />
             </state>
@@ -57,11 +52,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ViewFrame.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ViewFrame.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/view/src/main/java/view/ViewFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1972">
-              <caret line="133" column="18" selection-start-line="133" selection-start-column="18" selection-end-line="133" selection-end-column="18" />
+            <state relative-caret-position="204">
+              <caret line="151" column="7" selection-start-line="151" selection-start-column="7" selection-end-line="151" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -122,8 +117,8 @@
       <file leaf-file-name="Model.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model/src/main/java/model/Model.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="89" column="0" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+            <state relative-caret-position="527">
+              <caret line="139" column="16" selection-start-line="139" selection-start-column="16" selection-end-line="139" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -163,11 +158,11 @@
         <option value="$PROJECT_DIR$/model/src/main/resources/jpublankproject.sql" />
         <option value="$PROJECT_DIR$/controller/src/main/java/controller/Controller.java" />
         <option value="$PROJECT_DIR$/model/src/main/java/element/ISprite.java" />
-        <option value="$PROJECT_DIR$/view/src/main/java/view/ViewFrame.java" />
         <option value="$PROJECT_DIR$/view/src/main/java/view/ViewPanel.java" />
         <option value="$PROJECT_DIR$/contract/src/main/java/contract/IModel.java" />
         <option value="$PROJECT_DIR$/model/src/main/java/element/Element.java" />
         <option value="$PROJECT_DIR$/model/src/main/java/model/Model.java" />
+        <option value="$PROJECT_DIR$/view/src/main/java/view/ViewFrame.java" />
       </list>
     </option>
   </component>
@@ -1026,7 +1021,7 @@
       <workItem from="1465802532576" duration="10339000" />
       <workItem from="1465820399186" duration="2796000" />
       <workItem from="1465843043429" duration="4054000" />
-      <workItem from="1465886850691" duration="885000" />
+      <workItem from="1465886850691" duration="2730000" />
     </task>
     <task id="LOCAL-00001" summary="Push test">
       <created>1465804918356</created>
@@ -1056,11 +1051,18 @@
       <option name="project" value="LOCAL" />
       <updated>1465822882653</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Starting the parser to display graphics else than string">
+      <created>1465887800970</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1465887800970</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18074000" />
+    <option name="totallyTimeSpent" value="19919000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-189" width="1936" height="1056" extended-state="6" />
@@ -1109,7 +1111,8 @@
     <MESSAGE value="Comit + push Direct display map from DB" />
     <MESSAGE value="Add complete DataBase" />
     <MESSAGE value="Small update bud fix in LoadMap" />
-    <option name="LAST_COMMIT_MESSAGE" value="Small update bud fix in LoadMap" />
+    <MESSAGE value="Starting the parser to display graphics else than string" />
+    <option name="LAST_COMMIT_MESSAGE" value="Starting the parser to display graphics else than string" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1423,14 +1426,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/src/main/java/view/ViewFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1972">
-          <caret line="133" column="18" selection-start-line="133" selection-start-column="18" selection-end-line="133" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/contract/src/main/java/contract/IModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="663">
@@ -1475,16 +1470,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/model/src/main/java/model/Model.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="89" column="0" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+        <state relative-caret-position="527">
+          <caret line="139" column="16" selection-start-line="139" selection-start-column="16" selection-end-line="139" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/src/main/java/view/ViewPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
+        <state relative-caret-position="969">
           <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/src/main/java/view/ViewFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="151" column="7" selection-start-line="151" selection-start-column="7" selection-end-line="151" selection-end-column="7" />
           <folding />
         </state>
       </provider>
