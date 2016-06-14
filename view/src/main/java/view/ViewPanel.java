@@ -96,7 +96,7 @@ class ViewPanel extends JPanel implements Observer {
 					case 'B':
 						System.out.print(map[i][j]);
 						try {
-							Image img = ImageIO.read(new File("G:/CESI/A1/Projets et devoir/6 Lorann/jpulorann/sprite/bone.png"));
+							Image img = ImageIO.read(new File("sprite/bone.png"));
 							graphics.drawImage(img, 32*j, 32*i, this);
 						} catch (IOException e) {
 
@@ -107,7 +107,7 @@ class ViewPanel extends JPanel implements Observer {
 					case 'H':
 						System.out.print(map[i][j]);
 						try {
-							Image img = ImageIO.read(new File("G:/CESI/A1/Projets et devoir/6 Lorann/jpulorann/sprite/horizontal_bone.png"));
+							Image img = ImageIO.read(new File("sprite/horizontal_bone.png"));
 							graphics.drawImage(img, 32*j, 32*i, this);
 						} catch (IOException e) {
 
@@ -118,7 +118,7 @@ class ViewPanel extends JPanel implements Observer {
 					case 'V':
 						System.out.print(map[i][j]);
 						try {
-							Image img = ImageIO.read(new File("G:/CESI/A1/Projets et devoir/6 Lorann/jpulorann/sprite/vertical_bone.png"));
+							Image img = ImageIO.read(new File("sprite/vertical_bone.png"));
 							graphics.drawImage(img, 32*j, 32*i, this);
 						} catch (IOException e) {
 
@@ -129,7 +129,7 @@ class ViewPanel extends JPanel implements Observer {
 					case 'P':
 						System.out.print(map[i][j]);
 						try {
-							Image img = ImageIO.read(new File("G:/CESI/A1/Projets et devoir/6 Lorann/jpulorann/sprite/purse.png"));
+							Image img = ImageIO.read(new File("sprite/purse.png"));
 							graphics.drawImage(img, 32*j, 32*i, this);
 						} catch (IOException e) {
 
@@ -140,7 +140,7 @@ class ViewPanel extends JPanel implements Observer {
 					case 'L' :
 						System.out.print(map[i][j]);
 						try {
-							Image img = ImageIO.read(new File("G:/CESI/A1/Projets et devoir/6 Lorann/jpulorann/sprite/lorann.gif"));
+							Image img = ImageIO.read(new File("sprite/lorann.gif"));
 							graphics.drawImage(img, 32*j, 32*i, this);
 						} catch (IOException e) {
 
@@ -151,7 +151,7 @@ class ViewPanel extends JPanel implements Observer {
 					case 'C' :
 						System.out.print(map[i][j]);
 						try {
-							Image img = ImageIO.read(new File("G:/CESI/A1/Projets et devoir/6 Lorann/jpulorann/sprite/gate_closed.png"));
+							Image img = ImageIO.read(new File("sprite/gate_closed.png"));
 							graphics.drawImage(img, 32*j, 32*i, this);
 						} catch (IOException e) {
 
@@ -162,7 +162,7 @@ class ViewPanel extends JPanel implements Observer {
 					case 'K' :
 						System.out.print(map[i][j]);
 						try {
-							Image img = ImageIO.read(new File("G:/CESI/A1/Projets et devoir/6 Lorann/jpulorann/sprite/crystal_ball.png"));
+							Image img = ImageIO.read(new File("sprite/crystal_ball.png"));
 							graphics.drawImage(img, 32*j, 32*i, this);
 						} catch (IOException e) {
 
@@ -173,7 +173,7 @@ class ViewPanel extends JPanel implements Observer {
 					case '1' :
 						System.out.print(map[i][j]);
 						try {
-							Image img = ImageIO.read(new File("G:/CESI/A1/Projets et devoir/6 Lorann/jpulorann/sprite/monster_1.png"));
+							Image img = ImageIO.read(new File("sprite/monster_1.png"));
 							graphics.drawImage(img, 32*j, 32*i, this);
 						} catch (IOException e) {
 
@@ -184,7 +184,7 @@ class ViewPanel extends JPanel implements Observer {
 					case '2' :
 						System.out.print(map[i][j]);
 						try {
-							Image img = ImageIO.read(new File("G:/CESI/A1/Projets et devoir/6 Lorann/jpulorann/sprite/monster_2.png"));
+							Image img = ImageIO.read(new File("sprite/monster_2.png"));
 							graphics.drawImage(img, 32*j, 32*i, this);
 						} catch (IOException e) {
 
@@ -195,7 +195,7 @@ class ViewPanel extends JPanel implements Observer {
 					case '3' :
 						System.out.print(map[i][j]);
 						try {
-							Image img = ImageIO.read(new File("G:/CESI/A1/Projets et devoir/6 Lorann/jpulorann/sprite/monster_3.png"));
+							Image img = ImageIO.read(new File("sprite/monster_3.png"));
 							graphics.drawImage(img, 32*j, 32*i, this);
 						} catch (IOException e) {
 
@@ -206,7 +206,7 @@ class ViewPanel extends JPanel implements Observer {
 					case '4' :
 						System.out.print(map[i][j]);
 						try {
-							Image img = ImageIO.read(new File("G:/CESI/A1/Projets et devoir/6 Lorann/jpulorann/sprite/monster_4.png"));
+							Image img = ImageIO.read(new File("sprite/monster_4.png"));
 							graphics.drawImage(img, 32*j, 32*i, this);
 						} catch (IOException e) {
 
@@ -217,7 +217,7 @@ class ViewPanel extends JPanel implements Observer {
 					default:
 						System.out.print(" ");
 						try {
-							Image img = ImageIO.read(new File("G:/CESI/A1/Projets et devoir/6 Lorann/jpulorann/sprite/noimage.png"));
+							Image img = ImageIO.read(new File("sprite/noimage.png"));
 							graphics.drawImage(img, 32*j, 32*i, this);
 						} catch (IOException e) {
 
