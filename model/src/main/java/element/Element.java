@@ -1,26 +1,16 @@
 package element;
 
-<<<<<<< HEAD
+
 import aedt.showboard.ISquare;
 
 import java.awt.*;
 
-=======
-import java.awt.Image;
-import aedt.showboard.ISquare;
-
->>>>>>> origin/master
-
 /**
  * Created by Ahmed on 13/06/2016.
  */
-public abstract class Element implements ISquare{
+public abstract class Element /*implements ISquare*/{
     private ISprite				sprite;
-<<<<<<< HEAD
     private Permeability permeability;
-=======
-    private Permeability	permeability;
->>>>>>> origin/master
     //private IMap map;
 
     /**
