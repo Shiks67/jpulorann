@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  127.0.0.1
--- Généré le :  Lun 13 Juin 2016 à 13:43
+-- Généré le :  Mer 15 Juin 2016 à 16:50
 -- Version du serveur :  5.7.9
 -- Version de PHP :  5.6.16
 
@@ -38,11 +38,21 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `HelloworldByKey` (IN `p_key` VARCHA
 
 DROP PROCEDURE IF EXISTS `loadmapById`$$
 CREATE DEFINER=`root`@`localhost` PROCEDURE `loadmapById` (IN `idmap` INT(11))  NO SQL
-  SELECT * FROM map WHERE map_id = idmap$$
+  SELECT * FROM map WHERE id = idmap$$
 
 DROP PROCEDURE IF EXISTS `loadmapByKey`$$
 CREATE DEFINER=`root`@`localhost` PROCEDURE `loadmapByKey` (IN `namemap` VARCHAR(50))  NO SQL
   SELECT * FROM map WHERE map_name = namemap$$
+
+DROP PROCEDURE IF EXISTS `putHighscoreInDB`$$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `putHighscoreInDB` (IN `number` INT(11), IN `name` VARCHAR(50))  NO SQL
+  INSERT INTO highscore (nickname, score)
+  VALUES (name, number)$$
+
+DROP PROCEDURE IF EXISTS `sortHighscoreByDescendingOrder`$$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sortHighscoreByDescendingOrder` ()  NO SQL
+  SELECT * FROM highscore
+  ORDER BY score DESC$$
 
 DELIMITER ;
 
@@ -83,7 +93,19 @@ CREATE TABLE IF NOT EXISTS `highscore` (
   `score` int(11) NOT NULL,
   `nickname` varchar(50) NOT NULL,
   PRIMARY KEY (`score_id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
+
+--
+-- Contenu de la table `highscore`
+--
+
+INSERT INTO `highscore` (`score_id`, `score`, `nickname`) VALUES
+  (1, 800, 'Dipper'),
+  (2, 1200, 'Mabbel'),
+  (3, 0, 'Waddles'),
+  (4, 100, 'StanPines'),
+  (5, 9999, 'Soos'),
+  (6, 300, 'Wendy');
 
 -- --------------------------------------------------------
 

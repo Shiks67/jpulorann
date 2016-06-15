@@ -4,7 +4,6 @@ import contract.ControllerOrder;
 import contract.IController;
 import contract.IModel;
 import contract.IView;
-import model.Model;
 
 /**
  * The Class Controller.
