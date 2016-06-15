@@ -1,5 +1,6 @@
 package element.mobile;
 
+import element.Element;
 import element.Sprite;
 
 import java.awt.*;
@@ -7,11 +8,12 @@ import java.awt.*;
 /**
  * Created by Asus on 14/06/2016.
  */
-public class Hero extends Mobile {
-    private final Point lastPosition;
+public class Hero extends Element{
+    private Point lastPosition;
+    private Point position;
 
     public Hero(){
-        super(new Sprite("L", "lorann_b.png"));
+        super();
         this.lastPosition = new Point();
         this.lastPosition.setLocation(this.getPosition().x, this.getPosition().y);
     }
@@ -19,33 +21,51 @@ public class Hero extends Mobile {
         if ((this.lastPosition.getX() != this.getPosition().getX()) || (this.lastPosition.getY() != this.getPosition().getY())) {
             this.lastPosition.setLocation(this.getPosition().x, this.getPosition().y);}
     }
-    @Override
-    public void moveUp() {
-        this.saveLastPosition();
-        super.moveUp();
-    }
 
-    @Override
-    public void moveLeft() {
-        this.saveLastPosition();
-        super.moveLeft();
-    }
-
-    @Override
-    public void moveDown() {
-        this.saveLastPosition();
-        super.moveDown();
-    }
-
-    @Override
-    public void moveRight() {
-        this.saveLastPosition();
-        super.moveRight();
-    }
 
     public void moveBack() {
         this.setX(this.lastPosition.x);
         this.setY(this.lastPosition.y);
+    }
+
+    public int getX() {
+        return this.position.x;
+    }
+
+    protected void setX(final int x) {
+        if ((x >= 0) && (x < this.getNettleWorld().getWidth())) {
+            this.position.x = x;
+            this.getNettleWorld().setMobileHasChanged();
+        }
+    }
+
+    public int getY() {
+        return this.position.y;
+    }
+
+    protected void setY(final int y) {
+        if ((y >= 0) && (y < this.getNettleWorld().getHeight())) {
+            this.position.y = y;
+            this.getNettleWorld().setMobileHasChanged();
+        }
+    }
+
+    public Point getPosition(){ return this.position;}
+
+    public void moveUp() {
+        this.setY(this.getY() - 1);
+    }
+
+    public void moveLeft() {
+        this.setX(this.getX() - 1);
+    }
+
+    public void moveDown() {
+        this.setY(this.getY() + 1);
+    }
+
+    public void moveRight() {
+        this.setX(this.getX() + 1);
     }
 
 }

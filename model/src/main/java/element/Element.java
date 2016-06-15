@@ -24,6 +24,10 @@ public abstract class Element implements ISquare {
         this.setPermeability(permeability);
     }
 
+    public Element() {
+
+    }
+
     public ISprite getSprite() {
         return this.sprite;
     }
@@ -48,7 +52,6 @@ public abstract class Element implements ISquare {
         this.nettleWorld = nettleWorld;
     }
 
-    @Override
     public Image getImage(){
         return this.getSprite().getImage();
     }

@@ -20,7 +20,7 @@ public class MotionlessElement extends Element implements IDoActionOnHeroes {
     }
 
 
-    @Override
+
     public ActionOnHeroes getActionOnHeroes() {
         return ActionOnHeroes.NOP;
     }
