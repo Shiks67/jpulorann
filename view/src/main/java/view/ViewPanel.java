@@ -74,10 +74,8 @@ class ViewPanel extends JPanel implements Observer {
 		graphics.clearRect(0, 0, this.getWidth(), this.getHeight());
 		graphics.setColor(Color.BLACK);		/** background color is now black **/
 		graphics.fillRect(0, 0, this.getWidth(), this.getHeight());
-		graphics.setColor(Color.WHITE);		/** color change to write stuff **/
 		graphics.setFont(new Font("default", Font.BOLD, 16));	/** now want you write is bold **/
-		graphics.drawString("SCORE : " + this.viewFrame.getModel().getScore(),4,400);	/** display actual score **/
-		graphics.setColor(Color.BLACK);		/** everything next is black again just in case **/
+
 
 		this.map = this.viewFrame.getModel().getMap();		/** we copy the 2D array from the model to use it to display images **/
 
@@ -180,7 +178,7 @@ class ViewPanel extends JPanel implements Observer {
 				}
 			}
 		}			/** end of the parser **/
-		if (this.r < 2){		/** display highscore log only when you start the game **/
+		if (this.r < 2) {		/** display highscore log only when you start the game **/
 			graphics.setColor(Color.WHITE);
 			for(int c = 1;c < 8; c++){
 				if(c==1) {
@@ -190,7 +188,13 @@ class ViewPanel extends JPanel implements Observer {
 					graphics.drawString("tamère c'est pas encore implémenté",256,32*c);
 				}
 			}
-			this.r++;
+
+		}
+		this.r++;
+		if (this.r > 2) {
+			graphics.setColor(Color.WHITE);		/** color change to write stuff **/
+			graphics.drawString("SCORE : " + this.viewFrame.getModel().getScore(),4,400);	/** display actual score **/
+			graphics.setColor(Color.BLACK);		/** everything next is black again just in case **/
 		}
 	}
 }

@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69e7211a-abd9-46ca-9785-cd2ef29c1473" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contract/src/main/java/contract/IModel.java" afterPath="$PROJECT_DIR$/contract/src/main/java/contract/IModel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/src/main/java/model/DAOLoadMap.java" afterPath="$PROJECT_DIR$/model/src/main/java/model/DAOLoadMap.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/src/main/java/model/LoadMap.java" afterPath="$PROJECT_DIR$/model/src/main/java/model/LoadMap.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/src/main/java/model/Model.java" afterPath="$PROJECT_DIR$/model/src/main/java/model/Model.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/pom.xml" afterPath="$PROJECT_DIR$/view/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/src/main/java/view/ViewFrame.java" afterPath="$PROJECT_DIR$/view/src/main/java/view/ViewFrame.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/src/main/java/view/ViewPanel.java" afterPath="$PROJECT_DIR$/view/src/main/java/view/ViewPanel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/view.iml" afterPath="$PROJECT_DIR$/view/view.iml" />
     </list>
     <ignored path="masterpom.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,7 +34,7 @@
       <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller/src/main/java/controller/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
+            <state relative-caret-position="-363">
               <caret line="76" column="43" selection-start-line="76" selection-start-column="43" selection-end-line="76" selection-end-column="43" />
               <folding />
             </state>
@@ -52,8 +44,8 @@
       <file leaf-file-name="ViewPanel.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/view/src/main/java/view/ViewPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1513">
-              <caret line="93" column="48" selection-start-line="93" selection-start-column="48" selection-end-line="93" selection-end-column="48" />
+            <state relative-caret-position="-74">
+              <caret line="173" column="49" selection-start-line="173" selection-start-column="49" selection-end-line="173" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -959,7 +951,7 @@
       <workItem from="1465992738433" duration="2480000" />
       <workItem from="1466002289500" duration="1547000" />
       <workItem from="1466009812548" duration="240000" />
-      <workItem from="1466011769537" duration="4415000" />
+      <workItem from="1466011769537" duration="5703000" />
     </task>
     <task id="LOCAL-00001" summary="Push test">
       <created>1465804918356</created>
@@ -1087,11 +1079,18 @@
       <option name="project" value="LOCAL" />
       <updated>1466009910068</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="SEMI-MAJOR UPDATE : added lots of comments and a part of every score display !">
+      <created>1466016264893</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1466016264893</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51918000" />
+    <option name="totallyTimeSpent" value="53206000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -1151,7 +1150,8 @@
     <MESSAGE value="Lorann moveUP" />
     <MESSAGE value="Loot purse + score" />
     <MESSAGE value="DB script update : stored procedures to use highscore table" />
-    <option name="LAST_COMMIT_MESSAGE" value="DB script update : stored procedures to use highscore table" />
+    <MESSAGE value="SEMI-MAJOR UPDATE : added lots of comments and a part of every score display !" />
+    <option name="LAST_COMMIT_MESSAGE" value="SEMI-MAJOR UPDATE : added lots of comments and a part of every score display !" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1408,35 +1408,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/src/main/java/controller/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="76" column="43" selection-start-line="76" selection-start-column="43" selection-end-line="76" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/src/main/java/model/Model.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding>
-            <element signature="e#730#731#0" expanded="true" />
-            <element signature="e#758#759#0" expanded="true" />
-            <element signature="e#3867#3868#0" expanded="true" />
-            <element signature="e#3903#3904#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/src/main/java/view/ViewFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-788">
-          <caret line="136" column="142" selection-start-line="136" selection-start-column="142" selection-end-line="136" selection-end-column="142" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/model/src/main/java/model/LoadMap.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1043">
@@ -1461,10 +1432,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/view/src/main/java/view/ViewFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-788">
+          <caret line="136" column="142" selection-start-line="136" selection-start-column="142" selection-end-line="136" selection-end-column="142" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/src/main/java/model/Model.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding>
+            <element signature="e#730#731#0" expanded="true" />
+            <element signature="e#758#759#0" expanded="true" />
+            <element signature="e#3867#3868#0" expanded="true" />
+            <element signature="e#3903#3904#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/src/main/java/controller/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-363">
+          <caret line="76" column="43" selection-start-line="76" selection-start-column="43" selection-end-line="76" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/view/src/main/java/view/ViewPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1513">
-          <caret line="93" column="48" selection-start-line="93" selection-start-column="48" selection-end-line="93" selection-end-column="48" />
+        <state relative-caret-position="-74">
+          <caret line="173" column="49" selection-start-line="173" selection-start-column="49" selection-end-line="173" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
