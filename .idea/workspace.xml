@@ -4,7 +4,6 @@
     <list default="true" id="69e7211a-abd9-46ca-9785-cd2ef29c1473" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/src/main/java/model/Model.java" afterPath="$PROJECT_DIR$/model/src/main/java/model/Model.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/src/main/java/view/ViewPanel.java" afterPath="$PROJECT_DIR$/view/src/main/java/view/ViewPanel.java" />
     </list>
     <ignored path="masterpom.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -56,8 +55,8 @@
             <file leaf-file-name="Model.java" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/model/src/main/java/model/Model.java">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="332">
-                    <caret line="194" column="8" selection-start-line="194" selection-start-column="8" selection-end-line="194" selection-end-column="8" />
+                  <state relative-caret-position="689">
+                    <caret line="215" column="0" selection-start-line="215" selection-start-column="0" selection-end-line="215" selection-end-column="0" />
                     <folding>
                       <element signature="e#4336#4337#0" expanded="true" />
                       <element signature="e#4387#4388#0" expanded="true" />
@@ -80,7 +79,7 @@
       <file leaf-file-name="Controller.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controller/src/main/java/controller/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="449">
+            <state relative-caret-position="139">
               <caret line="101" column="0" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
               <folding />
             </state>
@@ -950,7 +949,7 @@
       <workItem from="1465980187361" duration="3786000" />
       <workItem from="1465984775298" duration="3313000" />
       <workItem from="1465992738433" duration="2480000" />
-      <workItem from="1466002289500" duration="1506000" />
+      <workItem from="1466002289500" duration="1547000" />
     </task>
     <task id="LOCAL-00001" summary="Push test">
       <created>1465804918356</created>
@@ -1064,11 +1063,18 @@
       <option name="project" value="LOCAL" />
       <updated>1465992383333</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Loot purse + score">
+      <created>1466003819095</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1466003819095</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47222000" />
+    <option name="totallyTimeSpent" value="47263000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1126,7 +1132,8 @@
     <MESSAGE value="KeyListenner for lorann" />
     <MESSAGE value="Lorann's motion" />
     <MESSAGE value="Lorann moveUP" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lorann moveUP" />
+    <MESSAGE value="Loot purse + score" />
+    <option name="LAST_COMMIT_MESSAGE" value="Loot purse + score" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1440,22 +1447,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/controller/src/main/java/controller/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="101" column="0" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/model/src/main/java/model/Model.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="194" column="8" selection-start-line="194" selection-start-column="8" selection-end-line="194" selection-end-column="8" />
+        <state relative-caret-position="689">
+          <caret line="215" column="0" selection-start-line="215" selection-start-column="0" selection-end-line="215" selection-end-column="0" />
           <folding>
             <element signature="e#4336#4337#0" expanded="true" />
             <element signature="e#4387#4388#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/src/main/java/controller/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="101" column="0" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>

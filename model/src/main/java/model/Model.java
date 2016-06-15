@@ -213,7 +213,6 @@ public class Model extends Observable implements IModel {
     public void moveLEFT() {
         if(this.isPurse(this.getHero().getY(), this.getHero().getX() - 1)){
             Score += 100;
-            System.out.println(Score);
         }if(isMovePossible(this.getHero().getY(), this.getHero().getX() - 1)){
             this.pngArray[this.getHero().getY()][this.getHero().getX()] = ' ';
             this.getHero().moveLEFT();
