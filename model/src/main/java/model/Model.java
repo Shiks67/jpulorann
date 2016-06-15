@@ -181,25 +181,41 @@ public class Model extends Observable implements IModel {
             e.printStackTrace();
         }
     }
+
+   private boolean isMovePossible(final int x, final int y){
+        return (this.pngArray[x][y] != 'V' && this.pngArray[x][y] != 'H'
+        && this.pngArray[x][y] != 'B' && this.pngArray[x][y] != 'C'
+        && this.pngArray[x][y] != '1' && this.pngArray[x][y] != '2'
+        && this.pngArray[x][y] != '3' && this.pngArray[x][y] != '4');
+    }
+
     public void moveRIGHT() {
-        this.pngArray[this.getHero().getY()][this.getHero().getX()] = ' ';
-        this.getHero().moveRIGHT();
-        this.pngArray[this.getHero().getY()][this.getHero().getX()] = 'L';
+        if (this.isMovePossible(this.getHero().getY(), this.getHero().getX()+1)){
+            this.pngArray[this.getHero().getY()][this.getHero().getX()] = ' ';
+            this.getHero().moveRIGHT();
+            this.pngArray[this.getHero().getY()][this.getHero().getX()] = 'L';
+        }
     }
     public void moveUP() {
-        this.pngArray[this.getHero().getY()][this.getHero().getX()] = ' ';
-        this.getHero().moveUp();
-        this.pngArray[this.getHero().getY()][this.getHero().getX()] = 'L';
+        if (this.isMovePossible(this.getHero().getY() -1, this.getHero().getX())) {
+            this.pngArray[this.getHero().getY()][this.getHero().getX()] = ' ';
+            this.getHero().moveUp();
+            this.pngArray[this.getHero().getY()][this.getHero().getX()] = 'L';
+        }
     }
     public void moveDOWN() {
-        this.pngArray[this.getHero().getY()][this.getHero().getX()] = ' ';
-        this.getHero().moveDOWN();
-        this.pngArray[this.getHero().getY()][this.getHero().getX()] = 'L';
+        if (this.isMovePossible(this.getHero().getY() +1, this.getHero().getX())) {
+            this.pngArray[this.getHero().getY()][this.getHero().getX()] = ' ';
+            this.getHero().moveDOWN();
+            this.pngArray[this.getHero().getY()][this.getHero().getX()] = 'L';
+        }
     }
     public void moveLEFT() {
-        this.pngArray[this.getHero().getY()][this.getHero().getX()] = ' ';
-        this.getHero().moveLEFT();
-        this.pngArray[this.getHero().getY()][this.getHero().getX()] = 'L';
+        if(isMovePossible(this.getHero().getY(), this.getHero().getX() - 1)){
+            this.pngArray[this.getHero().getY()][this.getHero().getX()] = ' ';
+            this.getHero().moveLEFT();
+            this.pngArray[this.getHero().getY()][this.getHero().getX()] = 'L';
+        }
     }
 
 }
