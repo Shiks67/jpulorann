@@ -2,7 +2,7 @@ package model;
 
 /**
  * The Class LoadMap.
- *
+ * I JUST CHANGED HelloWorld BY LoadMap EVERYWHERE TO MAKE IT CLEAR and added some stuff
  * @author Cedric Meyer
  */
 class LoadMap extends Entity {

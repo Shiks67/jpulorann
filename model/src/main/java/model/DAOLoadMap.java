@@ -7,7 +7,7 @@ import java.sql.SQLException;
 
 /**
  * The Class DAOLoadMap.
- *
+ * I JUST CHANGED HelloWorld BY LoadMap EVERYWHERE TO MAKE IT CLEAR and added some stuff
  * @author Cedric Meyer
  */
 class DAOLoadMap extends DAOEntity<LoadMap> {

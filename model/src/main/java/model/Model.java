@@ -16,6 +16,7 @@ public class Model extends Observable implements IModel {
     private int height = 12;
     private int width = 21;
     public Hero hero ;
+
     public int Score;
     private char[][] pngArray = new char[this.getHeight()][this.getWidth()];
 
@@ -34,6 +35,9 @@ public class Model extends Observable implements IModel {
         return this.width;
     }
 
+    public int getScore() {
+        return Score;
+    }
 
     /**
      * Instantiates a new model.
@@ -170,6 +174,9 @@ public class Model extends Observable implements IModel {
             e.printStackTrace();
         }
     }
+
+
+
 
     private boolean isPurse(final int x, final int y){
         return (this.pngArray[x][y] == 'P');

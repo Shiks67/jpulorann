@@ -47,7 +47,7 @@ public interface IModel {
 	void getMapInTab();
 
 	char[][] getMap();
-
+	int getScore();
 	/**
 	 * Load the map.
 	 *
