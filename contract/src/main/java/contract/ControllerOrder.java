@@ -17,5 +17,9 @@ public enum ControllerOrder {
 	MAP4,	/** The fourth Map **/
 	MAP5,	/** The fifth Map **/
 	test,	/** test the connection with Data Base **/
+	UP,
+	DOWN,
+	LEFT,
+	RIGHT,
 	nthng
 }

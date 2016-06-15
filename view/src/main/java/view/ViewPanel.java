@@ -136,8 +136,6 @@ class ViewPanel extends JPanel implements Observer {
 							graphics.drawImage(imagine, 32*j, 32*i, this);
 							break;
 						}**/
-
-
 							graphics.drawImage((new ImageIcon("sprite/lorann.gif")).getImage(),32*j,32*i,this);
 
 						break;

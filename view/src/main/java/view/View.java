@@ -57,6 +57,15 @@ public class View implements IView, Runnable {
 				return ControllerOrder.MAP5;
 			case KeyEvent.VK_T:
 				return ControllerOrder.test;
+			case KeyEvent.VK_UP:
+				return ControllerOrder.UP;
+			case KeyEvent.VK_DOWN:
+				return ControllerOrder.DOWN;
+			case KeyEvent.VK_LEFT:
+				return ControllerOrder.LEFT;
+			case KeyEvent.VK_RIGHT:
+				return ControllerOrder.RIGHT;
+
 			default:
 				return ControllerOrder.nthng;
 		}
