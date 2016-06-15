@@ -15,6 +15,8 @@ import javax.swing.*;
  */
 class ViewPanel extends JPanel implements Observer {
 
+	char[][] map;
+
 	/** The view frame. */
 	private ViewFrame					viewFrame;
 	/** The Constant serialVersionUID. */
@@ -58,6 +60,7 @@ class ViewPanel extends JPanel implements Observer {
 	 */
 	public void update(final Observable arg0, final Object arg1) {
 		//this.map = this.viewFrame.getModel().getMap();
+		this.viewFrame.getModel().getMapInTab();
 		this.repaint();
 	}
 
@@ -72,20 +75,15 @@ class ViewPanel extends JPanel implements Observer {
 		graphics.setColor(Color.BLACK);
 		graphics.fillRect(0, 0, this.getWidth(), this.getHeight());
 
+		this.map = this.viewFrame.getModel().getMap();
 
-
-		this.viewFrame.getModel().getMapInTab();
-
-
-		char[][] map = this.viewFrame.getModel().getMap();
-
-		for(int i = 0; i < map.length; i++)
+		for(int i = 0; i < this.map.length; i++)
 		{
-			for (int j = 0; j < map[i].length; j++)
+			for (int j = 0; j < this.map[i].length; j++)
 			{
-				switch (map[i][j]){
+				switch (this.map[i][j]){
 					case 'B':
-						System.out.print(map[i][j]);
+						System.out.print(this.map[i][j]);
 						try {
 							Image img = ImageIO.read(new File("sprite/bone.png"));
 							graphics.drawImage(img, 32*j, 32*i, this);
@@ -96,7 +94,7 @@ class ViewPanel extends JPanel implements Observer {
 						}
 						break;
 					case 'H':
-						System.out.print(map[i][j]);
+						System.out.print(this.map[i][j]);
 						try {
 							Image img = ImageIO.read(new File("sprite/horizontal_bone.png"));
 							graphics.drawImage(img, 32*j, 32*i, this);
@@ -107,7 +105,7 @@ class ViewPanel extends JPanel implements Observer {
 						}
 						break;
 					case 'V':
-						System.out.print(map[i][j]);
+						System.out.print(this.map[i][j]);
 						try {
 							Image img = ImageIO.read(new File("sprite/vertical_bone.png"));
 							graphics.drawImage(img, 32*j, 32*i, this);
@@ -118,7 +116,7 @@ class ViewPanel extends JPanel implements Observer {
 						}
 						break;
 					case 'P':
-						System.out.print(map[i][j]);
+						System.out.print(this.map[i][j]);
 						try {
 							Image img = ImageIO.read(new File("sprite/purse.png"));
 							graphics.drawImage(img, 32*j, 32*i, this);
@@ -129,18 +127,11 @@ class ViewPanel extends JPanel implements Observer {
 						}
 						break;
 					case 'L' :
-						System.out.print(map[i][j]);
-						/**Image imagine;
-						imagine = Toolkit.getDefaultToolkit().createImage("sprite/lorann.gif");
-						if (imagine != null) {
-							graphics.drawImage(imagine, 32*j, 32*i, this);
-							break;
-						}**/
-							graphics.drawImage((new ImageIcon("sprite/lorann.gif")).getImage(),32*j,32*i,this);
-
+						System.out.print(this.map[i][j]);
+						graphics.drawImage((new ImageIcon("sprite/lorann.gif")).getImage(),32*j,32*i,this);
 						break;
 					case 'C' :
-						System.out.print(map[i][j]);
+						System.out.print(this.map[i][j]);
 						try {
 							Image img = ImageIO.read(new File("sprite/gate_closed.png"));
 							graphics.drawImage(img, 32*j, 32*i, this);
@@ -151,7 +142,7 @@ class ViewPanel extends JPanel implements Observer {
 						}
 						break;
 					case 'K' :
-						System.out.print(map[i][j]);
+						System.out.print(this.map[i][j]);
 						try {
 							Image img = ImageIO.read(new File("sprite/crystal_ball.png"));
 							graphics.drawImage(img, 32*j, 32*i, this);
@@ -162,7 +153,7 @@ class ViewPanel extends JPanel implements Observer {
 						}
 						break;
 					case '1' :
-						System.out.print(map[i][j]);
+						System.out.print(this.map[i][j]);
 						try {
 							Image img = ImageIO.read(new File("sprite/monster_1.png"));
 							graphics.drawImage(img, 32*j, 32*i, this);
@@ -173,7 +164,7 @@ class ViewPanel extends JPanel implements Observer {
 						}
 						break;
 					case '2' :
-						System.out.print(map[i][j]);
+						System.out.print(this.map[i][j]);
 						try {
 							Image img = ImageIO.read(new File("sprite/monster_2.png"));
 							graphics.drawImage(img, 32*j, 32*i, this);
@@ -184,7 +175,7 @@ class ViewPanel extends JPanel implements Observer {
 						}
 						break;
 					case '3' :
-						System.out.print(map[i][j]);
+						System.out.print(this.map[i][j]);
 						try {
 							Image img = ImageIO.read(new File("sprite/monster_3.png"));
 							graphics.drawImage(img, 32*j, 32*i, this);
@@ -195,7 +186,7 @@ class ViewPanel extends JPanel implements Observer {
 						}
 						break;
 					case '4' :
-						System.out.print(map[i][j]);
+						System.out.print(this.map[i][j]);
 						try {
 							Image img = ImageIO.read(new File("sprite/monster_4.png"));
 							graphics.drawImage(img, 32*j, 32*i, this);
