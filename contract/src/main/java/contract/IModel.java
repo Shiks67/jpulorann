@@ -58,5 +58,7 @@ public interface IModel {
 
 	void moveUP();
 
-
+	void moveLEFT();
+	void moveRIGHT();
+	void moveDOWN();
 }

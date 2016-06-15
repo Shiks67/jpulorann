@@ -182,7 +182,9 @@ public class Model extends Observable implements IModel {
         }
     }
     public void moveRIGHT() {
-
+        this.pngArray[this.getHero().getY()][this.getHero().getX()] = ' ';
+        this.getHero().moveRIGHT();
+        this.pngArray[this.getHero().getY()][this.getHero().getX()] = 'L';
     }
     public void moveUP() {
         this.pngArray[this.getHero().getY()][this.getHero().getX()] = ' ';
@@ -190,10 +192,14 @@ public class Model extends Observable implements IModel {
         this.pngArray[this.getHero().getY()][this.getHero().getX()] = 'L';
     }
     public void moveDOWN() {
-
+        this.pngArray[this.getHero().getY()][this.getHero().getX()] = ' ';
+        this.getHero().moveDOWN();
+        this.pngArray[this.getHero().getY()][this.getHero().getX()] = 'L';
     }
     public void moveLEFT() {
-
+        this.pngArray[this.getHero().getY()][this.getHero().getX()] = ' ';
+        this.getHero().moveLEFT();
+        this.pngArray[this.getHero().getY()][this.getHero().getX()] = 'L';
     }
 
 }

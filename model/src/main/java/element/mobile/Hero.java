@@ -41,15 +41,15 @@ public class Hero {
         this.setY(this.getY() - 1);
     }
 
-    public void moveLeft() {
+    public void moveLEFT() {
         this.setX(this.getX() - 1);
     }
 
-    public void moveDown() {
+    public void moveDOWN() {
         this.setY(this.getY() + 1);
     }
 
-    public void moveRight() {
+    public void moveRIGHT() {
         this.setX(this.getX() + 1);
     }
 
