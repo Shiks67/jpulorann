@@ -1,14 +1,30 @@
 package element.motionless;
 
-import element.Permeability;
-import element.Sprite;
-
 /**
  * Created by Asus on 13/06/2016.
  */
-class GateC extends MotionlessElement{
+public class GateC{
 
-    public GateC(){
-      super(new Sprite("C", "gate_closed.png"), Permeability.BLOCKING, 'C');
+    private int x;
+    private int y;
+    public GateC (int x,int y){
+        this.x = x;
+        this.y = y;
+    }
+
+    public int getX() {
+        return this.x;
+    }
+
+    public void setX(final int x) {
+        this.x = x;
+    }
+
+    public int getY() {
+        return this.y;
+    }
+
+    public void setY(final int y) {
+        this.y = y;
     }
 }
