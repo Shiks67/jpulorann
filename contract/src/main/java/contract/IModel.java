@@ -58,5 +58,5 @@ public interface IModel {
 
 	void moveUP();
 
-	Hero getHero();
+
 }

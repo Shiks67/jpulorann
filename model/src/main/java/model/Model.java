@@ -161,7 +161,6 @@ public class Model extends Observable implements IModel {
 
     public Hero getHero() {
         return this.hero;
-
     }
 
 
@@ -182,4 +181,19 @@ public class Model extends Observable implements IModel {
             e.printStackTrace();
         }
     }
+    public void moveRIGHT() {
+
+    }
+    public void moveUP() {
+        this.pngArray[this.getHero().getY()][this.getHero().getX()] = ' ';
+        this.getHero().moveUp();
+        this.pngArray[this.getHero().getY()][this.getHero().getX()] = 'L';
+    }
+    public void moveDOWN() {
+
+    }
+    public void moveLEFT() {
+
+    }
+
 }
