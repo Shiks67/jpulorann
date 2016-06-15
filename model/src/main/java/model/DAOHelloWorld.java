@@ -106,5 +106,4 @@ class DAOHelloWorld extends DAOEntity<HelloWorld> {
 		}
 		return null;
 	}
-
 }

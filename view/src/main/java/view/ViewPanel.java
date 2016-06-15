@@ -15,8 +15,8 @@ import javax.swing.*;
  */
 class ViewPanel extends JPanel implements Observer {
 
-	char[][] map;	/** 2d array when we copy the one from the model **/
-	int r = 0;	/** used to display highscores log **/
+	public char[][] map;	/** 2d array when we copy the one from the model **/
+	private int r = 0;	/** used to display highscores log **/
 
 	/** The view frame. */
 	private ViewFrame					viewFrame;
@@ -187,13 +187,14 @@ class ViewPanel extends JPanel implements Observer {
 			}
 		}			/** end of the parser **/
 		if (this.r < 2) {		/** display highscore log only when you start the game **/
-			graphics.setColor(Color.WHITE);
 			for(int c = 1;c < 8; c++){
 				if(c==1) {
+					graphics.setColor(Color.RED);
 					graphics.drawString("Highscores :",256,32*c);
 				}
 				else {
-					graphics.drawString("tamère c'est pas encore implémenté",256,32*c);
+					graphics.setColor(Color.WHITE);
+					graphics.drawString("c'est pas encore implemente",256,32*c);
 				}
 			}
 

@@ -37,7 +37,7 @@ public interface IModel {
 	int getWidth();
 
 
-
+	/**			!!!		EVERYTHING NOT COMMENTED HERE IS COMMENTED IN MODEL			!!!		**/
 
 	/**
 	 * Gets the map content.
@@ -48,6 +48,8 @@ public interface IModel {
 
 	char[][] getMap();
 	int getScore();
+	
+	void loadHighscores();
 	/**
 	 * Load the map.
 	 *
