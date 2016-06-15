@@ -55,4 +55,8 @@ public interface IModel {
 	 *          the key
 	 */
 	void loadMap(String key);
+
+	void moveUP();
+
+	Hero getHero();
 }

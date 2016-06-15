@@ -1,6 +1,7 @@
 package model;
 
 import contract.IModel;
+import element.mobile.Hero;
 
 import java.sql.SQLException;
 import java.util.Observable;
@@ -14,6 +15,7 @@ public class Model extends Observable implements IModel {
     /** The array of objects **/
     private int height = 12;
     private int width = 21;
+    public Hero hero ;
     private char[][] pngArray = new char[this.getHeight()][this.getWidth()];
 
     /** The message. */
@@ -36,10 +38,10 @@ public class Model extends Observable implements IModel {
      * Instantiates a new model.
      */
     public Model() {
+
         this.map = "";
+        this.hero = new Hero(0,0);
     }
-
-
 
     /*
      * (non-Javadoc)
@@ -117,6 +119,8 @@ public class Model extends Observable implements IModel {
                         break;
                     case 'L' :
                         putPngName(i,j,'L');
+                        hero.setX(j);
+                        hero.setY(i);
                         //System.out.print(this.pngArray[i][j]);
                         break;
                     case 'C' :
@@ -154,6 +158,12 @@ public class Model extends Observable implements IModel {
         }
 
     }
+
+    public Hero getHero() {
+        return this.hero;
+
+    }
+
 
     public char[][] getMap() {
         return this.pngArray;
