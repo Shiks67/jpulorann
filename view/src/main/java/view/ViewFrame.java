@@ -4,6 +4,7 @@ import java.awt.GraphicsConfiguration;
 import java.awt.HeadlessException;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
+import java.io.IOException;
 
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
@@ -162,6 +163,37 @@ class ViewFrame extends JFrame implements KeyListener {
 	 */
 	public void keyPressed(final KeyEvent e) {
 		//this.getController().orderPerform(View.keyCodeToControllerOrder(e.getKeyCode()));
+		/**try {
+			for(int i = 0; i < this.l.size(); i++)
+
+			{
+				if ((int) this.l.get(i) == keyEvent.getKeyCode()) {
+					this.l.remove(i);
+				}
+			}
+			this.l.add(keyEvent.getKeyCode());
+			//NettleView.displayMessage("" + keyEvent.getKeyCode());
+			if (this.l.size() == 1) {
+				this.getNettlePlay().orderPerform(NettleView.keyCodeToUserOrder(keyEvent.getKeyCode()));
+			} else if (this.l.size() == 2) {
+				int i = 0;
+				i = (int) this.l.get(0) * (int) this.l.get(1);
+				this.getNettlePlay().orderPerform(NettleView.keyCodeToUserOrder(i));
+				//NettleView.displayMessage("Deux touches sont utilisées en même temps !");
+			}
+			**/
+
+			/*for(int i = 0; i < this.l.size(); i++)
+
+			{
+				if ((int) this.l.get(i) == keyEvent.getKeyCode()) {
+					this.l.remove(i);
+				}
+			}*/
+
+		/**} catch (final IOException e) {
+			e.printStackTrace();
+		}**/
 	}
 
 	/*
