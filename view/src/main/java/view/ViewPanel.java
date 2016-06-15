@@ -83,7 +83,7 @@ class ViewPanel extends JPanel implements Observer {
 			{
 				switch (this.map[i][j]){
 					case 'B':
-						System.out.print(this.map[i][j]);
+						//System.out.print(this.map[i][j]);
 						try {
 							Image img = ImageIO.read(new File("sprite/bone.png"));
 							graphics.drawImage(img, 32*j, 32*i, this);
@@ -94,7 +94,7 @@ class ViewPanel extends JPanel implements Observer {
 						}
 						break;
 					case 'H':
-						System.out.print(this.map[i][j]);
+						//System.out.print(this.map[i][j]);
 						try {
 							Image img = ImageIO.read(new File("sprite/horizontal_bone.png"));
 							graphics.drawImage(img, 32*j, 32*i, this);
@@ -105,7 +105,7 @@ class ViewPanel extends JPanel implements Observer {
 						}
 						break;
 					case 'V':
-						System.out.print(this.map[i][j]);
+						//System.out.print(this.map[i][j]);
 						try {
 							Image img = ImageIO.read(new File("sprite/vertical_bone.png"));
 							graphics.drawImage(img, 32*j, 32*i, this);
@@ -116,7 +116,7 @@ class ViewPanel extends JPanel implements Observer {
 						}
 						break;
 					case 'P':
-						System.out.print(this.map[i][j]);
+						//System.out.print(this.map[i][j]);
 						try {
 							Image img = ImageIO.read(new File("sprite/purse.png"));
 							graphics.drawImage(img, 32*j, 32*i, this);
@@ -127,11 +127,11 @@ class ViewPanel extends JPanel implements Observer {
 						}
 						break;
 					case 'L' :
-						System.out.print(this.map[i][j]);
+						//System.out.print(this.map[i][j]);
 						graphics.drawImage((new ImageIcon("sprite/lorann.gif")).getImage(),32*j,32*i,this);
 						break;
 					case 'C' :
-						System.out.print(this.map[i][j]);
+						//System.out.print(this.map[i][j]);
 						try {
 							Image img = ImageIO.read(new File("sprite/gate_closed.png"));
 							graphics.drawImage(img, 32*j, 32*i, this);
@@ -142,7 +142,7 @@ class ViewPanel extends JPanel implements Observer {
 						}
 						break;
 					case 'K' :
-						System.out.print(this.map[i][j]);
+						//System.out.print(this.map[i][j]);
 						try {
 							Image img = ImageIO.read(new File("sprite/crystal_ball.png"));
 							graphics.drawImage(img, 32*j, 32*i, this);
@@ -153,7 +153,7 @@ class ViewPanel extends JPanel implements Observer {
 						}
 						break;
 					case '1' :
-						System.out.print(this.map[i][j]);
+						//System.out.print(this.map[i][j]);
 						try {
 							Image img = ImageIO.read(new File("sprite/monster_1.png"));
 							graphics.drawImage(img, 32*j, 32*i, this);
@@ -164,7 +164,7 @@ class ViewPanel extends JPanel implements Observer {
 						}
 						break;
 					case '2' :
-						System.out.print(this.map[i][j]);
+						//System.out.print(this.map[i][j]);
 						try {
 							Image img = ImageIO.read(new File("sprite/monster_2.png"));
 							graphics.drawImage(img, 32*j, 32*i, this);
@@ -175,7 +175,7 @@ class ViewPanel extends JPanel implements Observer {
 						}
 						break;
 					case '3' :
-						System.out.print(this.map[i][j]);
+						//System.out.print(this.map[i][j]);
 						try {
 							Image img = ImageIO.read(new File("sprite/monster_3.png"));
 							graphics.drawImage(img, 32*j, 32*i, this);
@@ -186,7 +186,7 @@ class ViewPanel extends JPanel implements Observer {
 						}
 						break;
 					case '4' :
-						System.out.print(this.map[i][j]);
+						//System.out.print(this.map[i][j]);
 						try {
 							Image img = ImageIO.read(new File("sprite/monster_4.png"));
 							graphics.drawImage(img, 32*j, 32*i, this);
@@ -197,7 +197,7 @@ class ViewPanel extends JPanel implements Observer {
 						}
 						break;
 					default:
-						System.out.print(" ");
+						//System.out.print(" ");
 						try {
 							Image img = ImageIO.read(new File("sprite/noimage.png"));
 							graphics.drawImage(img, 32*j, 32*i, this);
@@ -209,7 +209,8 @@ class ViewPanel extends JPanel implements Observer {
 						break;
 				}
 			}
-			System.out.println();
+			//System.out.println();
+
 		}
 	}
 

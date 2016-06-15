@@ -16,6 +16,7 @@ public class Model extends Observable implements IModel {
     private int height = 12;
     private int width = 21;
     public Hero hero ;
+    public int Score;
     private char[][] pngArray = new char[this.getHeight()][this.getWidth()];
 
     /** The message. */
@@ -103,58 +104,46 @@ public class Model extends Observable implements IModel {
                 switch (tabmap[i].charAt(j)){
                     case 'B' :
                         putPngName(i,j,'B');
-                        //System.out.print(this.pngArray[i][j]);
                         break;
                     case 'H' :
                         putPngName(i,j,'H');
-                        //System.out.print(this.pngArray[i][j]);
                         break;
                     case 'V' :
                         putPngName(i,j,'V');
-                        //System.out.print(this.pngArray[i][j]);
                         break;
                     case 'P' :
                         putPngName(i,j,'P');
-                        //System.out.print(this.pngArray[i][j]);
                         break;
                     case 'L' :
                         putPngName(i,j,'L');
                         hero.setX(j);
                         hero.setY(i);
-                        //System.out.print(this.pngArray[i][j]);
                         break;
                     case 'C' :
                         putPngName(i,j,'C');
-                        //System.out.print(this.pngArray[i][j]);
                         break;
                     case 'K' :
                         putPngName(i,j,'K');
-                        //System.out.print(this.pngArray[i][j]);
                         break;
                     case '1' :
                         putPngName(i,j,'1');
-                        //System.out.print(this.pngArray[i][j]);
                         break;
                     case '2' :
                         putPngName(i,j,'2');
-                        //System.out.print(this.pngArray[i][j]);
                         break;
                     case '3' :
                         putPngName(i,j,'3');
-                        //System.out.print(this.pngArray[i][j]);
                         break;
                     case '4' :
                         putPngName(i,j,'4');
-                        //System.out.print(this.pngArray[i][j]);
                         break;
                     default :
                         putPngName(i,j,' ');
-                        //System.out.print(this.pngArray[i][j]);
                         break;
 
                 }
             }
-            System.out.println();
+           // System.out.println();
         }
 
     }
@@ -182,6 +171,10 @@ public class Model extends Observable implements IModel {
         }
     }
 
+    private boolean isPurse(final int x, final int y){
+        return (this.pngArray[x][y] == 'P');
+    }
+
    private boolean isMovePossible(final int x, final int y){
         return (this.pngArray[x][y] != 'V' && this.pngArray[x][y] != 'H'
         && this.pngArray[x][y] != 'B' && this.pngArray[x][y] != 'C'
@@ -190,32 +183,40 @@ public class Model extends Observable implements IModel {
     }
 
     public void moveRIGHT() {
-        if (this.isMovePossible(this.getHero().getY(), this.getHero().getX()+1)){
+        if(this.isPurse(this.getHero().getY(), this.getHero().getX()+1)){
+            Score += 100;
+        }if(this.isMovePossible(this.getHero().getY(), this.getHero().getX()+1)){
             this.pngArray[this.getHero().getY()][this.getHero().getX()] = ' ';
             this.getHero().moveRIGHT();
             this.pngArray[this.getHero().getY()][this.getHero().getX()] = 'L';
         }
     }
     public void moveUP() {
-        if (this.isMovePossible(this.getHero().getY() -1, this.getHero().getX())) {
+        if(this.isPurse(this.getHero().getY() -1, this.getHero().getX())){
+            Score += 100;
+        }if(this.isMovePossible(this.getHero().getY() -1, this.getHero().getX())) {
             this.pngArray[this.getHero().getY()][this.getHero().getX()] = ' ';
             this.getHero().moveUp();
             this.pngArray[this.getHero().getY()][this.getHero().getX()] = 'L';
         }
+
     }
     public void moveDOWN() {
-        if (this.isMovePossible(this.getHero().getY() +1, this.getHero().getX())) {
+        if(this.isPurse(this.getHero().getY() +1, this.getHero().getX())){
+            Score += 100;
+        }if (this.isMovePossible(this.getHero().getY() +1, this.getHero().getX())) {
             this.pngArray[this.getHero().getY()][this.getHero().getX()] = ' ';
             this.getHero().moveDOWN();
             this.pngArray[this.getHero().getY()][this.getHero().getX()] = 'L';
         }
     }
     public void moveLEFT() {
-        if(isMovePossible(this.getHero().getY(), this.getHero().getX() - 1)){
+        if(this.isPurse(this.getHero().getY(), this.getHero().getX() - 1)){
+            Score += 100;
+        }if(isMovePossible(this.getHero().getY(), this.getHero().getX() - 1)){
             this.pngArray[this.getHero().getY()][this.getHero().getX()] = ' ';
             this.getHero().moveLEFT();
             this.pngArray[this.getHero().getY()][this.getHero().getX()] = 'L';
         }
     }
-
 }
