@@ -133,6 +133,7 @@ class ViewFrame extends JFrame implements KeyListener {
 		this.setContentPane(new ViewPanel(this));
 		this.setSize(649,414);
 		this.setLocationRelativeTo(null);
+		this.setTitle("Lorann Game");
 	}
 
 	/**
@@ -160,7 +161,7 @@ class ViewFrame extends JFrame implements KeyListener {
 	 * @see java.awt.event.KeyListener#keyPressed(java.awt.event.KeyEvent)
 	 */
 	public void keyPressed(final KeyEvent e) {
-		//this.getController().orderPerform(View.keyCodeToControllerOrder(e.getKeyCode()));
+		this.getController().orderPerform(View.keyCodeToControllerOrder(e.getKeyCode()));
 	}
 
 	/*

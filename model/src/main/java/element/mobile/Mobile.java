@@ -19,7 +19,6 @@ public class Mobile extends Element implements IPawn {
         this.position = new Point();
     }
 
-    @Override
     public int getX() {
         return this.position.x;
     }
@@ -31,7 +30,6 @@ public class Mobile extends Element implements IPawn {
         }
     }
 
-    @Override
     public int getY() {
         return this.position.y;
     }
@@ -43,7 +41,6 @@ public class Mobile extends Element implements IPawn {
         }
     }
 
-    @Override
     public Point getPosition(){ return this.position;}
 
    public void setNettleWorld(final INettleWorld nettleWorld, final int x, final int y) {
