@@ -1,13 +1,13 @@
 package element.mobile;
 
 /**
- * Created by Asus on 14/06/2016.
+ * Created by Ahmed on 16/06/2016.
  */
-public class Hero {
+public class Monster2 {
     private int x;
     private int y;
-    public Hero(int x,int y){
-    this.x = x;
+    public Monster2(int x,int y){
+        this.x = x;
         this.y = y;
     }
 
@@ -16,7 +16,7 @@ public class Hero {
     }
 
     public void setX(final int x) {
-    this.x = x;
+        this.x = x;
     }
 
     public int getY() {
@@ -42,5 +42,4 @@ public class Hero {
     public void moveRIGHT() {
         this.setX(this.getX() + 1);
     }
-
 }

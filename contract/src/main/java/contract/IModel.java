@@ -63,4 +63,5 @@ public interface IModel {
 	void moveLEFT();
 	void moveRIGHT();
 	void moveDOWN();
+	void monster1();
 }
