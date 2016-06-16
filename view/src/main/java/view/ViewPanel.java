@@ -213,8 +213,7 @@ class ViewPanel extends JPanel implements Observer {
 
 	}
 
-
 	/** JOptionPane jop = new JOptionPane(), jop2 = new JOptionPane();
 	 String nom = jop.showInputDialog(null, "Your name", JOptionPane.QUESTION_MESSAGE);
-	 jop2.showMessageDialog(null, "Score saved", null, JOptionPane.INFORMATION_MESSAGE);**/
+	 jop2.showMessageDialog(null, "Score saved", null, JOptionPane.INFORMATION_MESSAGE); **/
 }

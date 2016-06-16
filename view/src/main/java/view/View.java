@@ -1,6 +1,7 @@
 package view;
 
 import java.awt.event.KeyEvent;
+import java.awt.event.WindowEvent;
 
 import javax.swing.SwingUtilities;
 
@@ -65,7 +66,6 @@ public class View implements IView, Runnable {
 				return ControllerOrder.LEFT;
 			case KeyEvent.VK_RIGHT:
 				return ControllerOrder.RIGHT;
-
 			default:
 				return ControllerOrder.nthng;
 		}

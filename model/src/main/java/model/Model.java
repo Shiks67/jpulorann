@@ -53,16 +53,17 @@ public class Model extends Observable implements IModel {
         return Score;
     }
 
-    public String[] getDBplayerName() {
-        return DBplayerName;
+    public String getDBplayerName(int i) {
+        return this.DBplayerName[i];
     }
 
+    public int getDBplayerScore(int i) {
+        return this.DBplayerScore[i];
+    }
+
+    /** setters **/
     public void setDBplayerName(String DBplayerName[]) {
         this.DBplayerName = DBplayerName;
-    }
-
-    public int[] getDBplayerScore() {
-        return DBplayerScore;
     }
 
     public void setDBplayerScore(int DBplayerScore[]) {
@@ -124,15 +125,6 @@ public class Model extends Observable implements IModel {
     public Observable getObservable() {
         return this;
     }
-
-    public String getDBplayerName(int i) {
-        return this.DBplayerName[i];
-    }
-
-    public int getDBplayerScore(int i) {
-        return this.DBplayerScore[i];
-    }
-
 
     /** i added the map functions in general here **/
 
