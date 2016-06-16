@@ -79,7 +79,6 @@ class ViewPanel extends JPanel implements Observer {
 
 		this.map = this.viewFrame.getModel().getMap();		/** we copy the 2D array from the model to use it to display images **/
 		this.viewFrame.getModel().monster1();
-
 		for(int i = 0; i < this.map.length; i++)			/** beginning of the parser **/
 		{
 			for (int j = 0; j < this.map[i].length; j++)

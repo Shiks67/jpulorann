@@ -42,4 +42,6 @@ public class Monster1 {
     public void moveRIGHT() {
         this.setX(this.getX() + 1);
     }
+
+
 }

@@ -43,4 +43,9 @@ public class Hero {
         this.setX(this.getX() + 1);
     }
 
+    public void heroDeath(){
+        this.setX(-5);
+        this.setY(-5);
+    }
+
 }

@@ -284,6 +284,14 @@ public class Model extends Observable implements IModel {
         this.pngArray[this.getHero().getY()][this.getHero().getX()] = 'L';
     }
 
+    public void lastMP(){
+        this.pngArray[this.getMonster1().getY()][this.getMonster1().getX()] = ' ';
+    }
+
+    public void newMP(){
+        this.pngArray[this.getMonster1().getY()][this.getMonster1().getX()] = '1';
+    }
+
     public void moveRIGHT() {
         if(this.isPurse(this.getHero().getY(), this.getHero().getX()+1)){
             Score += 100;
@@ -346,32 +354,29 @@ public class Model extends Observable implements IModel {
         int hy = this.getHero().getY();
 
         if(mx < hx && this.mMovePossible(this.getMonster1().getY(), this.getMonster1().getX() +1)){
-
-            this.pngArray[this.getMonster1().getY()][this.getMonster1().getX()] = ' ';
+            this.lastMP();
             this.getMonster1().moveRIGHT();
-            this.pngArray[this.getMonster1().getY()][this.getMonster1().getX()] = '1';
-
-        } if(mx > hx && this.mMovePossible(this.getMonster1().getY(), this.getMonster1().getX() -1)){
-
-            this.pngArray[this.getMonster1().getY()][this.getMonster1().getX()] = ' ';
+            this.newMP();
+        }
+        if(mx > hx && this.mMovePossible(this.getMonster1().getY(), this.getMonster1().getX() -1)){
+            this.lastMP();
             this.getMonster1().moveLEFT();
-            this.pngArray[this.getMonster1().getY()][this.getMonster1().getX()] = '1';
+            this.newMP();
         }
         if (my < hy && this.mMovePossible(this.getMonster1().getY() +1, this.getMonster1().getX())){
-
-            this.pngArray[this.getMonster1().getY()][this.getMonster1().getX()] = ' ';
+            this.lastMP();
             this.getMonster1().moveDOWN();
-            this.pngArray[this.getMonster1().getY()][this.getMonster1().getX()] = '1';
+            this.newMP();
         }
-
         if(my > hy && this.mMovePossible(this.getMonster1().getY() -1, this.getMonster1().getX())){
-
-            this.pngArray[this.getMonster1().getY()][this.getMonster1().getX()] = ' ';
+            this.lastMP();
             this.getMonster1().moveUp();
-            this.pngArray[this.getMonster1().getY()][this.getMonster1().getX()] = '1';
+            this.newMP();
         }
         if (mx == hx && my == hy ){
             this.pngArray[this.getHero().getY()][this.getHero().getX()] = ' ';
+            this.getHero().heroDeath();
+            //this.newHP();
         }
     }
 }
