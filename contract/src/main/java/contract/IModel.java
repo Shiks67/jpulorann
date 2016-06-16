@@ -59,7 +59,7 @@ public interface IModel {
 	 */
 	void loadMap(String key);
 
-	//int Death;
+	boolean isDead();
 
 	void moveUP();
 	void moveLEFT();

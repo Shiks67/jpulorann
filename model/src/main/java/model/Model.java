@@ -90,6 +90,12 @@ public class Model extends Observable implements IModel {
         this.monster2 = new Monster2(0,0);
         this.monster3 = new Monster3(0,0);
         this.monster4 = new Monster4(0,0);
+        hero = new Hero(1,1);
+        gateC = new GateC(0,0);
+        monster1 = new Monster1(0,0);
+        monster2 = new Monster2(0,0);
+        monster3 = new Monster3(0,0);
+        monster4 = new Monster4(0,0);
     }
 
     /*
@@ -226,28 +232,29 @@ public class Model extends Observable implements IModel {
 
     public Hero  getHero()  { return this.hero;}
 
+
     public GateC getGateC() { return this.gateC;}
 
     public Shoot getShoot() { return this.shoot;}
 
     public Monster1 getMonster1() {
-        return this.monster1;
+        return monster1;
     }
 
     public Monster2 getMonster2() {
-        return this.monster2;
+        return monster2;
     }
 
     public Monster3 getMonster3() {
-        return this.monster3;
+        return monster3;
     }
 
     public Monster4 getMonster4() {
-        return this.monster4;
+        return monster4;
     }
 
     public char[][] getMap() {  /** return chat 2d array used to display images in view by copy **/
-        return this.pngArray;
+        return pngArray;
     }
 
     private void setMap(final String map) {;
@@ -255,6 +262,7 @@ public class Model extends Observable implements IModel {
         this.setChanged();
         this.notifyObservers();
     }
+
     public void loadMap(String key) {
         try {
             final DAOLoadMap daoLoadMap = new DAOLoadMap(DBConnection.getInstance().getConnection());
@@ -279,79 +287,100 @@ public class Model extends Observable implements IModel {
     }
 
     private boolean mMovePossible(final int x, final int y){
-        return (this.pngArray[x][y] == ' ' || this.pngArray[x][y] == 'L');
+        return (pngArray[x][y] == ' ' || pngArray[x][y] == 'L');
     }
 
     private boolean openGate(final int x, final int y){
-        return (this.pngArray[x][y] == 'K');
+        return (pngArray[x][y] == 'K');
     }
 
     private boolean isPurse(final int x, final int y){
-        return (this.pngArray[x][y] == 'P');
+        return (pngArray[x][y] == 'P');
+    }
+
+    private boolean onGate(final int x, final int y){
+        return (pngArray[x][y] == 'O');
     }
 
     private boolean isMovePossible(final int x, final int y){
-        return (this.pngArray[x][y] != 'V' && this.pngArray[x][y] != 'H'
-        && this.pngArray[x][y] != 'B' && this.pngArray[x][y] != 'C'
-        && this.pngArray[x][y] != '1' && this.pngArray[x][y] != '2'
-        && this.pngArray[x][y] != '3' && this.pngArray[x][y] != '4'
-        && this.pngArray[x][y] != 'L');
+        return (pngArray[x][y] != 'V' && pngArray[x][y] != 'H'
+             && pngArray[x][y] != 'B' && pngArray[x][y] != 'C'
+             && pngArray[x][y] != '1' && pngArray[x][y] != '2'
+             && pngArray[x][y] != '3' && pngArray[x][y] != '4');
+    }
+
+    public boolean isDead(){
+        if (getMonster1().getX() == getHero().getX() && getMonster1().getY() == getHero().getY()){
+            pngArray[getHero().getY()][getHero().getX()] = ' ';
+            return true;
+        }
+        return false;
     }
 
     public void lastHP(){
-        this.pngArray[this.getHero().getY()][this.getHero().getX()] = ' ';
+        pngArray[getHero().getY()][getHero().getX()] = ' ';
     }
 
     public void newHP(){
-        this.pngArray[this.getHero().getY()][this.getHero().getX()] = 'L';
+        pngArray[getHero().getY()][getHero().getX()] = 'L';
     }
 
     public void lastMP(){
-        this.pngArray[this.getMonster1().getY()][this.getMonster1().getX()] = ' ';
+        pngArray[getMonster1().getY()][getMonster1().getX()] = ' ';
     }
 
     public void newMP(){
-        this.pngArray[this.getMonster1().getY()][this.getMonster1().getX()] = '1';
+        pngArray[getMonster1().getY()][getMonster1().getX()] = '1';
     }
 
     public void moveRIGHT() {
-        if(this.isPurse(this.getHero().getY(), this.getHero().getX()+1)){
+        if(isPurse(getHero().getY(), getHero().getX()+1)){
             Score += 100;
         }
-        if(this.openGate(this.getHero().getY(), this.getHero().getX() +1)){
-            this.pngArray[this.getGateC().getY()][this.gateC.getX()] = 'O';
+        if(openGate(getHero().getY(), getHero().getX() +1)){
+            pngArray[getGateC().getY()][gateC.getX()] = 'O';
         }
-        if(this.isMovePossible(this.getHero().getY(), this.getHero().getX()+1)){
-            this.lastHP();
-            this.getHero().moveRIGHT();
-            this.newHP();        }
+        if(onGate(getHero().getY(), getHero().getX() +1)){
+        System.out.println("C'est gagner !!");
+        }
+        if(isMovePossible(getHero().getY(), getHero().getX()+1)){
+            lastHP();
+            getHero().moveRIGHT();
+            newHP();        }
     }
 
     public void moveUP() {
-        if(this.isPurse(this.getHero().getY() -1, this.getHero().getX())){
+        if(isPurse(getHero().getY() -1, getHero().getX())){
             Score += 100;
         }
-        if(this.openGate(this.getHero().getY() -1, this.getHero().getX())){
-            this.pngArray[this.getGateC().getY()][this.gateC.getX()] = 'O';
+        if(openGate(getHero().getY() -1, getHero().getX())){
+            pngArray[getGateC().getY()][gateC.getX()] = 'O';
         }
-        if(this.isMovePossible(this.getHero().getY() -1, this.getHero().getX())) {
-            this.lastHP();
-            this.getHero().moveUp();
-            this.newHP();        }
+        if(onGate(getHero().getY() -1, getHero().getX())){
+            System.out.println("C'est gagner !!");
+        }
+        if(isMovePossible(getHero().getY() -1, getHero().getX())) {
+            lastHP();
+            getHero().moveUp();
+            newHP();
+        }
 
     }
 
     public void moveDOWN() {
-        if(this.isPurse(this.getHero().getY() +1, this.getHero().getX())){
+        if(isPurse(getHero().getY() +1, getHero().getX())){
             Score += 100;
         }
-        if(this.openGate(this.getHero().getY()+1, this.getHero().getX())){
-            this.pngArray[this.getGateC().getY()][this.gateC.getX()] = 'O';
+        if(openGate(getHero().getY()+1, getHero().getX())){
+            pngArray[getGateC().getY()][gateC.getX()] = 'O';
         }
-        if (this.isMovePossible(this.getHero().getY() +1, this.getHero().getX())) {
-            this.lastHP();
-            this.getHero().moveDOWN();
-            this.newHP();
+        if(onGate(getHero().getY()+1, getHero().getX())){
+            System.out.println("C'est gagner !!");
+        }
+        if (isMovePossible(getHero().getY() +1, getHero().getX())) {
+            lastHP();
+            getHero().moveDOWN();
+            newHP();
         }
     }
    public void fireAnimation() {
@@ -448,49 +477,47 @@ public class Model extends Observable implements IModel {
 
 
     public void moveLEFT() {
-        if(this.isPurse(this.getHero().getY(), this.getHero().getX() - 1)){
+        if(isPurse(getHero().getY(), getHero().getX() - 1)){
             Score += 100;
         }
-        if(this.openGate(this.getHero().getY(), this.getHero().getX() -1)){
-            this.pngArray[this.getGateC().getY()][this.gateC.getX()] = 'O';
+        if(openGate(getHero().getY(), getHero().getX() -1)){
+            pngArray[getGateC().getY()][gateC.getX()] = 'O';
         }
-        if(isMovePossible(this.getHero().getY(), this.getHero().getX() - 1)){
-            this.lastHP();
-            this.getHero().moveLEFT();
-            this.newHP();
+        if(onGate(getHero().getY(), getHero().getX() -1)){
+            System.out.println("C'est gagner !!");
+        }
+        if(isMovePossible(getHero().getY(), getHero().getX() - 1)){
+            lastHP();
+            getHero().moveLEFT();
+            newHP();
         }
     }
 
     public void monster1(){
-        int mx = this.getMonster1().getX();
-        int hx = this.getHero().getX();
-        int my = this.getMonster1().getY();
-        int hy = this.getHero().getY();
+        int mx = getMonster1().getX();
+        int hx = getHero().getX();
+        int my = getMonster1().getY();
+        int hy = getHero().getY();
 
-        if(mx < hx && this.mMovePossible(this.getMonster1().getY(), this.getMonster1().getX() +1)){
-            this.lastMP();
-            this.getMonster1().moveRIGHT();
-            this.newMP();
+        if(mx < hx && mMovePossible(getMonster1().getY(), getMonster1().getX() +1)){
+            lastMP();
+            getMonster1().moveRIGHT();
+            newMP();
         }
-        if(mx > hx && this.mMovePossible(this.getMonster1().getY(), this.getMonster1().getX() -1)){
-            this.lastMP();
-            this.getMonster1().moveLEFT();
-            this.newMP();
+        if(mx > hx && mMovePossible(getMonster1().getY(),getMonster1().getX() -1)){
+            lastMP();
+            getMonster1().moveLEFT();
+            newMP();
         }
-        if (my < hy && this.mMovePossible(this.getMonster1().getY() +1, this.getMonster1().getX())){
-            this.lastMP();
-            this.getMonster1().moveDOWN();
-            this.newMP();
+        if (my < hy && mMovePossible(getMonster1().getY() +1,getMonster1().getX())){
+            lastMP();
+            getMonster1().moveDOWN();
+            newMP();
         }
-        if(my > hy && this.mMovePossible(this.getMonster1().getY() -1, this.getMonster1().getX())){
-            this.lastMP();
-            this.getMonster1().moveUp();
-            this.newMP();
-        }
-        if (mx == hx && my == hy ){
-            this.pngArray[this.getHero().getY()][this.getHero().getX()] = ' ';
-            //Death += 1;
-            //System.out.println(Death);
+        if(my > hy && mMovePossible(getMonster1().getY() -1,getMonster1().getX())){
+            lastMP();
+            getMonster1().moveUp();
+            newMP();
         }
     }
 }
