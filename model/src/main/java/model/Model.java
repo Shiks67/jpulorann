@@ -4,7 +4,7 @@ import contract.IModel;
 import element.mobile.Hero;
 import element.mobile.Shoot;
 import element.mobile.*;
-import element.motionless.GateC;
+import element.motionless.*;
 
 
 import java.sql.SQLException;
@@ -23,11 +23,16 @@ public class Model extends Observable implements IModel {
     public String fireDirection = "RIGHT";
     public int canShoot = 1;
 
-    int Death;
+    public int getOnGate() {
+        return OnGate;
+    }
+
+    public int OnGate = 0;
 
     public Shoot shoot;
     private Hero hero;
     private GateC gateC;
+    private GateO gateO;
     private Monster1 monster1;
     private Monster2 monster2;
     private Monster3 monster3;
@@ -83,15 +88,9 @@ public class Model extends Observable implements IModel {
      */
     public Model() {
         this.map = "";
-        this.hero = new Hero(0,0);
-        this.gateC = new GateC(0,0);
-        this.shoot = new Shoot(0,0);
-        this.monster1 = new Monster1(0,0);
-        this.monster2 = new Monster2(0,0);
-        this.monster3 = new Monster3(0,0);
-        this.monster4 = new Monster4(0,0);
         hero = new Hero(1,1);
         gateC = new GateC(0,0);
+        gateO = new GateO(0,0);
         monster1 = new Monster1(0,0);
         monster2 = new Monster2(0,0);
         monster3 = new Monster3(0,0);
@@ -126,9 +125,11 @@ public class Model extends Observable implements IModel {
     public void setLastMove(String lastMove){
         this.lastMove = lastMove;
     }
+
     public String getFireDirection(){
         return this.fireDirection;
     }
+
     public void setFireDirection(String fireDirection){
         this.fireDirection = fireDirection;
     }
@@ -193,6 +194,8 @@ public class Model extends Observable implements IModel {
                         break;
                     case 'O':
                         putPngName(i,j,'O');
+                        gateO.setX(j);
+                        gateO.setY(i);
                         break;
                     case 'K' :
                         putPngName(i,j,'K');
@@ -234,6 +237,9 @@ public class Model extends Observable implements IModel {
 
 
     public GateC getGateC() { return this.gateC;}
+
+    public GateO getGateO() { return this.gateO;}
+
 
     public Shoot getShoot() { return this.shoot;}
 
@@ -341,7 +347,7 @@ public class Model extends Observable implements IModel {
             pngArray[getGateC().getY()][gateC.getX()] = 'O';
         }
         if(onGate(getHero().getY(), getHero().getX() +1)){
-        System.out.println("C'est gagner !!");
+        OnGate = 1;
         }
         if(isMovePossible(getHero().getY(), getHero().getX()+1)){
             lastHP();
@@ -357,7 +363,7 @@ public class Model extends Observable implements IModel {
             pngArray[getGateC().getY()][gateC.getX()] = 'O';
         }
         if(onGate(getHero().getY() -1, getHero().getX())){
-            System.out.println("C'est gagner !!");
+            OnGate = 1;
         }
         if(isMovePossible(getHero().getY() -1, getHero().getX())) {
             lastHP();
@@ -375,7 +381,7 @@ public class Model extends Observable implements IModel {
             pngArray[getGateC().getY()][gateC.getX()] = 'O';
         }
         if(onGate(getHero().getY()+1, getHero().getX())){
-            System.out.println("C'est gagner !!");
+            OnGate = 1;
         }
         if (isMovePossible(getHero().getY() +1, getHero().getX())) {
             lastHP();
@@ -383,6 +389,7 @@ public class Model extends Observable implements IModel {
             newHP();
         }
     }
+
    public void fireAnimation() {
 
        if (canShoot == 0) {
@@ -475,7 +482,6 @@ public class Model extends Observable implements IModel {
         }
     }
 
-
     public void moveLEFT() {
         if(isPurse(getHero().getY(), getHero().getX() - 1)){
             Score += 100;
@@ -484,7 +490,7 @@ public class Model extends Observable implements IModel {
             pngArray[getGateC().getY()][gateC.getX()] = 'O';
         }
         if(onGate(getHero().getY(), getHero().getX() -1)){
-            System.out.println("C'est gagner !!");
+            OnGate = 1;
         }
         if(isMovePossible(getHero().getY(), getHero().getX() - 1)){
             lastHP();

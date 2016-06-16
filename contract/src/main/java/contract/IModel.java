@@ -60,6 +60,7 @@ public interface IModel {
 	void loadMap(String key);
 
 	boolean isDead();
+	int getOnGate();
 
 	void moveUP();
 	void moveLEFT();

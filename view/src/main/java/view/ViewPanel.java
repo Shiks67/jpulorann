@@ -18,6 +18,7 @@ class ViewPanel extends JPanel implements Observer {
 	public char[][] map;	/** 2d array when we copy the one from the model **/
 	private int r = 0;	/** used to display highscores log **/
 	int GO = 0;
+	int Win = 0;
 
 	/** The view frame. */
 	private ViewFrame					viewFrame;
@@ -225,6 +226,10 @@ class ViewPanel extends JPanel implements Observer {
 		if(this.viewFrame.getModel().isDead() && GO == 0){
 			GO = 1;
 			this.viewFrame.printMap("GAME OVER");
+		}
+		if(this.viewFrame.getModel().getOnGate() == 1 && Win == 0){
+			Win= 1;
+			this.viewFrame.printMap("GG SUCH A WIN, SO HARD");
 		}
 	}
 

@@ -1,18 +1,31 @@
 package element.motionless;
 
-import element.Permeability;
-import element.Sprite;
 
 /**
  * Created by Ahmed on 13/06/2016.
  */
-class GateO extends MotionlessElement{
+public class GateO{
 
-    public GateO(){
-        super(new Sprite("O","gate_open.png"), Permeability.PENETRABLE, 'C');
+    private int x;
+    private int y;
+    public GateO (int x,int y){
+        this.x = x;
+        this.y = y;
     }
 
-    public ActionOnHeroes getActionOnHeroes() {
-        return ActionOnHeroes.DOOR;
+    public int getX() {
+        return this.x;
+    }
+
+    public void setX(final int x) {
+        this.x = x;
+    }
+
+    public int getY() {
+        return this.y;
+    }
+
+    public void setY(final int y) {
+        this.y = y;
     }
 }
