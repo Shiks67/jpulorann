@@ -238,17 +238,19 @@ class ViewPanel extends JPanel implements Observer {
 	public void endGame() {
 		JOptionPane jop = new JOptionPane(), jop2 = new JOptionPane();
 		String nom = jop.showInputDialog(null, "Your name", JOptionPane.QUESTION_MESSAGE);
-		jop2.showMessageDialog(null, "Score saved", null, JOptionPane.INFORMATION_MESSAGE);
 
-		int score = this.viewFrame.getModel().getScore();
-		/**try {
-			Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/jpublankproject", "root", "");
-			String sql = "{call sortHighscoreByDescendingOrder(?,?)}";
+		/**int score = this.viewFrame.getModel().getScore();
+		try {
+			Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/jpublankproject?autoReconnect=true&useSSL=false", "root", "");
+			String sql = "{call putHighscoreInDB(?,?)}";
 			PreparedStatement statement = conn.prepareStatement(sql);
-			statement.setString(1, nom);
-			statement.setInt(2, score);
+			statement.setString(2, nom);
+			statement.setInt(1, score);
+			statement.execute();
+		 	jop2.showMessageDialog(null, "Score saved", null, JOptionPane.INFORMATION_MESSAGE);
 		} catch (SQLException e) {
 			e.printStackTrace();
+		 	jop2.showMessageDialog(null, "Score not saved", null, JOptionPane.INFORMATION_MESSAGE);
 		}**/
 
 		System.exit(0);		/** exit game **/
