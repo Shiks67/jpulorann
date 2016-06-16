@@ -2,6 +2,7 @@ package model;
 
 import contract.IModel;
 import element.mobile.Hero;
+import element.motionless.GateC;
 
 import java.sql.CallableStatement;
 import java.sql.SQLException;
@@ -18,6 +19,7 @@ public class Model extends Observable implements IModel {
     private int[] DBplayerScore = new int[6];
 
     public Hero hero;
+    public GateC gateC;
 
     private int Score;  /** ingame score **/
 
@@ -67,6 +69,7 @@ public class Model extends Observable implements IModel {
 
         this.map = "";
         this.hero = new Hero(0,0);
+        this.gateC = new GateC(0,0);
     }
 
     /*
@@ -146,6 +149,11 @@ public class Model extends Observable implements IModel {
                         break;
                     case 'C' :
                         putPngName(i,j,'C');
+                        gateC.setX(j);
+                        gateC.setY(i);
+                        break;
+                    case 'O':
+                        putPngName(i,j,'O');
                         break;
                     case 'K' :
                         putPngName(i,j,'K');
@@ -172,6 +180,10 @@ public class Model extends Observable implements IModel {
 
     public Hero getHero() {
         return this.hero;
+    }
+
+    public GateC getGateC(){
+        return this.gateC;
     }
 
 
@@ -208,12 +220,15 @@ public class Model extends Observable implements IModel {
     }
 
 
+    private boolean openGate(final int x, final int y){
+        return (this.pngArray[x][y] == 'K');
+    }
 
     private boolean isPurse(final int x, final int y){
         return (this.pngArray[x][y] == 'P');
     }
 
-   private boolean isMovePossible(final int x, final int y){
+    private boolean isMovePossible(final int x, final int y){
         return (this.pngArray[x][y] != 'V' && this.pngArray[x][y] != 'H'
         && this.pngArray[x][y] != 'B' && this.pngArray[x][y] != 'C'
         && this.pngArray[x][y] != '1' && this.pngArray[x][y] != '2'
@@ -223,7 +238,11 @@ public class Model extends Observable implements IModel {
     public void moveRIGHT() {
         if(this.isPurse(this.getHero().getY(), this.getHero().getX()+1)){
             Score += 100;
-        }if(this.isMovePossible(this.getHero().getY(), this.getHero().getX()+1)){
+        }
+        if(this.openGate(this.getHero().getY(), this.getHero().getX() +1)){
+            this.pngArray[this.getGateC().getY()][this.gateC.getX()] = 'O';
+        }
+        if(this.isMovePossible(this.getHero().getY(), this.getHero().getX()+1)){
             this.pngArray[this.getHero().getY()][this.getHero().getX()] = ' ';
             this.getHero().moveRIGHT();
             this.pngArray[this.getHero().getY()][this.getHero().getX()] = 'L';
@@ -232,7 +251,11 @@ public class Model extends Observable implements IModel {
     public void moveUP() {
         if(this.isPurse(this.getHero().getY() -1, this.getHero().getX())){
             Score += 100;
-        }if(this.isMovePossible(this.getHero().getY() -1, this.getHero().getX())) {
+        }
+        if(this.openGate(this.getHero().getY() -1, this.getHero().getX())){
+            this.pngArray[this.getGateC().getY()][this.gateC.getX()] = 'O';
+        }
+        if(this.isMovePossible(this.getHero().getY() -1, this.getHero().getX())) {
             this.pngArray[this.getHero().getY()][this.getHero().getX()] = ' ';
             this.getHero().moveUp();
             this.pngArray[this.getHero().getY()][this.getHero().getX()] = 'L';
@@ -242,7 +265,11 @@ public class Model extends Observable implements IModel {
     public void moveDOWN() {
         if(this.isPurse(this.getHero().getY() +1, this.getHero().getX())){
             Score += 100;
-        }if (this.isMovePossible(this.getHero().getY() +1, this.getHero().getX())) {
+        }
+        if(this.openGate(this.getHero().getY()+1, this.getHero().getX())){
+            this.pngArray[this.getGateC().getY()][this.gateC.getX()] = 'O';
+        }
+        if (this.isMovePossible(this.getHero().getY() +1, this.getHero().getX())) {
             this.pngArray[this.getHero().getY()][this.getHero().getX()] = ' ';
             this.getHero().moveDOWN();
             this.pngArray[this.getHero().getY()][this.getHero().getX()] = 'L';
@@ -251,7 +278,11 @@ public class Model extends Observable implements IModel {
     public void moveLEFT() {
         if(this.isPurse(this.getHero().getY(), this.getHero().getX() - 1)){
             Score += 100;
-        }if(isMovePossible(this.getHero().getY(), this.getHero().getX() - 1)){
+        }
+        if(this.openGate(this.getHero().getY(), this.getHero().getX() -1)){
+            this.pngArray[this.getGateC().getY()][this.gateC.getX()] = 'O';
+        }
+        if(isMovePossible(this.getHero().getY(), this.getHero().getX() - 1)){
             this.pngArray[this.getHero().getY()][this.getHero().getX()] = ' ';
             this.getHero().moveLEFT();
             this.pngArray[this.getHero().getY()][this.getHero().getX()] = 'L';
