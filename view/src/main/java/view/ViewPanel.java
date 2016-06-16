@@ -5,10 +5,7 @@ import model.Model;
 import java.awt.*;
 import java.io.File;
 import java.io.IOException;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.Observable;
 import java.util.Observer;
 import javax.imageio.ImageIO;
@@ -201,7 +198,7 @@ class ViewPanel extends JPanel implements Observer {
 				}
 			}
 		}			/** end of the parser **/
-		if (this.r < 2) {		/** display highscore log only when you start the game **/
+		if (this.r < 2 && this.r > 0) {		/** display highscore log only when you start the game **/
 			for(int c = 1;c < 8; c++){
 				if(c==1) {
 					graphics.setColor(Color.RED);
@@ -224,9 +221,6 @@ class ViewPanel extends JPanel implements Observer {
 			graphics.setColor(Color.BLACK);		/** everything next is black again just in case **/
 		}
 		this.viewFrame.getModel().fireAnimation();
-		/*if(this.viewFrame.getModel().Death == 1){
-			System.out.println("Salut");
-		}*/
 
 		this.viewFrame.getModel().monster1();
 		if(this.viewFrame.getModel().isDead() && GO == 0){
