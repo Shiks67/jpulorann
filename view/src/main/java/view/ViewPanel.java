@@ -1,8 +1,14 @@
 package view;
 
+import model.Model;
+
 import java.awt.*;
 import java.io.File;
 import java.io.IOException;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
 import java.util.Observable;
 import java.util.Observer;
 import javax.imageio.ImageIO;
@@ -226,15 +232,31 @@ class ViewPanel extends JPanel implements Observer {
 		if(this.viewFrame.getModel().isDead() && GO == 0){
 			GO = 1;
 			this.viewFrame.printMap("GAME OVER");
+			this.endGame();
 		}
 		if(this.viewFrame.getModel().getOnGate() == 1 && Win == 0){
 			Win= 1;
 			this.viewFrame.printMap("GG SUCH A WIN, SO HARD");
+			this.endGame();
 		}
 	}
 
+	public void endGame() {
+		JOptionPane jop = new JOptionPane(), jop2 = new JOptionPane();
+		String nom = jop.showInputDialog(null, "Your name", JOptionPane.QUESTION_MESSAGE);
+		jop2.showMessageDialog(null, "Score saved", null, JOptionPane.INFORMATION_MESSAGE);
 
-	/** JOptionPane jop = new JOptionPane(), jop2 = new JOptionPane();
-	 String nom = jop.showInputDialog(null, "Your name", JOptionPane.QUESTION_MESSAGE);
-	 jop2.showMessageDialog(null, "Score saved", null, JOptionPane.INFORMATION_MESSAGE); **/
+		int score = this.viewFrame.getModel().getScore();
+		/**try {
+			Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/jpublankproject", "root", "");
+			String sql = "{call sortHighscoreByDescendingOrder(?,?)}";
+			PreparedStatement statement = conn.prepareStatement(sql);
+			statement.setString(1, nom);
+			statement.setInt(2, score);
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}**/
+
+		System.exit(0);		/** exit game **/
+	}
 }
