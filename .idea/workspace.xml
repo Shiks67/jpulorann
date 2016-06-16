@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="69e7211a-abd9-46ca-9785-cd2ef29c1473" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/contract/src/main/java/contract/IMonster.java" />
+    <list default="true" id="69e7211a-abd9-46ca-9785-cd2ef29c1473" name="Default" comment="Lorann's moves edited + monster1 IA">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/src/main/java/element/mobile/Hero.java" afterPath="$PROJECT_DIR$/model/src/main/java/element/mobile/Hero.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/src/main/java/element/mobile/Monster1.java" afterPath="$PROJECT_DIR$/model/src/main/java/element/mobile/Monster1.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/src/main/java/model/Model.java" afterPath="$PROJECT_DIR$/model/src/main/java/model/Model.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/src/main/java/view/ViewFrame.java" afterPath="$PROJECT_DIR$/view/src/main/java/view/ViewFrame.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/src/main/java/view/ViewPanel.java" afterPath="$PROJECT_DIR$/view/src/main/java/view/ViewPanel.java" />
     </list>
     <ignored path="masterpom.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,31 +36,25 @@
     <window id="1">
       <content type="file-editors">
         <state>
-          <leaf>
+          <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
             <file leaf-file-name="Model.java" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/model/src/main/java/model/Model.java">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="758">
-                    <caret line="371" column="9" selection-start-line="371" selection-start-column="9" selection-end-line="371" selection-end-column="9" />
+                  <state relative-caret-position="633">
+                    <caret line="363" column="25" selection-start-line="363" selection-start-column="25" selection-end-line="363" selection-end-column="25" />
                     <folding>
                       <element signature="method#setMessage#0;class#Model#0" expanded="false" />
                       <element signature="method#loadMessage#0;class#Model#0" expanded="false" />
-                      <element signature="e#2777#2778#0" expanded="true" />
-                      <element signature="e#2804#2805#0" expanded="true" />
                       <element signature="method#setMap#0;class#Model#0" expanded="false" />
                       <element signature="method#loadMap#0;class#Model#0" expanded="false" />
                       <element signature="method#setDBplayer#0;class#Model#0" expanded="false" />
                       <element signature="method#loadHighscores#0;class#Model#0" expanded="false" />
                       <element signature="method#mMovePossible#0;class#Model#0" expanded="false" />
                       <element signature="method#isMovePossible#0;class#Model#0" expanded="false" />
-                      <element signature="e#7680#7681#0" expanded="true" />
-                      <element signature="e#7761#7762#0" expanded="true" />
-                      <element signature="e#7787#7788#0" expanded="true" />
-                      <element signature="e#7868#7869#0" expanded="true" />
-                      <element signature="e#7895#7896#0" expanded="true" />
-                      <element signature="e#7984#7985#0" expanded="true" />
-                      <element signature="e#8010#8011#0" expanded="true" />
-                      <element signature="e#8099#8100#0" expanded="true" />
+                      <element signature="e#8068#8069#0" expanded="true" />
+                      <element signature="e#8157#8158#0" expanded="true" />
+                      <element signature="e#8183#8184#0" expanded="true" />
+                      <element signature="e#8272#8273#0" expanded="true" />
                       <element signature="method#moveRIGHT#0;class#Model#0" expanded="false" />
                       <element signature="method#moveUP#0;class#Model#0" expanded="false" />
                       <element signature="method#moveDOWN#0;class#Model#0" expanded="false" />
@@ -89,8 +78,8 @@
       <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller/src/main/java/controller/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-85">
-              <caret line="68" column="36" selection-start-line="68" selection-start-column="36" selection-end-line="68" selection-end-column="36" />
+            <state relative-caret-position="1037">
+              <caret line="68" column="34" selection-start-line="68" selection-start-column="34" selection-end-line="68" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -99,7 +88,7 @@
       <file leaf-file-name="Hero.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model/src/main/java/element/mobile/Hero.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
+            <state relative-caret-position="578">
               <caret line="46" column="20" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="20" />
               <folding>
                 <element signature="e#453#454#0" expanded="true" />
@@ -141,7 +130,7 @@
       <file leaf-file-name="ViewPanel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view/src/main/java/view/ViewPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
+            <state relative-caret-position="1292">
               <caret line="80" column="29" selection-start-line="80" selection-start-column="29" selection-end-line="80" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -153,7 +142,7 @@
       <file leaf-file-name="View.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view/src/main/java/view/View.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
+            <state relative-caret-position="986">
               <caret line="66" column="45" selection-start-line="66" selection-start-column="45" selection-end-line="66" selection-end-column="45" />
               <folding />
             </state>
@@ -166,29 +155,6 @@
             <state relative-caret-position="782">
               <caret line="65" column="4" selection-start-line="65" selection-start-column="4" selection-end-line="65" selection-end-column="4" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IMonster.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/contract/src/main/java/contract/IMonster.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ViewFrame.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view/src/main/java/view/ViewFrame.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1132">
-              <caret line="109" column="21" selection-start-line="109" selection-start-column="21" selection-end-line="109" selection-end-column="21" />
-              <folding>
-                <element signature="e#2210#2211#0" expanded="true" />
-                <element signature="e#2234#2235#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -253,9 +219,9 @@
         <option value="$PROJECT_DIR$/contract/src/main/java/contract/IMonster.java" />
         <option value="$PROJECT_DIR$/model/src/main/java/element/mobile/Monster1.java" />
         <option value="$PROJECT_DIR$/model/src/main/java/model/Model.java" />
-        <option value="$PROJECT_DIR$/view/src/main/java/view/ViewFrame.java" />
         <option value="$PROJECT_DIR$/view/src/main/java/view/ViewPanel.java" />
         <option value="$PROJECT_DIR$/contract/src/main/java/contract/IModel.java" />
+        <option value="$PROJECT_DIR$/view/src/main/java/view/ViewFrame.java" />
       </list>
     </option>
   </component>
@@ -337,6 +303,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -591,55 +560,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="masterpom" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jpuLorann" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="contract" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="masterpom" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jpuLorann" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="contract" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="contract" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1151,6 +1073,7 @@
       <workItem from="1466030103364" duration="96000" />
       <workItem from="1466059564831" duration="1299000" />
       <workItem from="1466061045885" duration="13780000" />
+      <workItem from="1466077552223" duration="538000" />
     </task>
     <task id="LOCAL-00001" summary="Push test">
       <created>1465804918356</created>
@@ -1317,11 +1240,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76890000" />
+    <option name="totallyTimeSpent" value="77428000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -1337,7 +1260,6 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29270834" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22135417" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32875264" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1348,6 +1270,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32875264" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1413,7 +1336,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="16" />
+      <option name="time" value="17" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1629,7 +1552,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
           <caret line="138" column="0" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1637,7 +1559,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1667,7 +1588,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/model/src/main/java/element/mobile/Hero.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
+        <state relative-caret-position="578">
           <caret line="46" column="20" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="20" />
           <folding>
             <element signature="e#453#454#0" expanded="true" />
@@ -1678,14 +1599,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/contract/src/main/java/contract/IMonster.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/contract/src/main/java/contract/IMonster.java" />
     <entry file="file://$PROJECT_DIR$/model/src/main/java/element/mobile/Monster1.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="799">
@@ -1713,15 +1627,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/src/main/java/controller/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-85">
-          <caret line="68" column="36" selection-start-line="68" selection-start-column="36" selection-end-line="68" selection-end-column="36" />
+        <state relative-caret-position="1037">
+          <caret line="68" column="34" selection-start-line="68" selection-start-column="34" selection-end-line="68" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/src/main/java/view/View.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
+        <state relative-caret-position="986">
           <caret line="66" column="45" selection-start-line="66" selection-start-column="45" selection-end-line="66" selection-end-column="45" />
           <folding />
         </state>
@@ -1729,7 +1643,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/view/src/main/java/view/ViewPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
+        <state relative-caret-position="1292">
           <caret line="80" column="29" selection-start-line="80" selection-start-column="29" selection-end-line="80" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1739,43 +1653,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/view/src/main/java/view/ViewFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1132">
-          <caret line="109" column="21" selection-start-line="109" selection-start-column="21" selection-end-line="109" selection-end-column="21" />
-          <folding>
-            <element signature="e#2210#2211#0" expanded="true" />
-            <element signature="e#2234#2235#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/src/main/java/model/Model.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="758">
-          <caret line="371" column="9" selection-start-line="371" selection-start-column="9" selection-end-line="371" selection-end-column="9" />
-          <folding>
-            <element signature="method#setMessage#0;class#Model#0" expanded="false" />
-            <element signature="method#loadMessage#0;class#Model#0" expanded="false" />
-            <element signature="e#2777#2778#0" expanded="true" />
-            <element signature="e#2804#2805#0" expanded="true" />
-            <element signature="method#setMap#0;class#Model#0" expanded="false" />
-            <element signature="method#loadMap#0;class#Model#0" expanded="false" />
-            <element signature="method#setDBplayer#0;class#Model#0" expanded="false" />
-            <element signature="method#loadHighscores#0;class#Model#0" expanded="false" />
-            <element signature="method#mMovePossible#0;class#Model#0" expanded="false" />
-            <element signature="method#isMovePossible#0;class#Model#0" expanded="false" />
-            <element signature="e#7680#7681#0" expanded="true" />
-            <element signature="e#7761#7762#0" expanded="true" />
-            <element signature="e#7787#7788#0" expanded="true" />
-            <element signature="e#7868#7869#0" expanded="true" />
-            <element signature="e#7895#7896#0" expanded="true" />
-            <element signature="e#7984#7985#0" expanded="true" />
-            <element signature="e#8010#8011#0" expanded="true" />
-            <element signature="e#8099#8100#0" expanded="true" />
-            <element signature="method#moveRIGHT#0;class#Model#0" expanded="false" />
-            <element signature="method#moveUP#0;class#Model#0" expanded="false" />
-            <element signature="method#moveDOWN#0;class#Model#0" expanded="false" />
-            <element signature="method#moveLEFT#0;class#Model#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="-884">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1784,6 +1664,31 @@
         <state relative-caret-position="782">
           <caret line="65" column="4" selection-start-line="65" selection-start-column="4" selection-end-line="65" selection-end-column="4" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/src/main/java/model/Model.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="633">
+          <caret line="363" column="25" selection-start-line="363" selection-start-column="25" selection-end-line="363" selection-end-column="25" />
+          <folding>
+            <element signature="method#setMessage#0;class#Model#0" expanded="false" />
+            <element signature="method#loadMessage#0;class#Model#0" expanded="false" />
+            <element signature="method#setMap#0;class#Model#0" expanded="false" />
+            <element signature="method#loadMap#0;class#Model#0" expanded="false" />
+            <element signature="method#setDBplayer#0;class#Model#0" expanded="false" />
+            <element signature="method#loadHighscores#0;class#Model#0" expanded="false" />
+            <element signature="method#mMovePossible#0;class#Model#0" expanded="false" />
+            <element signature="method#isMovePossible#0;class#Model#0" expanded="false" />
+            <element signature="e#8068#8069#0" expanded="true" />
+            <element signature="e#8157#8158#0" expanded="true" />
+            <element signature="e#8183#8184#0" expanded="true" />
+            <element signature="e#8272#8273#0" expanded="true" />
+            <element signature="method#moveRIGHT#0;class#Model#0" expanded="false" />
+            <element signature="method#moveUP#0;class#Model#0" expanded="false" />
+            <element signature="method#moveDOWN#0;class#Model#0" expanded="false" />
+            <element signature="method#moveLEFT#0;class#Model#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
