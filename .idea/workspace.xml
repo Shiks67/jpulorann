@@ -2,14 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69e7211a-abd9-46ca-9785-cd2ef29c1473" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/src/main/java/element/mobile/Monster1.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/src/main/java/element/mobile/Monster2.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/src/main/java/element/mobile/Monster3.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/src/main/java/element/mobile/Monster4.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contract/src/main/java/contract/IModel.java" afterPath="$PROJECT_DIR$/contract/src/main/java/contract/IModel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/src/main/java/element/mobile/Hero.java" afterPath="$PROJECT_DIR$/model/src/main/java/element/mobile/Hero.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/src/main/java/controller/Controller.java" afterPath="$PROJECT_DIR$/controller/src/main/java/controller/Controller.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/src/main/java/main/Main.java" afterPath="$PROJECT_DIR$/main/src/main/java/main/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/src/main/java/model/DAOLoadMap.java" afterPath="$PROJECT_DIR$/model/src/main/java/model/DAOLoadMap.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/src/main/java/model/Model.java" afterPath="$PROJECT_DIR$/model/src/main/java/model/Model.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/src/main/resources/jpublankproject.sql" afterPath="$PROJECT_DIR$/model/src/main/resources/jpublankproject.sql" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/src/main/java/view/ViewPanel.java" afterPath="$PROJECT_DIR$/view/src/main/java/view/ViewPanel.java" />
     </list>
     <ignored path="masterpom.iws" />
@@ -39,55 +39,20 @@
     <option name="SHOW_TABLE_DETAILS" value="true" />
     <option name="SHOW_EMPTY_GROUPS" value="false" />
   </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file leaf-file-name="Model.java" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/model/src/main/java/model/Model.java">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="238">
-                    <caret line="329" column="25" selection-start-line="329" selection-start-column="25" selection-end-line="329" selection-end-column="25" />
-                    <folding>
-                      <element signature="method#Model#0;class#Model#0" expanded="false" />
-                      <element signature="method#setMessage#0;class#Model#0" expanded="false" />
-                      <element signature="method#loadMessage#0;class#Model#0" expanded="false" />
-                      <element signature="method#getMapInTab#0;class#Model#0" expanded="false" />
-                      <element signature="method#setMap#0;class#Model#0" expanded="false" />
-                      <element signature="method#loadMap#0;class#Model#0" expanded="false" />
-                      <element signature="method#setDBplayer#0;class#Model#0" expanded="false" />
-                      <element signature="method#loadHighscores#0;class#Model#0" expanded="false" />
-                      <element signature="e#7147#7148#0" expanded="true" />
-                      <element signature="e#7198#7199#0" expanded="true" />
-                      <element signature="e#7680#7681#0" expanded="true" />
-                      <element signature="e#7761#7762#0" expanded="true" />
-                      <element signature="e#7787#7788#0" expanded="true" />
-                      <element signature="e#7868#7869#0" expanded="true" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="masterpom" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Hero.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Hero.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model/src/main/java/element/mobile/Hero.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="493">
               <caret line="43" column="5" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
               <folding>
-                <element signature="e#453#454#0" expanded="true" />
-                <element signature="e#495#496#0" expanded="true" />
+                <element signature="e#670#671#0" expanded="true" />
+                <element signature="e#712#713#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -96,8 +61,8 @@
       <file leaf-file-name="ViewPanel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view/src/main/java/view/ViewPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="381">
-              <caret line="80" column="8" selection-start-line="80" selection-start-column="8" selection-end-line="80" selection-end-column="8" />
+            <state relative-caret-position="162">
+              <caret line="200" column="70" selection-start-line="200" selection-start-column="70" selection-end-line="200" selection-end-column="70" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -118,58 +83,40 @@
       <file leaf-file-name="IModel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/contract/src/main/java/contract/IModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="755">
+            <state relative-caret-position="1105">
               <caret line="65" column="20" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Monster1.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/model/src/main/java/element/mobile/Monster1.java">
+      <file leaf-file-name="Model.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/model/src/main/java/model/Model.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="43" column="5" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
-              <folding />
+            <state relative-caret-position="-28">
+              <caret line="130" column="37" selection-start-line="130" selection-start-column="37" selection-end-line="130" selection-end-column="37" />
+              <folding>
+                <element signature="method#Model#0;class#Model#0" expanded="false" />
+                <element signature="method#setMessage#0;class#Model#0" expanded="false" />
+                <element signature="method#loadMessage#0;class#Model#0" expanded="false" />
+                <element signature="e#2777#2778#0" expanded="true" />
+                <element signature="e#2804#2805#0" expanded="true" />
+                <element signature="e#2848#2849#0" expanded="true" />
+                <element signature="e#2891#2892#0" expanded="true" />
+                <element signature="e#2933#2934#0" expanded="true" />
+                <element signature="e#2977#2978#0" expanded="true" />
+                <element signature="method#getMapInTab#0;class#Model#0" expanded="false" />
+                <element signature="method#setMap#0;class#Model#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Monster2.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/model/src/main/java/element/mobile/Monster2.java">
+      <file leaf-file-name="DAOLoadMap.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/model/src/main/java/model/DAOLoadMap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="43" column="5" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Monster3.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/model/src/main/java/element/mobile/Monster3.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="43" column="5" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Monster4.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/model/src/main/java/element/mobile/Monster4.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="43" column="5" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ControllerOrder.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/contract/src/main/java/contract/ControllerOrder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+            <state relative-caret-position="194">
+              <caret line="120" column="36" selection-start-line="120" selection-start-column="36" selection-end-line="120" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -223,7 +170,6 @@
         <option value="$PROJECT_DIR$/model/src/main/java/model/DAOHelloWorld.java" />
         <option value="$PROJECT_DIR$/model/src/main/java/model/LoadHighscores.java" />
         <option value="$PROJECT_DIR$/controller/src/main/java/controller/Controller.java" />
-        <option value="$PROJECT_DIR$/model/src/main/java/model/DAOLoadMap.java" />
         <option value="$PROJECT_DIR$/model/src/main/resources/jpublankproject.sql" />
         <option value="$PROJECT_DIR$/contract/src/main/java/contract/ControllerOrder.java" />
         <option value="$PROJECT_DIR$/view/src/main/java/view/ViewFrame.java" />
@@ -235,6 +181,7 @@
         <option value="$PROJECT_DIR$/model/src/main/java/element/mobile/Monster4.java" />
         <option value="$PROJECT_DIR$/contract/src/main/java/contract/IModel.java" />
         <option value="$PROJECT_DIR$/model/src/main/java/element/mobile/Hero.java" />
+        <option value="$PROJECT_DIR$/model/src/main/java/model/DAOLoadMap.java" />
         <option value="$PROJECT_DIR$/model/src/main/java/model/Model.java" />
       </list>
     </option>
@@ -289,8 +236,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="width" value="1616" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -317,12 +264,153 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
-        <subPane />
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="masterpom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="masterpom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jpulorann" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="masterpom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jpulorann" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="masterpom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jpulorann" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="masterpom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jpulorann" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="masterpom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jpulorann" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="masterpom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jpulorann" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="masterpom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jpulorann" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
       </pane>
       <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -834,6 +922,7 @@
       <workItem from="1466030103364" duration="96000" />
       <workItem from="1466059564831" duration="1299000" />
       <workItem from="1466061045885" duration="8450000" />
+      <workItem from="1466071603022" duration="531000" />
     </task>
     <task id="LOCAL-00001" summary="Push test">
       <created>1465804918356</created>
@@ -993,26 +1082,27 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71560000" />
+    <option name="totallyTimeSpent" value="72091000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32346722" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3224543" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33028722" sideWeight="0.5025" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16701902" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3266385" sideWeight="0.4975" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32506528" sideWeight="0.4975" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29270834" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2925" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22135417" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32898173" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1023,7 +1113,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32898173" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1291,14 +1380,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model/src/main/java/model/DAOLoadMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="110" column="0" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/model/src/main/java/model/DAOEntity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="575">
@@ -1339,24 +1420,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/src/main/java/view/ViewFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="187" column="4" selection-start-line="187" selection-start-column="4" selection-end-line="187" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/src/main/java/view/ViewPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="80" column="8" selection-start-line="80" selection-start-column="8" selection-end-line="80" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/model/src/main/java/element/mobile/Monster1.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
@@ -1391,7 +1454,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/contract/src/main/java/contract/IModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="755">
+        <state relative-caret-position="1105">
           <caret line="65" column="20" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="20" />
           <folding />
         </state>
@@ -1402,31 +1465,54 @@
         <state relative-caret-position="493">
           <caret line="43" column="5" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
           <folding>
-            <element signature="e#453#454#0" expanded="true" />
-            <element signature="e#495#496#0" expanded="true" />
+            <element signature="e#670#671#0" expanded="true" />
+            <element signature="e#712#713#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/src/main/java/view/ViewFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="187" column="4" selection-start-line="187" selection-start-column="4" selection-end-line="187" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/src/main/java/model/DAOLoadMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="120" column="36" selection-start-line="120" selection-start-column="36" selection-end-line="120" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/src/main/java/view/ViewPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="200" column="70" selection-start-line="200" selection-start-column="70" selection-end-line="200" selection-end-column="70" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/model/src/main/java/model/Model.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="329" column="25" selection-start-line="329" selection-start-column="25" selection-end-line="329" selection-end-column="25" />
+        <state relative-caret-position="-28">
+          <caret line="130" column="37" selection-start-line="130" selection-start-column="37" selection-end-line="130" selection-end-column="37" />
           <folding>
             <element signature="method#Model#0;class#Model#0" expanded="false" />
             <element signature="method#setMessage#0;class#Model#0" expanded="false" />
             <element signature="method#loadMessage#0;class#Model#0" expanded="false" />
+            <element signature="e#2777#2778#0" expanded="true" />
+            <element signature="e#2804#2805#0" expanded="true" />
+            <element signature="e#2848#2849#0" expanded="true" />
+            <element signature="e#2891#2892#0" expanded="true" />
+            <element signature="e#2933#2934#0" expanded="true" />
+            <element signature="e#2977#2978#0" expanded="true" />
             <element signature="method#getMapInTab#0;class#Model#0" expanded="false" />
             <element signature="method#setMap#0;class#Model#0" expanded="false" />
-            <element signature="method#loadMap#0;class#Model#0" expanded="false" />
-            <element signature="method#setDBplayer#0;class#Model#0" expanded="false" />
-            <element signature="method#loadHighscores#0;class#Model#0" expanded="false" />
-            <element signature="e#7147#7148#0" expanded="true" />
-            <element signature="e#7198#7199#0" expanded="true" />
-            <element signature="e#7680#7681#0" expanded="true" />
-            <element signature="e#7761#7762#0" expanded="true" />
-            <element signature="e#7787#7788#0" expanded="true" />
-            <element signature="e#7868#7869#0" expanded="true" />
           </folding>
         </state>
       </provider>

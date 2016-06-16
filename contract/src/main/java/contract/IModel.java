@@ -31,7 +31,8 @@ public interface IModel {
 	 */
 	Observable getObservable();
 
-
+	String getDBplayerName(int i);
+	int getDBplayerScore(int i);
 
 	int getHeight();
 	int getWidth();

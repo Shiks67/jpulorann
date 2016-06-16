@@ -123,6 +123,14 @@ public class Model extends Observable implements IModel {
         return this;
     }
 
+    public String getDBplayerName(int i) {
+        return this.DBplayerName[i];
+    }
+
+    public int getDBplayerScore(int i) {
+        return this.DBplayerScore[i];
+    }
+
 
     /** i added the map functions in general here **/
 

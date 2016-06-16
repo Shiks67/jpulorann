@@ -66,7 +66,6 @@ public class Controller implements IController {
 
 	/** the loading the map in function of the map_name on the database*/
 	public void orderPerform(final ControllerOrder controllerOrder) {
-		this.model.loadHighscores();
 		switch (controllerOrder) {
 			case MAP1:
 				this.model.loadMap("MAP1");

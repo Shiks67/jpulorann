@@ -1,5 +1,7 @@
 package view;
 
+import model.Model;
+
 import java.awt.*;
 import java.io.File;
 import java.io.IOException;
@@ -195,7 +197,10 @@ class ViewPanel extends JPanel implements Observer {
 				}
 				else {
 					graphics.setColor(Color.WHITE);
-					graphics.drawString("c'est pas encore implemente",256,32*c);
+					for (int i = 0 ; i < 6;) {
+						graphics.drawString(this.viewFrame.getModel().getDBplayerName(i) + " :  " + this.viewFrame.getModel().getDBplayerScore(i), 256, (64+ (32 * i)));
+						i++;
+					}
 				}
 			}
 
@@ -207,4 +212,7 @@ class ViewPanel extends JPanel implements Observer {
 			graphics.setColor(Color.BLACK);		/** everything next is black again just in case **/
 		}
 	}
+
+
+
 }

@@ -112,26 +112,27 @@ public class DAOLoadMap extends DAOEntity<LoadMap> {
     public LoadHighscores putHighscores() {
         LoadHighscores loadHighscores = new LoadHighscores();
         try {
+            String[] name = new String[6];
+            int[] score = new int[6];
             final String sql = "{call sortHighscoreByDescendingOrder()}";
             final CallableStatement call = this.getConnection().prepareCall(sql);
-            //call.setString(1,null);
             call.execute();
             final ResultSet resultSet = call.getResultSet();
             if (resultSet.first()) {
-                String[] name = new String[20];         /** to correct 20 **/
-                int[] score = new int[20];              /** to correct 20 **/
-                for(int m=0; m < 20; m++) {             /** to correct 20 **/
+                for (int m = 0; m < 6; m++) {
                     name[m] = resultSet.getString("nickname");
                     score[m] = resultSet.getInt("score");
+                    resultSet.next();
+                    System.out.println(name[m]+"   "+score[m]);
                 }
-                loadHighscores = new LoadHighscores(name,score);
+                loadHighscores = new LoadHighscores(name, score);
             }
+
             return loadHighscores;
         } catch (final SQLException e) {
             e.printStackTrace();
         }
         return null;
     }
-
 }
 
