@@ -52,7 +52,7 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `putHighscoreInDB` (IN `number` INT(
 DROP PROCEDURE IF EXISTS `sortHighscoreByDescendingOrder`$$
 CREATE DEFINER=`root`@`localhost` PROCEDURE `sortHighscoreByDescendingOrder` ()  NO SQL
   SELECT * FROM highscore
-  ORDER BY score DESC$$
+  ORDER BY score DESC limit 6$$
 
 DELIMITER ;
 
