@@ -45,9 +45,6 @@ public class Model extends Observable implements IModel {
     private int width = 21;
     private char[][] pngArray = new char[this.getHeight()][this.getWidth()];
 
-    /** The message. */
-    private String message;
-
     /** The map */
     private String map;
 
@@ -97,26 +94,6 @@ public class Model extends Observable implements IModel {
         monster4 = new Monster4(0,0);
     }
 
-    /*
-     * (non-Javadoc)
-     *
-     * @see contract.IModel#getMessage()
-     */
-    public String getMessage() {
-        return this.message;
-    }
-
-    /**
-     * Sets the message.
-     *
-     * @param message
-     *          the new message
-     */
-    private void setMessage(final String message) {
-        this.message = message;
-        this.setChanged();
-        this.notifyObservers();
-    }
     public String getLastMove(){
         return this.lastMove;
     }
@@ -134,19 +111,6 @@ public class Model extends Observable implements IModel {
         this.fireDirection = fireDirection;
     }
 
-    /*
-     * (non-Javadoc)
-     *
-     * @see contract.IModel#getMessage(java.lang.String)
-     */
-    public void loadMessage(final String key) { /** loads TEXT map from DB into a String **/
-        try {
-            final DAOHelloWorld daoHelloWorld = new DAOHelloWorld(DBConnection.getInstance().getConnection());
-            this.setMessage(daoHelloWorld.find(key).getMessage());
-        } catch (final SQLException e) {
-            e.printStackTrace();
-        }
-    }
 
     /*
      * (non-Javadoc)
