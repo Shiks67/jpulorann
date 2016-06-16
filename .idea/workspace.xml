@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="69e7211a-abd9-46ca-9785-cd2ef29c1473" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/src/main/java/main/Main.java" afterPath="$PROJECT_DIR$/main/src/main/java/main/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/src/main/java/view/ViewPanel.java" afterPath="$PROJECT_DIR$/view/src/main/java/view/ViewPanel.java" />
     </list>
     <ignored path="masterpom.iws" />
@@ -54,11 +55,21 @@
       <file leaf-file-name="ViewPanel.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/view/src/main/java/view/ViewPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="200" column="156" selection-start-line="200" selection-start-column="156" selection-end-line="200" selection-end-column="156" />
+            <state relative-caret-position="373">
+              <caret line="216" column="91" selection-start-line="216" selection-start-column="91" selection-end-line="216" selection-end-column="91" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main/src/main/java/main/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="29" column="29" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -151,7 +162,6 @@
         <option value="$PROJECT_DIR$/model/src/main/java/element/motionless/HBone.java" />
         <option value="$PROJECT_DIR$/model/src/main/java/element/Permeability.java" />
         <option value="$PROJECT_DIR$/contract/src/main/java/contract/IController.java" />
-        <option value="$PROJECT_DIR$/main/src/main/java/main/Main.java" />
         <option value="$PROJECT_DIR$/model/src/main/java/model/NettleWorld.java" />
         <option value="$PROJECT_DIR$/model/src/main/java/element/mobile/Mobile.java" />
         <option value="$PROJECT_DIR$/model/src/main/java/element/Element.java" />
@@ -175,6 +185,7 @@
         <option value="$PROJECT_DIR$/model/src/main/java/element/mobile/Hero.java" />
         <option value="$PROJECT_DIR$/model/src/main/java/model/DAOLoadMap.java" />
         <option value="$PROJECT_DIR$/model/src/main/java/model/Model.java" />
+        <option value="$PROJECT_DIR$/main/src/main/java/main/Main.java" />
         <option value="$PROJECT_DIR$/view/src/main/java/view/ViewPanel.java" />
       </list>
     </option>
@@ -329,10 +340,6 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -397,6 +404,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="jpulorann" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="masterpom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jpulorann" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -919,7 +956,7 @@
       <workItem from="1466030103364" duration="96000" />
       <workItem from="1466059564831" duration="1299000" />
       <workItem from="1466061045885" duration="8450000" />
-      <workItem from="1466071603022" duration="684000" />
+      <workItem from="1466071603022" duration="1250000" />
     </task>
     <task id="LOCAL-00001" summary="Push test">
       <created>1465804918356</created>
@@ -1082,11 +1119,18 @@
       <option name="project" value="LOCAL" />
       <updated>1466072166902</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="highscores from DB display is now in the center of the window">
+      <created>1466072325709</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1466072325709</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72244000" />
+    <option name="totallyTimeSpent" value="72810000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -1178,7 +1222,8 @@
     <MESSAGE value="Added fonctionnality to get highscores from DB (some things are to correct) if commit twice it's a bug from maven" />
     <MESSAGE value="Re-open door, last commit bugged" />
     <MESSAGE value="displays correct highscores from DB" />
-    <option name="LAST_COMMIT_MESSAGE" value="displays correct highscores from DB" />
+    <MESSAGE value="highscores from DB display is now in the center of the window" />
+    <option name="LAST_COMMIT_MESSAGE" value="highscores from DB display is now in the center of the window" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1338,16 +1383,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
           <caret line="49" column="10" selection-start-line="49" selection-start-column="10" selection-end-line="49" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/src/main/java/main/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1512,10 +1547,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/main/src/main/java/main/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="29" column="29" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/view/src/main/java/view/ViewPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="200" column="156" selection-start-line="200" selection-start-column="156" selection-end-line="200" selection-end-column="156" />
+        <state relative-caret-position="373">
+          <caret line="216" column="91" selection-start-line="216" selection-start-column="91" selection-end-line="216" selection-end-column="91" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
