@@ -21,6 +21,7 @@ public enum ControllerOrder {
 	DOWN,
 	LEFT,
 	RIGHT,
-	nthng,
-	ENTER
+	SHOOT,
+	ENTER,
+	nthng
 }

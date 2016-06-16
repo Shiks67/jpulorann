@@ -65,5 +65,11 @@ public interface IModel {
 	void moveLEFT();
 	void moveRIGHT();
 	void moveDOWN();
+	void lauchMissile();
+
+	void setLastMove(String lastMove);
+	String getLastMove();
+
+	void fireAnimation();
 	void monster1();
 }

@@ -17,7 +17,6 @@ import contract.IView;
  * @author Jean-Aymeric Diet
  */
 public class View implements IView, Runnable {
-
 	/** The frame. */
 	private final ViewFrame viewFrame;
 
@@ -66,11 +65,12 @@ public class View implements IView, Runnable {
 				return ControllerOrder.LEFT;
 			case KeyEvent.VK_RIGHT:
 				return ControllerOrder.RIGHT;
+			case KeyEvent.VK_SPACE:
+				return ControllerOrder.SHOOT;
 			default:
 				return ControllerOrder.nthng;
 		}
 	}
-
 	/*
 	 * (non-Javadoc)
 	 *

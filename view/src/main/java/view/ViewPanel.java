@@ -78,6 +78,9 @@ class ViewPanel extends JPanel implements Observer {
 
 		this.map = this.viewFrame.getModel().getMap();		/** we copy the 2D array from the model to use it to display images **/
 		this.viewFrame.getModel().monster1();
+
+
+
 		for(int i = 0; i < this.map.length; i++)			/** beginning of the parser **/
 		{
 			for (int j = 0; j < this.map[i].length; j++)
@@ -182,6 +185,10 @@ class ViewPanel extends JPanel implements Observer {
 							e.printStackTrace();
 						}
 						break;
+					case 'M' :
+
+						graphics.drawImage((new ImageIcon("C:/Users/Asus/Desktop/jpulorann/sprite/shoot.gif")).getImage(),32*j,32*i,this);
+						break;
 				}
 			}
 		}			/** end of the parser **/
@@ -207,11 +214,13 @@ class ViewPanel extends JPanel implements Observer {
 			graphics.drawString("SCORE : " + this.viewFrame.getModel().getScore(),4,400);	/** display actual score **/
 			graphics.setColor(Color.BLACK);		/** everything next is black again just in case **/
 		}
+		this.viewFrame.getModel().fireAnimation();
 		/*if(this.viewFrame.getModel().Death == 1){
 			System.out.println("Salut");
 		}*/
 
 	}
+
 
 	/** JOptionPane jop = new JOptionPane(), jop2 = new JOptionPane();
 	 String nom = jop.showInputDialog(null, "Your name", JOptionPane.QUESTION_MESSAGE);
