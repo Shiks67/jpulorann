@@ -193,12 +193,12 @@ class ViewPanel extends JPanel implements Observer {
 			for(int c = 1;c < 8; c++){
 				if(c==1) {
 					graphics.setColor(Color.RED);
-					graphics.drawString("Highscores :",256,32*c);
+					graphics.drawString("Highscores :",256,64+32*c);
 				}
 				else {
 					graphics.setColor(Color.WHITE);
 					for (int i = 0 ; i < 6;) {
-						graphics.drawString(this.viewFrame.getModel().getDBplayerName(i) + " :  " + this.viewFrame.getModel().getDBplayerScore(i), 256, (64+ (32 * i)));
+						graphics.drawString(this.viewFrame.getModel().getDBplayerName(i) + " :  " + this.viewFrame.getModel().getDBplayerScore(i), 256, (128+ (32 * i)));
 						i++;
 					}
 				}

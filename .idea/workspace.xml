@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69e7211a-abd9-46ca-9785-cd2ef29c1473" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contract/src/main/java/contract/IModel.java" afterPath="$PROJECT_DIR$/contract/src/main/java/contract/IModel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/src/main/java/controller/Controller.java" afterPath="$PROJECT_DIR$/controller/src/main/java/controller/Controller.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/src/main/java/main/Main.java" afterPath="$PROJECT_DIR$/main/src/main/java/main/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/src/main/java/model/DAOLoadMap.java" afterPath="$PROJECT_DIR$/model/src/main/java/model/DAOLoadMap.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/src/main/java/model/Model.java" afterPath="$PROJECT_DIR$/model/src/main/java/model/Model.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/src/main/resources/jpublankproject.sql" afterPath="$PROJECT_DIR$/model/src/main/resources/jpublankproject.sql" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/src/main/java/view/ViewPanel.java" afterPath="$PROJECT_DIR$/view/src/main/java/view/ViewPanel.java" />
     </list>
     <ignored path="masterpom.iws" />
@@ -58,11 +51,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ViewPanel.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ViewPanel.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/view/src/main/java/view/ViewPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="200" column="70" selection-start-line="200" selection-start-column="70" selection-end-line="200" selection-end-column="70" />
+            <state relative-caret-position="316">
+              <caret line="200" column="156" selection-start-line="200" selection-start-column="156" selection-end-line="200" selection-end-column="156" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -90,11 +83,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Model.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Model.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model/src/main/java/model/Model.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-28">
-              <caret line="130" column="37" selection-start-line="130" selection-start-column="37" selection-end-line="130" selection-end-column="37" />
+            <state relative-caret-position="312">
+              <caret line="225" column="5" selection-start-line="225" selection-start-column="5" selection-end-line="225" selection-end-column="5" />
               <folding>
                 <element signature="method#Model#0;class#Model#0" expanded="false" />
                 <element signature="method#setMessage#0;class#Model#0" expanded="false" />
@@ -174,7 +167,6 @@
         <option value="$PROJECT_DIR$/contract/src/main/java/contract/ControllerOrder.java" />
         <option value="$PROJECT_DIR$/view/src/main/java/view/ViewFrame.java" />
         <option value="$PROJECT_DIR$/view/src/main/java/view/View.java" />
-        <option value="$PROJECT_DIR$/view/src/main/java/view/ViewPanel.java" />
         <option value="$PROJECT_DIR$/model/src/main/java/element/mobile/Monster1.java" />
         <option value="$PROJECT_DIR$/model/src/main/java/element/mobile/Monster2.java" />
         <option value="$PROJECT_DIR$/model/src/main/java/element/mobile/Monster3.java" />
@@ -183,6 +175,7 @@
         <option value="$PROJECT_DIR$/model/src/main/java/element/mobile/Hero.java" />
         <option value="$PROJECT_DIR$/model/src/main/java/model/DAOLoadMap.java" />
         <option value="$PROJECT_DIR$/model/src/main/java/model/Model.java" />
+        <option value="$PROJECT_DIR$/view/src/main/java/view/ViewPanel.java" />
       </list>
     </option>
   </component>
@@ -334,6 +327,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -922,7 +919,7 @@
       <workItem from="1466030103364" duration="96000" />
       <workItem from="1466059564831" duration="1299000" />
       <workItem from="1466061045885" duration="8450000" />
-      <workItem from="1466071603022" duration="531000" />
+      <workItem from="1466071603022" duration="684000" />
     </task>
     <task id="LOCAL-00001" summary="Push test">
       <created>1465804918356</created>
@@ -1078,11 +1075,18 @@
       <option name="project" value="LOCAL" />
       <updated>1466061100809</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="displays correct highscores from DB">
+      <created>1466072166902</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1466072166902</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72091000" />
+    <option name="totallyTimeSpent" value="72244000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -1173,7 +1177,8 @@
     <MESSAGE value="display ingame score at the right moment" />
     <MESSAGE value="Added fonctionnality to get highscores from DB (some things are to correct) if commit twice it's a bug from maven" />
     <MESSAGE value="Re-open door, last commit bugged" />
-    <option name="LAST_COMMIT_MESSAGE" value="Re-open door, last commit bugged" />
+    <MESSAGE value="displays correct highscores from DB" />
+    <option name="LAST_COMMIT_MESSAGE" value="displays correct highscores from DB" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1396,14 +1401,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model/src/main/resources/jpublankproject.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="138" column="0" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/contract/src/main/java/contract/ControllerOrder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -1479,28 +1476,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model/src/main/java/model/DAOLoadMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="120" column="36" selection-start-line="120" selection-start-column="36" selection-end-line="120" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/src/main/java/view/ViewPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="200" column="70" selection-start-line="200" selection-start-column="70" selection-end-line="200" selection-end-column="70" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/model/src/main/java/model/Model.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-28">
-          <caret line="130" column="37" selection-start-line="130" selection-start-column="37" selection-end-line="130" selection-end-column="37" />
+        <state relative-caret-position="312">
+          <caret line="225" column="5" selection-start-line="225" selection-start-column="5" selection-end-line="225" selection-end-column="5" />
           <folding>
             <element signature="method#Model#0;class#Model#0" expanded="false" />
             <element signature="method#setMessage#0;class#Model#0" expanded="false" />
@@ -1513,6 +1492,32 @@
             <element signature="e#2977#2978#0" expanded="true" />
             <element signature="method#getMapInTab#0;class#Model#0" expanded="false" />
             <element signature="method#setMap#0;class#Model#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/src/main/resources/jpublankproject.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="138" column="0" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/src/main/java/model/DAOLoadMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="120" column="36" selection-start-line="120" selection-start-column="36" selection-end-line="120" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/src/main/java/view/ViewPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="200" column="156" selection-start-line="200" selection-start-column="156" selection-end-line="200" selection-end-column="156" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
