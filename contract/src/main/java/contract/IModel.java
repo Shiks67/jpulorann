@@ -59,8 +59,9 @@ public interface IModel {
 	 */
 	void loadMap(String key);
 
-	void moveUP();
+	//int Death;
 
+	void moveUP();
 	void moveLEFT();
 	void moveRIGHT();
 	void moveDOWN();

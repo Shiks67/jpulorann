@@ -76,7 +76,6 @@ class ViewPanel extends JPanel implements Observer {
 		graphics.fillRect(0, 0, this.getWidth(), this.getHeight());
 		graphics.setFont(new Font("default", Font.BOLD, 16));	/** now want you write is bold **/
 
-
 		this.map = this.viewFrame.getModel().getMap();		/** we copy the 2D array from the model to use it to display images **/
 		this.viewFrame.getModel().monster1();
 		for(int i = 0; i < this.map.length; i++)			/** beginning of the parser **/
@@ -208,6 +207,10 @@ class ViewPanel extends JPanel implements Observer {
 			graphics.drawString("SCORE : " + this.viewFrame.getModel().getScore(),4,400);	/** display actual score **/
 			graphics.setColor(Color.BLACK);		/** everything next is black again just in case **/
 		}
+		/*if(this.viewFrame.getModel().Death == 1){
+			System.out.println("Salut");
+		}*/
+
 	}
 
 

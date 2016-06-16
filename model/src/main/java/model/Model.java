@@ -18,6 +18,8 @@ public class Model extends Observable implements IModel {
     private String[] DBplayerName = new String[6];
     private int[] DBplayerScore = new int[6];
 
+    int Death;
+
     private Hero hero;
     private GateC gateC;
     private Monster1 monster1;
@@ -375,8 +377,8 @@ public class Model extends Observable implements IModel {
         }
         if (mx == hx && my == hy ){
             this.pngArray[this.getHero().getY()][this.getHero().getX()] = ' ';
-            this.getHero().heroDeath();
-            //this.newHP();
+            //Death += 1;
+            //System.out.println(Death);
         }
     }
 }
