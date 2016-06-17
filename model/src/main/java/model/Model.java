@@ -642,7 +642,6 @@ public class Model extends Observable implements IModel {
     private void verifyMapDoor() {
         switch(this.getMapnumber()) {
             case 1:
-                //emptyChar();
                 this.loadMap("MAP2");
                 this.setMapnumber(2);
                 this.death2 = 0;
@@ -650,7 +649,6 @@ public class Model extends Observable implements IModel {
                 this.death4 = 0;
                 break;
             case 2:
-                //emptyChar();
                 this.loadMap("MAP3");
                 this.setMapnumber(3);
                 this.death1 = 0;
@@ -659,7 +657,6 @@ public class Model extends Observable implements IModel {
                 this.death4 = 0;
                 break;
             case 3:
-                //emptyChar();
                 this.loadMap("MAP4");
                 this.setMapnumber(4);
                 this.death1 = 0;
@@ -667,7 +664,6 @@ public class Model extends Observable implements IModel {
                 this.death4 = 0;
                 break;
             case 4:
-                //emptyChar();
                 this.loadMap("MAP5");
                 this.setMapnumber(5);
                 this.death1 = 0;
@@ -678,7 +674,6 @@ public class Model extends Observable implements IModel {
                 OnGate = 1;
                 break;
             case 6:
-                //emptyChar();
                 this.loadMap("MAP1");
                 this.setMapnumber(1);
                 this.death1 = 0;
@@ -688,15 +683,5 @@ public class Model extends Observable implements IModel {
         }
         this.getShoot().setY(this.getHero().getY());
         this.getShoot().setX(this.getHero().getX());
-    }
-
-    private void emptyChar() {
-        for(int i = 0; i < this.pngArray.length; i++)			/** beginning of the parser **/
-        {
-            for (int j = 0; j < this.pngArray[i].length; j++)
-            {
-                putPngName(i,j,' ');
-            }
-        }
     }
 }
