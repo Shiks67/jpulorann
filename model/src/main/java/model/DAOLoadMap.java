@@ -91,7 +91,6 @@ public class DAOLoadMap extends DAOEntity<LoadMap> {
     @Override
     public LoadMap find(final String key) {
         LoadMap loadMap = new LoadMap();
-
         try {
             final String sql = "{call loadmapByKey(?)}";
             final CallableStatement call = this.getConnection().prepareCall(sql);
@@ -123,11 +122,9 @@ public class DAOLoadMap extends DAOEntity<LoadMap> {
                     name[m] = resultSet.getString("nickname");
                     score[m] = resultSet.getInt("score");
                     resultSet.next();
-                    System.out.println(name[m]+"   "+score[m]);
                 }
                 loadHighscores = new LoadHighscores(name, score);
             }
-
             return loadHighscores;
         } catch (final SQLException e) {
             e.printStackTrace();

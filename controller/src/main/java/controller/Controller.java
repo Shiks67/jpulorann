@@ -35,7 +35,7 @@ public class Controller implements IController {
 	 * @see contract.IController#control()
 	 */
 	public void control() {
-		this.view.printMap("Press the key '1', '2', '3' '4' or '5', to load the level of your choice.\nPress 't' to load a test level.");
+		this.view.printMap("Press the key '1', '2', '3' '4' or '5', to load the level of your choice.\nPress 't' to load a test level.\nPress 'Enter' to close the game.");
 	}
 
 	/**
