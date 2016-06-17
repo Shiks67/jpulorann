@@ -88,6 +88,7 @@ public class Model extends Observable implements IModel {
         hero = new Hero(1,1);
         gateC = new GateC(0,0);
         gateO = new GateO(0,0);
+        shoot = new Shoot(0,0);
         monster1 = new Monster1(0,0);
         monster2 = new Monster2(0,0);
         monster3 = new Monster3(0,0);
@@ -414,7 +415,7 @@ public class Model extends Observable implements IModel {
        }
    }
 
-    public void lauchMissile() {
+    public void fireBall() {
 
         if(getLastMove() == "RIGHT"){
             this.getShoot().setY(this.getHero().getY());

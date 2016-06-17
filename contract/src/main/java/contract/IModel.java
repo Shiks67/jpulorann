@@ -50,7 +50,7 @@ public interface IModel {
 	void moveLEFT();
 	void moveRIGHT();
 	void moveDOWN();
-	void lauchMissile();
+	void fireBall();
 
 	void setLastMove(String lastMove);
 	String getLastMove();

@@ -102,7 +102,7 @@ public class Controller implements IController {
 				this.model.setLastMove("DOWN");
 				break;
 			case SHOOT:
-				this.model.lauchMissile();
+				this.model.fireBall();
 				break;
 			default:
 				break;

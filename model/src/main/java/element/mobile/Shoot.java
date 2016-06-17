@@ -29,10 +29,7 @@ public class Shoot {
         this.y = y;
     }
 
-    public void moveUP() {
-
-        this.setY(this.getY() - 1);
-    }
+    public void moveUP() {this.setY(this.getY() - 1);}
 
     public void moveLEFT() {
         this.setX(this.getX() - 1);

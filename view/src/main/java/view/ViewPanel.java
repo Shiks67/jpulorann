@@ -183,6 +183,10 @@ class ViewPanel extends JPanel implements Observer {
 							e.printStackTrace();
 						}
 						break;
+					case 'M' :
+
+						graphics.drawImage((new ImageIcon("sprite/shoot.gif")).getImage(),32*j,32*i,this);
+						break;
 					default:
 						try {
 							Image img = ImageIO.read(new File("sprite/noimage.png"));
@@ -191,10 +195,7 @@ class ViewPanel extends JPanel implements Observer {
 							e.printStackTrace();
 						}
 						break;
-					case 'M' :
 
-						graphics.drawImage((new ImageIcon("C:/Users/Asus/Desktop/jpulorann/sprite/shoot.gif")).getImage(),32*j,32*i,this);
-						break;
 				}
 			}
 		}			/** end of the parser **/
