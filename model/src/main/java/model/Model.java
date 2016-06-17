@@ -17,6 +17,9 @@ import java.util.Observable;
  */
 public class Model extends Observable implements IModel {
 
+
+    int thatmap = 0;
+
     private String[] DBplayerName = new String[6];
     private int[] DBplayerScore = new int[6];
     public String lastMove = "RIGHT";
@@ -58,9 +61,16 @@ public class Model extends Observable implements IModel {
         this.mapnumber = mapnumber;
     }
 
+
     /** getters **/
 
+    public int getThatmap() {
+        return thatmap;
+    }
 
+    public void setThatmap(int thatmap) {
+        this.thatmap = thatmap;
+    }
 
     public int getCanShoot() { return this.canShoot;}
 
@@ -613,22 +623,22 @@ public class Model extends Observable implements IModel {
     private void verifyMapDoor() {
         switch(this.getMapnumber()) {
             case 1:
-                emptyChar();
+                //emptyChar();
                 this.loadMap("MAP2");
                 this.setMapnumber(2);
                 break;
             case 2:
-                emptyChar();
+                //emptyChar();
                 this.loadMap("MAP3");
                 this.setMapnumber(3);
                 break;
             case 3:
-                emptyChar();
+                //emptyChar();
                 this.loadMap("MAP4");
                 this.setMapnumber(4);
                 break;
             case 4:
-                emptyChar();
+                //emptyChar();
                 this.loadMap("MAP5");
                 this.setMapnumber(5);
                 break;
@@ -636,7 +646,7 @@ public class Model extends Observable implements IModel {
                 OnGate = 1;
                 break;
             case 6:
-                emptyChar();
+                //emptyChar();
                 this.loadMap("MAP1");
                 this.setMapnumber(1);
                 break;
