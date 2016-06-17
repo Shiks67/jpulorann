@@ -266,6 +266,11 @@ public class Model extends Observable implements IModel {
     private boolean mMovePossible(final int x, final int y){
         return (pngArray[x][y] == ' ' || pngArray[x][y] == 'L');
     }
+    private boolean fMovePossible(final int x, final int y) {
+        return (pngArray[x][y] != 'V' && pngArray[x][y] != 'H'
+                && pngArray[x][y] != 'B' && pngArray[x][y] != 'C'
+                && pngArray[x][y] != 'O');
+    }
 
     private boolean openGate(final int x, final int y){
         return (pngArray[x][y] == 'K');
@@ -297,6 +302,12 @@ public class Model extends Observable implements IModel {
         if (getShoot().getX() == getHero().getX() && getShoot().getY() == getHero().getY()) {
             pngArray[getHero().getY()][getHero().getX()] = 'L';
             canShoot = 1;
+        }
+        else if (getShoot().getX() == getMonster1().getX() && getShoot().getY() == getMonster1().getY()) {
+            pngArray[getMonster1().getY()][getMonster1().getX()] = ' ';
+            canShoot = 1;
+            getMonster1().setX(0);
+            getMonster1().setY(0);
         }
     }
 
@@ -368,32 +379,24 @@ public class Model extends Observable implements IModel {
     }
 
    public void fireAnimation() {
-       System.out.println("test");
-       System.out.println(canShoot);
            if (canShoot == 0) {
-               System.out.println("test2");
-               if (getFireDirection() == "RIGHT") {
-                   System.out.println("test3");
-                   if (this.isMovePossible(this.getShoot().getY(), this.getShoot().getX() + 1)) {
+               if (getFireDirection() == "RIGHT" ) {
+                   if (this.fMovePossible(this.getShoot().getY(), this.getShoot().getX() + 1)) {
                        this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = ' ';
                        this.getShoot().moveRIGHT();
                        this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = 'M';
-
                    } else {
-
                        this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = ' ';
                        this.getShoot().moveLEFT();
                        this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = 'M';
                        fireDirection = "LEFT";
-
                    }
                } else if (getFireDirection() == "LEFT") {
-                   if (this.isMovePossible(this.getShoot().getY(), this.getShoot().getX() - 1)) {
+                   if (this.fMovePossible(this.getShoot().getY(), this.getShoot().getX() - 1)) {
                        this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = ' ';
                        this.getShoot().moveLEFT();
                        this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = 'M';
                    } else {
-                       System.out.println("test3");
                        this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = ' ';
                        this.getShoot().moveRIGHT();
                        this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = 'M';
@@ -401,7 +404,7 @@ public class Model extends Observable implements IModel {
 
                    }
                } else if (getFireDirection() == "UP") {
-                   if (this.isMovePossible(this.getShoot().getY() - 1, this.getShoot().getX())) {
+                   if (this.fMovePossible(this.getShoot().getY() - 1, this.getShoot().getX())) {
                        this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = ' ';
                        this.getShoot().moveUP();
                        this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = 'M';
@@ -412,7 +415,7 @@ public class Model extends Observable implements IModel {
                        fireDirection = "DOWN";
                    }
                } else if (getFireDirection() == "DOWN") {
-                   if (this.isMovePossible(this.getShoot().getY() + 1, this.getShoot().getX())) {
+                   if (this.fMovePossible(this.getShoot().getY() + 1, this.getShoot().getX())) {
                        this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = ' ';
                        this.getShoot().moveDOWN();
                        this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = 'M';
@@ -434,13 +437,12 @@ public class Model extends Observable implements IModel {
             if (getLastMove() == "RIGHT") {
                 this.getShoot().setY(this.getHero().getY());
                 this.getShoot().setX(this.getHero().getX() + 1);
-                this.pngArray[this.getShoot().getY()][this.getShoot().getX() + 1] = 'M';
+                this.pngArray[this.getHero().getY()][this.getHero().getX() + 1] = 'M';
                 fireDirection = "RIGHT";
             }
             if (getLastMove() == "LEFT") {
                 this.getShoot().setY(this.getHero().getY());
                 this.getShoot().setX(this.getHero().getX() - 1);
-
                 this.pngArray[this.getHero().getY()][this.getHero().getX() - 1] = 'M';
                 fireDirection = "LEFT";
             }
