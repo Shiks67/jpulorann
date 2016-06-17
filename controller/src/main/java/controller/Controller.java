@@ -68,29 +68,46 @@ public class Controller implements IController {
 	public void orderPerform(final ControllerOrder controllerOrder) {
 		switch (controllerOrder) {
 			case MAP1:
-				this.model.setMapnumber(1);
-				System.out.print(this.model.getMapnumber());
-				this.model.loadMap("MAP1");
+				if (this.model.getThatmap() == 0) {
+					this.model.setMapnumber(1);
+					this.model.loadMap("MAP1");
+					this.model.setThatmap(1);
+				}
 				break;
 			case MAP2:
-				this.model.setMapnumber(2);
-				this.model.loadMap("MAP2");
+				if (this.model.getThatmap() == 0) {
+					this.model.setMapnumber(2);
+					this.model.loadMap("MAP2");
+					this.model.setThatmap(1);
+				}
 				break;
 			case MAP3:
-				this.model.setMapnumber(3);
-				this.model.loadMap("MAP3");
+				if (this.model.getThatmap() == 0) {
+					this.model.setMapnumber(3);
+					this.model.loadMap("MAP3");
+					this.model.setThatmap(1);
+				}
 				break;
 			case MAP4:
-				this.model.setMapnumber(4);
-				this.model.loadMap("MAP4");
+				if (this.model.getThatmap() == 0) {
+					this.model.setMapnumber(4);
+					this.model.loadMap("MAP4");
+					this.model.setThatmap(1);
+				}
 				break;
 			case MAP5:
-				this.model.setMapnumber(5);
-				this.model.loadMap("MAP5");
+				if (this.model.getThatmap() == 0) {
+					this.model.setMapnumber(5);
+					this.model.loadMap("MAP5");
+					this.model.setThatmap(1);
+				}
 				break;
 			case test:
-				this.model.setMapnumber(6);
-				this.model.loadMap("MAP6");
+				if (this.model.getThatmap() == 0) {
+					this.model.setMapnumber(6);
+					this.model.loadMap("MAP6");
+					this.model.setThatmap(1);
+				}
 				break;
 			case UP:
 				this.model.moveUP();

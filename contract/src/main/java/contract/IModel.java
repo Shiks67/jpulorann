@@ -64,4 +64,7 @@ public interface IModel {
 
 	int getMapnumber();
 	void setMapnumber(int mapnumber);
+
+	int getThatmap();
+	void setThatmap(int thatmap);
 }

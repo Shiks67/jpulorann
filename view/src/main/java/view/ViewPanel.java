@@ -1,7 +1,6 @@
 package view;
 
 import model.Model;
-
 import java.awt.*;
 import java.io.File;
 import java.io.IOException;
@@ -82,6 +81,7 @@ class ViewPanel extends JPanel implements Observer {
 		graphics.setFont(new Font("default", Font.BOLD, 16));	/** now want you write is bold **/
 
 		this.map = this.viewFrame.getModel().getMap();		/** we copy the 2D array from the model to use it to display images **/
+
 		this.viewFrame.getModel().monster1();
 		this.viewFrame.getModel().monster2();
 		this.viewFrame.getModel().monster3();
@@ -228,6 +228,7 @@ class ViewPanel extends JPanel implements Observer {
 		}
 		this.viewFrame.getModel().fireAnimation();
 		this.viewFrame.getModel().checkFireball();
+
 		if(this.viewFrame.getModel().isDead() && GO == 0){
 			GO = 1;
 			this.viewFrame.printMap("GAME OVER");
@@ -261,7 +262,7 @@ class ViewPanel extends JPanel implements Observer {
 		System.exit(0);		/** exit game **/
 	}
 
-	private void emptyChar() {
+	public void emptyChar() {
 		for(int i = 0; i < this.map.length; i++)			/** beginning of the parser **/
 		{
 			for (int j = 0; j < this.map[i].length; j++)

@@ -6,10 +6,7 @@ import java.awt.event.WindowEvent;
 import javax.swing.SwingUtilities;
 
 import com.sun.javafx.scene.traversal.Direction;
-import contract.ControllerOrder;
-import contract.IController;
-import contract.IModel;
-import contract.IView;
+import contract.*;
 
 /**
  * The Class View.
