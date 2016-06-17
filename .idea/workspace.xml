@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="69e7211a-abd9-46ca-9785-cd2ef29c1473" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contract/src/main/java/contract/IModel.java" afterPath="$PROJECT_DIR$/contract/src/main/java/contract/IModel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/src/main/java/controller/Controller.java" afterPath="$PROJECT_DIR$/controller/src/main/java/controller/Controller.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/src/main/java/model/Model.java" afterPath="$PROJECT_DIR$/model/src/main/java/model/Model.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/src/main/resources/jpublankproject.sql" afterPath="$PROJECT_DIR$/model/src/main/resources/jpublankproject.sql" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/src/main/java/view/ViewPanel.java" afterPath="$PROJECT_DIR$/view/src/main/java/view/ViewPanel.java" />
     </list>
     <ignored path="masterpom.iws" />
@@ -52,11 +49,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ViewPanel.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ViewPanel.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/view/src/main/java/view/ViewPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="424">
-              <caret line="217" column="9" selection-start-line="217" selection-start-column="9" selection-end-line="217" selection-end-column="9" />
+            <state relative-caret-position="186">
+              <caret line="219" column="0" selection-start-line="219" selection-start-column="0" selection-end-line="219" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -108,8 +105,8 @@
       <file leaf-file-name="Model.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model/src/main/java/model/Model.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1139">
-              <caret line="333" column="28" selection-start-line="333" selection-start-column="28" selection-end-line="333" selection-end-column="28" />
+            <state relative-caret-position="136">
+              <caret line="514" column="34" selection-start-line="514" selection-start-column="34" selection-end-line="514" selection-end-column="34" />
               <folding>
                 <element signature="e#1168#1169#0" expanded="true" />
                 <element signature="e#1205#1206#0" expanded="true" />
@@ -167,18 +164,18 @@
                 <element signature="e#8932#8933#0" expanded="true" />
                 <element signature="e#8958#8959#0" expanded="true" />
                 <element signature="e#9032#9033#0" expanded="true" />
-                <marker date="1466150221147" expanded="false" signature="597:608" ph=" { " />
-                <marker date="1466150221147" expanded="false" signature="622:628" ph=" }" />
+                <marker date="1466151648224" expanded="false" signature="597:608" ph=" { " />
+                <marker date="1466151648224" expanded="false" signature="622:628" ph=" }" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jpublankproject.sql" pinned="false" current-in-tab="true">
+      <file leaf-file-name="jpublankproject.sql" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model/src/main/resources/jpublankproject.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="124" column="28" selection-start-line="124" selection-start-column="28" selection-end-line="124" selection-end-column="28" />
+            <state relative-caret-position="104">
+              <caret line="109" column="59" selection-start-line="109" selection-start-column="59" selection-end-line="109" selection-end-column="59" />
               <folding />
             </state>
           </provider>
@@ -272,11 +269,11 @@
         <option value="$PROJECT_DIR$/model/src/main/java/element/mobile/Monster1.java" />
         <option value="$PROJECT_DIR$/view/src/main/java/view/ViewFrame.java" />
         <option value="$PROJECT_DIR$/main/src/main/java/main/Main.java" />
-        <option value="$PROJECT_DIR$/view/src/main/java/view/ViewPanel.java" />
         <option value="$PROJECT_DIR$/contract/src/main/java/contract/IModel.java" />
         <option value="$PROJECT_DIR$/controller/src/main/java/controller/Controller.java" />
-        <option value="$PROJECT_DIR$/model/src/main/java/model/Model.java" />
         <option value="$PROJECT_DIR$/model/src/main/resources/jpublankproject.sql" />
+        <option value="$PROJECT_DIR$/model/src/main/java/model/Model.java" />
+        <option value="$PROJECT_DIR$/view/src/main/java/view/ViewPanel.java" />
       </list>
     </option>
   </component>
@@ -1177,7 +1174,7 @@
       <workItem from="1466077552223" duration="3175000" />
       <workItem from="1466080935811" duration="5164000" />
       <workItem from="1466096028268" duration="5325000" />
-      <workItem from="1466146590774" duration="4092000" />
+      <workItem from="1466146590774" duration="5249000" />
     </task>
     <task id="LOCAL-00001" summary="Push test">
       <created>1465804918356</created>
@@ -1382,11 +1379,18 @@
       <option name="project" value="LOCAL" />
       <updated>1466147375649</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="small DB update to ease to game">
+      <created>1466150747576</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1466150747576</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94646000" />
+    <option name="totallyTimeSpent" value="95803000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1592" y="-189" width="1936" height="1056" extended-state="6" />
@@ -1458,7 +1462,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Comit + push Direct display map from DB" />
     <MESSAGE value="Add complete DataBase" />
     <MESSAGE value="Small update bud fix in LoadMap" />
     <MESSAGE value="Beginning sprites implement" />
@@ -1483,7 +1486,8 @@
     <MESSAGE value="revomed useless things in model module" />
     <MESSAGE value="correcting bug while sending a score to the DB (the part is now again in comment)" />
     <MESSAGE value="add getter setter for pngArray by the position we want" />
-    <option name="LAST_COMMIT_MESSAGE" value="add getter setter for pngArray by the position we want" />
+    <MESSAGE value="small DB update to ease to game" />
+    <option name="LAST_COMMIT_MESSAGE" value="small DB update to ease to game" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1762,16 +1766,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/src/main/java/view/ViewPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="217" column="9" selection-start-line="217" selection-start-column="9" selection-end-line="217" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controller/src/main/java/controller/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="74">
@@ -1788,10 +1782,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/model/src/main/resources/jpublankproject.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="109" column="59" selection-start-line="109" selection-start-column="59" selection-end-line="109" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/model/src/main/java/model/Model.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1139">
-          <caret line="333" column="28" selection-start-line="333" selection-start-column="28" selection-end-line="333" selection-end-column="28" />
+        <state relative-caret-position="136">
+          <caret line="514" column="34" selection-start-line="514" selection-start-column="34" selection-end-line="514" selection-end-column="34" />
           <folding>
             <element signature="e#1168#1169#0" expanded="true" />
             <element signature="e#1205#1206#0" expanded="true" />
@@ -1849,17 +1851,19 @@
             <element signature="e#8932#8933#0" expanded="true" />
             <element signature="e#8958#8959#0" expanded="true" />
             <element signature="e#9032#9033#0" expanded="true" />
-            <marker date="1466150221147" expanded="false" signature="597:608" ph=" { " />
-            <marker date="1466150221147" expanded="false" signature="622:628" ph=" }" />
+            <marker date="1466151648224" expanded="false" signature="597:608" ph=" { " />
+            <marker date="1466151648224" expanded="false" signature="622:628" ph=" }" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model/src/main/resources/jpublankproject.sql">
+    <entry file="file://$PROJECT_DIR$/view/src/main/java/view/ViewPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="124" column="28" selection-start-line="124" selection-start-column="28" selection-end-line="124" selection-end-column="28" />
-          <folding />
+        <state relative-caret-position="186">
+          <caret line="219" column="0" selection-start-line="219" selection-start-column="0" selection-end-line="219" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

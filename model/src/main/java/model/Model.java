@@ -512,25 +512,30 @@ public class Model extends Observable implements IModel {
         }
     }
 
-    public void verifyMapDoor() {
+    private void verifyMapDoor() {
         switch(this.getMapnumber()) {
             case 1:
                 this.loadMap("MAP2");
+                this.setMapnumber(2);
                 break;
             case 2:
                 this.loadMap("MAP3");
+                this.setMapnumber(3);
                 break;
             case 3:
                 this.loadMap("MAP4");
+                this.setMapnumber(4);
                 break;
             case 4:
                 this.loadMap("MAP5");
+                this.setMapnumber(5);
                 break;
             case 5:
                 OnGate = 1;
                 break;
             case 6:
-                OnGate = 1;
+                this.loadMap("MAP1");
+                this.setMapnumber(1);
                 break;
             default:
                 break;

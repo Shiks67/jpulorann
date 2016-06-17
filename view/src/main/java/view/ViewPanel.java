@@ -219,8 +219,9 @@ class ViewPanel extends JPanel implements Observer {
 		this.r++;
 
 		if (this.r > 2) {
-			graphics.setColor(Color.WHITE);		/** color change to write stuff **/
-			graphics.drawString("SCORE : " + this.viewFrame.getModel().getScore(),4,400);	/** display actual score **/
+			graphics.setColor(Color.YELLOW);		/** color change to write stuff **/
+			graphics.drawString("SCORE : " + this.viewFrame.getModel().getScore(),4,this.getHeight()-10);	/** display actual score **/
+			graphics.drawString("LEVEL : " + this.viewFrame.getModel().getMapnumber(),200,this.getHeight()-10);
 			graphics.setColor(Color.BLACK);		/** everything next is black again just in case **/
 		}
 		this.viewFrame.getModel().fireAnimation();
