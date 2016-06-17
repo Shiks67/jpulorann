@@ -309,6 +309,24 @@ public class Model extends Observable implements IModel {
             getMonster1().setX(0);
             getMonster1().setY(0);
         }
+        else if (getShoot().getX() == getMonster2().getX() && getShoot().getY() == getMonster2().getY()) {
+            pngArray[getMonster2().getY()][getMonster2().getX()] = ' ';
+            canShoot = 1;
+            getMonster2().setX(0);
+            getMonster2().setY(0);
+        }
+        else if (getShoot().getX() == getMonster3().getX() && getShoot().getY() == getMonster3().getY()) {
+            pngArray[getMonster3().getY()][getMonster3().getX()] = ' ';
+            canShoot = 1;
+            getMonster3().setX(0);
+            getMonster3().setY(0);
+        }
+        else if (getShoot().getX() == getMonster4().getX() && getShoot().getY() == getMonster4().getY()) {
+            pngArray[getMonster4().getY()][getMonster4().getX()] = ' ';
+            canShoot = 1;
+            getMonster4().setX(0);
+            getMonster4().setY(0);
+        }
     }
 
     public void lastHP(){
