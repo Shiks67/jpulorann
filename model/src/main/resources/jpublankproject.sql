@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  127.0.0.1
--- Généré le :  Ven 17 Juin 2016 à 08:03
+-- Généré le :  Ven 17 Juin 2016 à 08:38
 -- Version du serveur :  5.7.9
 -- Version de PHP :  5.6.16
 
@@ -127,7 +127,7 @@ CREATE TABLE IF NOT EXISTS `map` (
 
 INSERT INTO `map` (`id`, `map_name`, `map`) VALUES
   (1, 'MAP1', 'BHHHHHHHHHHHHHHHHHHB\nV    V             V\nV    V             V\nV    V     P       V\nV  P BHHHHHB       V\nV P P1     K  L  KCV\nV  P BHHHHHB       V\nV    V     P       V\nV    V             V\nV    V             V\nV    V             V\nBHHHHHHHHHHHHHHHHHHB'),
-  (2, 'MAP2', '        BHHB        \n        VP V        \nBHHHHHB V  BHHHHHHB \nV4    BHB L  B   2V \nV       K BBHBHBBHB \nV     BHBHBB V VV V \nVP    V V  BHBHBBHB \nV P   V V  BHBHBBHB \nVP    V V  V V VV V \nV PBHHBHB  BHBHBBHBB\nV               3 CV\nBHHHHHHHHHHHHHHHHHHB'),
+  (2, 'MAP2', '        BHHB        \n        VP V        \nBHHHHHB V  BHHHHHHB \nV4    BHB L  B   2V \nV       K BBHBHBBHB \nV     BHBHBB V VV V \nVP    V V BBHBHBBHB \nV P   V V  BHBHBBHB \nVP    V V  V V VV V \nV PBHHBHB  BHBHBBHBB\nV               3 CV\nBHHHHHHHHHHHHHHHHHHB'),
   (3, 'MAP3', 'BHHHHHHHB    BHHHHHB\nVP      V    V1   3V\nV BHHHB V    V  B  V\nV V     V    V  P  V\nB V BHHHBHHHHB  P  V\nC V V   V  L V BPB V\nB V B B B    V  P  V\nV V   V      V  P  V\nV BHHHHHBHHHHB  P  V\nV       K       B  V\nV       BHHHHB2   4V\nBHHHHHHHB    BHHHHHB'),
   (4, 'MAP4', 'BHHHHHHHHHHHHHHHHHB \r\nV                 BB\r\nV BHHHHHHHHHHHHHB  V\r\nV P          2  BB V\r\nV BHHHHHHHHHHHB  V V\r\nV V4           B V V\r\nVKV            B V V\r\nV BHHHHHHHHHHHB  V V\r\nV P   1         BB V\r\nV BHHHHHHHHHHHHHBL B\r\nBB                 C\r\n BHHHHHHHHHHHHHHHHHB'),
   (5, 'MAP5', 'BHHHHHHHHHHHBHHHHB  \r\nVP P        V    BB \r\nV  B  B3 B  V     V \r\nV  V4 P  P1 V   B V \r\nV  V  P  P  V   V V \r\nV  V  P  P  V   V V \r\nV  V  B  B  V   V V \r\nV  V        V   V V \r\nV  BHHHHHHHHB   V V \r\nV  K        L BHB V \r\nBB               CBB\r\n BHHHHHHHHHHHHHHHHHB'),

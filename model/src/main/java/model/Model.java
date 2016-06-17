@@ -46,8 +46,8 @@ public class Model extends Observable implements IModel {
     private int Score;  /** ingame score **/
 
     /** The array of objects **/
-    private int height = 12;
-    private int width = 21;
+    private final int height = 12;
+    private final int width = 21;
     private char[][] pngArray = new char[this.getHeight()][this.getWidth()];
 
     /** The map */
@@ -508,18 +508,22 @@ public class Model extends Observable implements IModel {
     private void verifyMapDoor() {
         switch(this.getMapnumber()) {
             case 1:
+                emptyChar();
                 this.loadMap("MAP2");
                 this.setMapnumber(2);
                 break;
             case 2:
+                emptyChar();
                 this.loadMap("MAP3");
                 this.setMapnumber(3);
                 break;
             case 3:
+                emptyChar();
                 this.loadMap("MAP4");
                 this.setMapnumber(4);
                 break;
             case 4:
+                emptyChar();
                 this.loadMap("MAP5");
                 this.setMapnumber(5);
                 break;
@@ -527,11 +531,22 @@ public class Model extends Observable implements IModel {
                 OnGate = 1;
                 break;
             case 6:
+                emptyChar();
                 this.loadMap("MAP1");
                 this.setMapnumber(1);
                 break;
             default:
                 break;
+        }
+    }
+
+    private void emptyChar() {
+        for(int i = 0; i < this.pngArray.length; i++)			/** beginning of the parser **/
+        {
+            for (int j = 0; j < this.pngArray[i].length; j++)
+            {
+                putPngName(i,j,' ');
+            }
         }
     }
 }
