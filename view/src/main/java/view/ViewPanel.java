@@ -225,7 +225,7 @@ class ViewPanel extends JPanel implements Observer {
 			graphics.setColor(Color.BLACK);		/** everything next is black again just in case **/
 		}
 		this.viewFrame.getModel().fireAnimation();
-
+		this.viewFrame.getModel().checkFireball();
 		this.viewFrame.getModel().monster1();
 		if(this.viewFrame.getModel().isDead() && GO == 0){
 			GO = 1;

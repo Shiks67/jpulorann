@@ -28,6 +28,10 @@ public class Model extends Observable implements IModel {
         return OnGate;
     }
 
+    public void checkFireball() {
+
+    }
+
     public int OnGate = 0;
 
     public Shoot shoot;
@@ -111,7 +115,6 @@ public class Model extends Observable implements IModel {
         return this.lastMove;
     }
 
-
     public void setLastMove(String lastMove){
         this.lastMove = lastMove;
     }
@@ -119,11 +122,6 @@ public class Model extends Observable implements IModel {
     public String getFireDirection(){
         return this.fireDirection;
     }
-
-    public void setFireDirection(String fireDirection){
-        this.fireDirection = fireDirection;
-    }
-
 
     /*
      * (non-Javadoc)
@@ -212,7 +210,6 @@ public class Model extends Observable implements IModel {
 
     public Hero  getHero()  { return this.hero;}
 
-
     public GateC getGateC() { return this.gateC;}
 
     public GateO getGateO() { return this.gateO;}
@@ -299,13 +296,12 @@ public class Model extends Observable implements IModel {
         }
         return false;
     }
-    public boolean checkFireball(){
-        if (getShoot().getX() == getHero().getX() && getShoot().getY() == getHero().getY()){
+    /*public void checkFireball(){
+        if (getShoot().getX() == getHero().getX() && getShoot().getY() == getHero().getY()) {
             pngArray[getHero().getY()][getHero().getX()] = 'L';
-            return true;
+            canShoot = 1;
         }
-        return false;
-    }
+    }*/
 
     public void lastHP(){
         pngArray[getHero().getY()][getHero().getX()] = ' ';
@@ -375,17 +371,19 @@ public class Model extends Observable implements IModel {
     }
 
    public void fireAnimation() {
-       if (checkFireball()) {
-           if (canShoot == 0) {
+       System.out.println("test");
+       System.out.println(canShoot);
+           if (canShoot == 1) {
+               System.out.println("test2");
                if (getFireDirection() == "RIGHT") {
-
+                   System.out.println("test3");
                    if (this.isMovePossible(this.getShoot().getY(), this.getShoot().getX() + 1)) {
                        this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = ' ';
                        this.getShoot().moveRIGHT();
                        this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = 'M';
 
                    } else {
-                       System.out.println("test3");
+
                        this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = ' ';
                        this.getShoot().moveLEFT();
                        this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = 'M';
@@ -394,7 +392,6 @@ public class Model extends Observable implements IModel {
                    }
                } else if (getFireDirection() == "LEFT") {
                    if (this.isMovePossible(this.getShoot().getY(), this.getShoot().getX() - 1)) {
-                       System.out.println("test2");
                        this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = ' ';
                        this.getShoot().moveLEFT();
                        this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = 'M';
@@ -433,37 +430,33 @@ public class Model extends Observable implements IModel {
                }
            }
        }
-   }
 
     public void fireBall() {
-
-        if(getLastMove() == "RIGHT"){
-            this.getShoot().setY(this.getHero().getY());
-            this.getShoot().setX(this.getHero().getX()+1);
-            canShoot = 0;
-            this.pngArray[this.getShoot().getY()][this.getShoot().getX()+1] = 'M';
-            fireDirection = "RIGHT";
+        if (canShoot == 1) {
+            if (getLastMove() == "RIGHT") {
+                this.getShoot().setY(this.getHero().getY());
+                this.getShoot().setX(this.getHero().getX() + 1);
+                this.pngArray[this.getShoot().getY()][this.getShoot().getX() + 1] = 'M';
+                fireDirection = "RIGHT";
             }
-        if(getLastMove() == "LEFT"){
-            this.getShoot().setY(this.getHero().getY());
-            this.getShoot().setX(this.getHero().getX()-1);
-            canShoot = 0;
-            this.pngArray[this.getHero().getY()][this.getHero().getX()-1] = 'M';
-            fireDirection = "LEFT";
-        }
-        if(getLastMove() == "UP"){
-            this.getShoot().setY(this.getHero().getY()-1);
-            this.getShoot().setX(this.getHero().getX());
-            canShoot = 0;
-            this.pngArray[this.getHero().getY()-1][this.getHero().getX()] = 'M';
-            fireDirection = "UP";
-        }
-        if(getLastMove() == "DOWN"){
-            this.getShoot().setY(this.getHero().getY()+1);
-            this.getShoot().setX(this.getHero().getX());
-            canShoot = 0;
-            this.pngArray[this.getHero().getY()+1][this.getHero().getX()] = 'M';
-            fireDirection = "DOWN";
+            if (getLastMove() == "LEFT") {
+                this.getShoot().setY(this.getHero().getY());
+                this.getShoot().setX(this.getHero().getX() - 1);
+                this.pngArray[this.getHero().getY()][this.getHero().getX() - 1] = 'M';
+                fireDirection = "LEFT";
+            }
+            if (getLastMove() == "UP") {
+                this.getShoot().setY(this.getHero().getY() - 1);
+                this.getShoot().setX(this.getHero().getX());
+                this.pngArray[this.getHero().getY() - 1][this.getHero().getX()] = 'M';
+                fireDirection = "UP";
+            }
+            if (getLastMove() == "DOWN") {
+                this.getShoot().setY(this.getHero().getY() + 1);
+                this.getShoot().setX(this.getHero().getX());
+                this.pngArray[this.getHero().getY() + 1][this.getHero().getX()] = 'M';
+                fireDirection = "DOWN";
+            }
         }
     }
 
