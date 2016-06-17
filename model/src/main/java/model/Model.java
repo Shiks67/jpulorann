@@ -49,9 +49,18 @@ public class Model extends Observable implements IModel {
     private String map;
 
     /** getters **/
+    public char getCharTabPos(int x, int y) {
+        return pngArray[x][y];
+    }
+
+    public void setCharTabPos(int x, int y, char whatIsInside) {
+        this.pngArray[x][y] = whatIsInside;
+    }
+
     public int getCanShoot() { return this.canShoot;}
 
     public void setCanShoot(int canShoot) {this.canShoot = canShoot;}
+
     public int getHeight() {
         return this.height;
     }
