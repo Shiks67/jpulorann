@@ -83,7 +83,9 @@ class ViewPanel extends JPanel implements Observer {
 
 		this.map = this.viewFrame.getModel().getMap();		/** we copy the 2D array from the model to use it to display images **/
 		this.viewFrame.getModel().monster1();
-
+		this.viewFrame.getModel().monster2();
+		this.viewFrame.getModel().monster3();
+		this.viewFrame.getModel().monster4();
 
 
 
@@ -226,7 +228,6 @@ class ViewPanel extends JPanel implements Observer {
 		}
 		this.viewFrame.getModel().fireAnimation();
 		this.viewFrame.getModel().checkFireball();
-		this.viewFrame.getModel().monster1();
 		if(this.viewFrame.getModel().isDead() && GO == 0){
 			GO = 1;
 			this.viewFrame.printMap("GAME OVER");
