@@ -47,6 +47,9 @@ public class Model extends Observable implements IModel {
     private Monster3 monster3;
     private Monster4 monster4;
 
+
+    private int o = 0;
+
     private int Score;  /** ingame score **/
 
     /** The array of objects **/
@@ -67,6 +70,14 @@ public class Model extends Observable implements IModel {
 
 
     /** getters **/
+
+    public int getO() {
+        return o;
+    }
+
+    public void setO(int o) {
+        this.o = o;
+    }
 
     public int getThatmap() {
         return thatmap;
@@ -518,124 +529,134 @@ public class Model extends Observable implements IModel {
         }
     }
 
-    public void monster1() {
-        if (this.death1 == 0) {
-            int mx = getMonster1().getX();
-            int hx = getHero().getX();
-            int my = getMonster1().getY();
-            int hy = getHero().getY();
 
-            if (mx < hx && mMovePossible(getMonster1().getY(), getMonster1().getX() + 1)) {
-                pngArray[getMonster1().getY()][getMonster1().getX()] = ' ';
-                getMonster1().moveRIGHT();
-                pngArray[getMonster1().getY()][getMonster1().getX()] = '1';
-            }
-            if (mx > hx && mMovePossible(getMonster1().getY(), getMonster1().getX() - 1)) {
-                pngArray[getMonster1().getY()][getMonster1().getX()] = ' ';
-                getMonster1().moveLEFT();
-                pngArray[getMonster1().getY()][getMonster1().getX()] = '1';
-            }
-            if (my < hy && mMovePossible(getMonster1().getY() + 1, getMonster1().getX())) {
-                pngArray[getMonster1().getY()][getMonster1().getX()] = ' ';
-                getMonster1().moveDOWN();
-                pngArray[getMonster1().getY()][getMonster1().getX()] = '1';
-            }
-            if (my > hy && mMovePossible(getMonster1().getY() - 1, getMonster1().getX())) {
-                pngArray[getMonster1().getY()][getMonster1().getX()] = ' ';
-                getMonster1().moveUp();
-                pngArray[getMonster1().getY()][getMonster1().getX()] = '1';
+    public void monster1() {
+        if (this.getO() == 3) {
+            if (this.death1 == 0) {
+                int mx = getMonster1().getX();
+                int hx = getHero().getX();
+                int my = getMonster1().getY();
+                int hy = getHero().getY();
+
+                if (mx < hx && mMovePossible(getMonster1().getY(), getMonster1().getX() + 1)) {
+                    pngArray[getMonster1().getY()][getMonster1().getX()] = ' ';
+                    getMonster1().moveRIGHT();
+                    pngArray[getMonster1().getY()][getMonster1().getX()] = '1';
+                }
+                if (mx > hx && mMovePossible(getMonster1().getY(), getMonster1().getX() - 1)) {
+                    pngArray[getMonster1().getY()][getMonster1().getX()] = ' ';
+                    getMonster1().moveLEFT();
+                    pngArray[getMonster1().getY()][getMonster1().getX()] = '1';
+                }
+                if (my < hy && mMovePossible(getMonster1().getY() + 1, getMonster1().getX())) {
+                    pngArray[getMonster1().getY()][getMonster1().getX()] = ' ';
+                    getMonster1().moveDOWN();
+                    pngArray[getMonster1().getY()][getMonster1().getX()] = '1';
+                }
+                if (my > hy && mMovePossible(getMonster1().getY() - 1, getMonster1().getX())) {
+                    pngArray[getMonster1().getY()][getMonster1().getX()] = ' ';
+                    getMonster1().moveUp();
+                    pngArray[getMonster1().getY()][getMonster1().getX()] = '1';
+                }
             }
         }
     }
 
 
     public void monster2() {
-        if (this.death2 == 0) {
-            int m2x = getMonster2().getX();
-            int h2x = getHero().getX();
-            int m2y = getMonster2().getY();
-            int h2y = getHero().getY();
+        if (this.getO() == 3) {
+            if (this.death2 == 0) {
+                int m2x = getMonster2().getX();
+                int h2x = getHero().getX();
+                int m2y = getMonster2().getY();
+                int h2y = getHero().getY();
 
-            if (m2x < h2x && mMovePossible(getMonster2().getY(), getMonster2().getX() + 1)) {
-                pngArray[getMonster2().getY()][getMonster2().getX()] = ' ';
-                getMonster2().moveRIGHT();
-                pngArray[getMonster2().getY()][getMonster2().getX()] = '2';
-            }
-            if (m2x > h2x && mMovePossible(getMonster2().getY(), getMonster2().getX() - 1)) {
-                pngArray[getMonster2().getY()][getMonster2().getX()] = ' ';
-                getMonster2().moveLEFT();
-                pngArray[getMonster2().getY()][getMonster2().getX()] = '2';
-            }
-            if (m2y < h2y && mMovePossible(getMonster2().getY() + 1, getMonster2().getX())) {
-                pngArray[getMonster2().getY()][getMonster2().getX()] = ' ';
-                getMonster2().moveDOWN();
-                pngArray[getMonster2().getY()][getMonster2().getX()] = '2';
-            }
-            if (m2y > h2y && mMovePossible(getMonster2().getY() - 1, getMonster2().getX())) {
-                pngArray[getMonster2().getY()][getMonster2().getX()] = ' ';
-                getMonster2().moveUp();
-                pngArray[getMonster2().getY()][getMonster2().getX()] = '2';
+                if (m2x < h2x && mMovePossible(getMonster2().getY(), getMonster2().getX() + 1)) {
+                    pngArray[getMonster2().getY()][getMonster2().getX()] = ' ';
+                    getMonster2().moveRIGHT();
+                    pngArray[getMonster2().getY()][getMonster2().getX()] = '2';
+                }
+                if (m2x > h2x && mMovePossible(getMonster2().getY(), getMonster2().getX() - 1)) {
+                    pngArray[getMonster2().getY()][getMonster2().getX()] = ' ';
+                    getMonster2().moveLEFT();
+                    pngArray[getMonster2().getY()][getMonster2().getX()] = '2';
+                }
+                if (m2y < h2y && mMovePossible(getMonster2().getY() + 1, getMonster2().getX())) {
+                    pngArray[getMonster2().getY()][getMonster2().getX()] = ' ';
+                    getMonster2().moveDOWN();
+                    pngArray[getMonster2().getY()][getMonster2().getX()] = '2';
+                }
+                if (m2y > h2y && mMovePossible(getMonster2().getY() - 1, getMonster2().getX())) {
+                    pngArray[getMonster2().getY()][getMonster2().getX()] = ' ';
+                    getMonster2().moveUp();
+                    pngArray[getMonster2().getY()][getMonster2().getX()] = '2';
+                }
             }
         }
     }
 
     public void monster3() {
-        if (this.death3 == 0) {
-            int m3x = getMonster3().getX();
-            int h3x = getHero().getX();
-            int m3y = getMonster3().getY();
-            int h3y = getHero().getY();
+        if (this.getO() == 3) {
+            if (this.death3 == 0) {
+                int m3x = getMonster3().getX();
+                int h3x = getHero().getX();
+                int m3y = getMonster3().getY();
+                int h3y = getHero().getY();
 
-            if (m3x < h3x && mMovePossible(getMonster3().getY(), getMonster3().getX() + 1)) {
-                pngArray[getMonster3().getY()][getMonster3().getX()] = ' ';
-                getMonster3().moveRIGHT();
-                pngArray[getMonster3().getY()][getMonster3().getX()] = '3';
-            }
-            if (m3x > h3x && mMovePossible(getMonster3().getY(), getMonster3().getX() - 1)) {
-                pngArray[getMonster3().getY()][getMonster3().getX()] = ' ';
-                getMonster3().moveLEFT();
-                pngArray[getMonster3().getY()][getMonster3().getX()] = '3';
-            }
-            if (m3y < h3y && mMovePossible(getMonster3().getY() + 1, getMonster3().getX())) {
-                pngArray[getMonster3().getY()][getMonster3().getX()] = ' ';
-                getMonster3().moveDOWN();
-                pngArray[getMonster3().getY()][getMonster3().getX()] = '3';
-            }
-            if (m3y > h3y && mMovePossible(getMonster3().getY() - 1, getMonster3().getX())) {
-                pngArray[getMonster3().getY()][getMonster3().getX()] = ' ';
-                getMonster3().moveUp();
-                pngArray[getMonster3().getY()][getMonster3().getX()] = '3';
+                if (m3x < h3x && mMovePossible(getMonster3().getY(), getMonster3().getX() + 1)) {
+                    pngArray[getMonster3().getY()][getMonster3().getX()] = ' ';
+                    getMonster3().moveRIGHT();
+                    pngArray[getMonster3().getY()][getMonster3().getX()] = '3';
+                }
+                if (m3x > h3x && mMovePossible(getMonster3().getY(), getMonster3().getX() - 1)) {
+                    pngArray[getMonster3().getY()][getMonster3().getX()] = ' ';
+                    getMonster3().moveLEFT();
+                    pngArray[getMonster3().getY()][getMonster3().getX()] = '3';
+                }
+                if (m3y < h3y && mMovePossible(getMonster3().getY() + 1, getMonster3().getX())) {
+                    pngArray[getMonster3().getY()][getMonster3().getX()] = ' ';
+                    getMonster3().moveDOWN();
+                    pngArray[getMonster3().getY()][getMonster3().getX()] = '3';
+                }
+                if (m3y > h3y && mMovePossible(getMonster3().getY() - 1, getMonster3().getX())) {
+                    pngArray[getMonster3().getY()][getMonster3().getX()] = ' ';
+                    getMonster3().moveUp();
+                    pngArray[getMonster3().getY()][getMonster3().getX()] = '3';
+                }
             }
         }
     }
 
     public void monster4() {
-        if (this.death4 == 0) {
-            int m4x = getMonster4().getX();
-            int h4x = getHero().getX();
-            int m4y = getMonster4().getY();
-            int h4y = getHero().getY();
+        if (this.getO() == 3) {
+            if (this.death4 == 0) {
+                int m4x = getMonster4().getX();
+                int h4x = getHero().getX();
+                int m4y = getMonster4().getY();
+                int h4y = getHero().getY();
 
-            if (m4x < h4x && mMovePossible(getMonster4().getY(), getMonster4().getX() + 1)) {
-                pngArray[getMonster4().getY()][getMonster4().getX()] = ' ';
-                getMonster4().moveRIGHT();
-                pngArray[getMonster4().getY()][getMonster4().getX()] = '4';
+                if (m4x < h4x && mMovePossible(getMonster4().getY(), getMonster4().getX() + 1)) {
+                    pngArray[getMonster4().getY()][getMonster4().getX()] = ' ';
+                    getMonster4().moveRIGHT();
+                    pngArray[getMonster4().getY()][getMonster4().getX()] = '4';
+                }
+                if (m4x > h4x && mMovePossible(getMonster4().getY(), getMonster4().getX() - 1)) {
+                    pngArray[getMonster4().getY()][getMonster4().getX()] = ' ';
+                    getMonster4().moveLEFT();
+                    pngArray[getMonster4().getY()][getMonster4().getX()] = '4';
+                }
+                if (m4y < h4y && mMovePossible(getMonster4().getY() + 1, getMonster4().getX())) {
+                    pngArray[getMonster4().getY()][getMonster4().getX()] = ' ';
+                    getMonster4().moveDOWN();
+                    pngArray[getMonster4().getY()][getMonster4().getX()] = '4';
+                }
+                if (m4y > h4y && mMovePossible(getMonster4().getY() - 1, getMonster4().getX())) {
+                    pngArray[getMonster4().getY()][getMonster4().getX()] = ' ';
+                    getMonster4().moveUp();
+                    pngArray[getMonster4().getY()][getMonster4().getX()] = '4';
+                }
             }
-            if (m4x > h4x && mMovePossible(getMonster4().getY(), getMonster4().getX() - 1)) {
-                pngArray[getMonster4().getY()][getMonster4().getX()] = ' ';
-                getMonster4().moveLEFT();
-                pngArray[getMonster4().getY()][getMonster4().getX()] = '4';
-            }
-            if (m4y < h4y && mMovePossible(getMonster4().getY() + 1, getMonster4().getX())) {
-                pngArray[getMonster4().getY()][getMonster4().getX()] = ' ';
-                getMonster4().moveDOWN();
-                pngArray[getMonster4().getY()][getMonster4().getX()] = '4';
-            }
-            if (m4y > h4y && mMovePossible(getMonster4().getY() - 1, getMonster4().getX())) {
-                pngArray[getMonster4().getY()][getMonster4().getX()] = ' ';
-                getMonster4().moveUp();
-                pngArray[getMonster4().getY()][getMonster4().getX()] = '4';
-            }
+            this.setO(0);
         }
     }
 

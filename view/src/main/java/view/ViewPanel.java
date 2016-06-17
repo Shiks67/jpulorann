@@ -22,6 +22,7 @@ class ViewPanel extends JPanel implements Observer {
 	int GO = 0;
 	int Win = 0;
 
+
 	/** The view frame. */
 	private ViewFrame					viewFrame;
 	/** The Constant serialVersionUID. */
@@ -86,7 +87,7 @@ class ViewPanel extends JPanel implements Observer {
 		this.viewFrame.getModel().monster2();
 		this.viewFrame.getModel().monster3();
 		this.viewFrame.getModel().monster4();
-
+		this.viewFrame.getModel().setO(this.viewFrame.getModel().getO() +1);
 
 
 		for(int i = 0; i < this.map.length; i++)			/** beginning of the parser **/

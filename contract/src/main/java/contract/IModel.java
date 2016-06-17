@@ -67,4 +67,7 @@ public interface IModel {
 
 	int getThatmap();
 	void setThatmap(int thatmap);
+
+	void setO(int o);
+	int getO();
 }
