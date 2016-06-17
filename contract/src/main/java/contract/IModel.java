@@ -45,6 +45,7 @@ public interface IModel {
 
 	boolean isDead();
 	int getOnGate();
+	boolean checkFireball();
 
 	void moveUP();
 	void moveLEFT();

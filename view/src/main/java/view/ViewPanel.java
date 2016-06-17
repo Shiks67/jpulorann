@@ -76,6 +76,7 @@ class ViewPanel extends JPanel implements Observer {
 	 */
 	@Override
 	protected void paintComponent(final Graphics graphics) {
+		this.viewFrame.getModel().loadHighscores();
 		graphics.clearRect(0, 0, this.getWidth(), this.getHeight());
 		graphics.setColor(Color.BLACK);		/** background color is now black **/
 		graphics.fillRect(0, 0, this.getWidth(), this.getHeight());
@@ -199,7 +200,7 @@ class ViewPanel extends JPanel implements Observer {
 				}
 			}
 		}			/** end of the parser **/
-		if (this.r < 2 && this.r > 0) {		/** display highscore log only when you start the game **/
+		if (this.r < 1) {		/** display highscore log only when you start the game **/
 			for(int c = 1;c < 8; c++){
 				if(c==1) {
 					graphics.setColor(Color.RED);

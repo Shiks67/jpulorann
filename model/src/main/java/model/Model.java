@@ -49,18 +49,9 @@ public class Model extends Observable implements IModel {
     private String map;
 
     /** getters **/
-    public char getCharTabPos(int x, int y) {
-        return pngArray[x][y];
-    }
-
-    public void setCharTabPos(int x, int y, char whatIsInside) {
-        this.pngArray[x][y] = whatIsInside;
-    }
-
     public int getCanShoot() { return this.canShoot;}
 
     public void setCanShoot(int canShoot) {this.canShoot = canShoot;}
-
     public int getHeight() {
         return this.height;
     }
@@ -296,6 +287,13 @@ public class Model extends Observable implements IModel {
         }
         return false;
     }
+    public boolean checkFireball(){
+        if (getShoot().getX() == getHero().getX() && getShoot().getY() == getHero().getY()){
+            pngArray[getHero().getY()][getHero().getX()] = 'L';
+            return true;
+        }
+        return false;
+    }
 
     public void lastHP(){
         pngArray[getHero().getY()][getHero().getX()] = ' ';
@@ -365,61 +363,62 @@ public class Model extends Observable implements IModel {
     }
 
    public void fireAnimation() {
+       if (checkFireball()) {
+           if (canShoot == 0) {
+               if (getFireDirection() == "RIGHT") {
 
-       if (canShoot == 0) {
-           if (getFireDirection() == "RIGHT") {
+                   if (this.isMovePossible(this.getShoot().getY(), this.getShoot().getX() + 1)) {
+                       this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = ' ';
+                       this.getShoot().moveRIGHT();
+                       this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = 'M';
 
-               if (this.isMovePossible(this.getShoot().getY(), this.getShoot().getX() + 1)) {
-                   this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = ' ';
-                   this.getShoot().moveRIGHT();
-                   this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = 'M';
+                   } else {
+                       System.out.println("test3");
+                       this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = ' ';
+                       this.getShoot().moveLEFT();
+                       this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = 'M';
+                       fireDirection = "LEFT";
 
-               } else {
-                   System.out.println("test3");
-                   this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = ' ';
-                   this.getShoot().moveLEFT();
-                   this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = 'M';
-                   fireDirection = "LEFT";
+                   }
+               } else if (getFireDirection() == "LEFT") {
+                   if (this.isMovePossible(this.getShoot().getY(), this.getShoot().getX() - 1)) {
+                       System.out.println("test2");
+                       this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = ' ';
+                       this.getShoot().moveLEFT();
+                       this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = 'M';
+                   } else {
+                       System.out.println("test3");
+                       this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = ' ';
+                       this.getShoot().moveRIGHT();
+                       this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = 'M';
+                       fireDirection = "RIGHT";
+
+                   }
+               } else if (getFireDirection() == "UP") {
+                   if (this.isMovePossible(this.getShoot().getY() - 1, this.getShoot().getX())) {
+                       this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = ' ';
+                       this.getShoot().moveUP();
+                       this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = 'M';
+                   } else {
+                       this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = ' ';
+                       this.getShoot().moveDOWN();
+                       this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = 'M';
+                       fireDirection = "DOWN";
+                   }
+               } else if (getFireDirection() == "DOWN") {
+                   if (this.isMovePossible(this.getShoot().getY() + 1, this.getShoot().getX())) {
+                       this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = ' ';
+                       this.getShoot().moveDOWN();
+                       this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = 'M';
+                   } else {
+                       this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = ' ';
+                       this.getShoot().moveUP();
+                       this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = 'M';
+                       fireDirection = "UP";
+
+                   }
 
                }
-           } else if (getFireDirection() == "LEFT") {
-               if (this.isMovePossible(this.getShoot().getY(), this.getShoot().getX() - 1)) {
-                   System.out.println("test2");
-                   this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = ' ';
-                   this.getShoot().moveLEFT();
-                   this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = 'M';
-               } else {
-                   System.out.println("test3");
-                   this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = ' ';
-                   this.getShoot().moveRIGHT();
-                   this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = 'M';
-                   fireDirection = "RIGHT";
-
-               }
-           } else if (getFireDirection() == "UP") {
-               if (this.isMovePossible(this.getShoot().getY() - 1, this.getShoot().getX())) {
-                   this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = ' ';
-                   this.getShoot().moveUP();
-                   this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = 'M';
-               } else {
-                   this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = ' ';
-                   this.getShoot().moveDOWN();
-                   this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = 'M';
-                   fireDirection = "DOWN";
-               }
-           } else if (getFireDirection() == "DOWN") {
-               if (this.isMovePossible(this.getShoot().getY()+ 1, this.getShoot().getX())) {
-                   this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = ' ';
-                   this.getShoot().moveDOWN();
-                   this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = 'M';
-               } else {
-                   this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = ' ';
-                   this.getShoot().moveUP();
-                   this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = 'M';
-                   fireDirection = "UP";
-
-               }
-
            }
        }
    }
