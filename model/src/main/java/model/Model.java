@@ -307,6 +307,7 @@ public class Model extends Observable implements IModel {
         }
         return false;
     }
+
     public void checkFireball(){
         if (getShoot().getX() == getHero().getX() && getShoot().getY() == getHero().getY()) {
             pngArray[getHero().getY()][getHero().getX()] = 'L';

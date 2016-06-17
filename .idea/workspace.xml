@@ -1,19 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="69e7211a-abd9-46ca-9785-cd2ef29c1473" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/model/src/main/java/element/Element.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/model/src/main/java/element/motionless/ActionOnHeroes.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/model/src/main/java/element/motionless/Bone.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/model/src/main/java/element/motionless/Crystal.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/model/src/main/java/element/motionless/HBone.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/model/src/main/java/element/motionless/IDoActionOnHeroes.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/model/src/main/java/element/motionless/MotionlessElement.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/model/src/main/java/element/motionless/Purse.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/model/src/main/java/element/motionless/VBone.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/model/src/main/java/model/INettleWorld.java" afterPath="" />
+    <list default="true" id="69e7211a-abd9-46ca-9785-cd2ef29c1473" name="Default" comment="li">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/src/main/java/element/motionless/GateO.java" afterPath="$PROJECT_DIR$/model/src/main/java/element/motionless/GateO.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/src/main/java/model/Model.java" afterPath="$PROJECT_DIR$/model/src/main/java/model/Model.java" />
     </list>
     <ignored path="masterpom.iws" />
@@ -51,13 +40,13 @@
             <file leaf-file-name="Model.java" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/model/src/main/java/model/Model.java">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="694">
-                    <caret line="332" column="41" selection-start-line="332" selection-start-column="41" selection-end-line="332" selection-end-column="41" />
+                  <state relative-caret-position="186">
+                    <caret line="309" column="0" selection-start-line="309" selection-start-column="0" selection-end-line="309" selection-end-column="0" />
                     <folding>
                       <element signature="e#7908#7909#0" expanded="true" />
                       <element signature="e#7954#7955#0" expanded="true" />
                       <element signature="method#isMovePossible#0;class#Model#0" expanded="false" />
-                      <element signature="method#isDead#0;class#Model#0" expanded="false" />
+                      <element signature="method#checkFireball#0;class#Model#0" expanded="false" />
                     </folding>
                   </state>
                 </provider>
@@ -77,8 +66,8 @@
       <file leaf-file-name="GateO.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/model/src/main/java/element/motionless/GateO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+            <state relative-caret-position="323">
+              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -911,7 +900,7 @@
       <workItem from="1466080935811" duration="5164000" />
       <workItem from="1466096028268" duration="5325000" />
       <workItem from="1466146590774" duration="11412000" />
-      <workItem from="1466163515628" duration="1194000" />
+      <workItem from="1466163515628" duration="3147000" />
     </task>
     <task id="LOCAL-00001" summary="Push test">
       <created>1465804918356</created>
@@ -1144,7 +1133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1466160749867</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Monsters die">
+      <created>1466164824325</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1466164824325</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1156,11 +1152,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103160000" />
+    <option name="totallyTimeSpent" value="105113000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -1228,7 +1224,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Major Bug FIX" />
     <MESSAGE value="aedt.showboard add" />
     <MESSAGE value="Display from view" />
     <MESSAGE value="add pngs and correct display size" />
@@ -1253,7 +1248,8 @@
     <MESSAGE value="display of the level in the bottom and now you change level vy going on a door" />
     <MESSAGE value="map clear +DB update" />
     <MESSAGE value="empty things when needed" />
-    <option name="LAST_COMMIT_MESSAGE" value="empty things when needed" />
+    <MESSAGE value="Monsters die" />
+    <option name="LAST_COMMIT_MESSAGE" value="Monsters die" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1579,21 +1575,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/model/src/main/java/element/motionless/GateO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+        <state relative-caret-position="323">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/model/src/main/java/model/Model.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="694">
-          <caret line="332" column="41" selection-start-line="332" selection-start-column="41" selection-end-line="332" selection-end-column="41" />
+        <state relative-caret-position="186">
+          <caret line="309" column="0" selection-start-line="309" selection-start-column="0" selection-end-line="309" selection-end-column="0" />
           <folding>
             <element signature="e#7908#7909#0" expanded="true" />
             <element signature="e#7954#7955#0" expanded="true" />
             <element signature="method#isMovePossible#0;class#Model#0" expanded="false" />
-            <element signature="method#isDead#0;class#Model#0" expanded="false" />
+            <element signature="method#checkFireball#0;class#Model#0" expanded="false" />
           </folding>
         </state>
       </provider>
