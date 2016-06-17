@@ -669,7 +669,7 @@ public class Model extends Observable implements IModel {
                 this.loadMap("MAP5");
                 this.setMapnumber(5);
                 this.death1 = 0;
-                this.death2 = 0;
+                this.death2 = 1;
                 this.death3 = 0;
                 this.death4 = 0;
                 break;
