@@ -115,7 +115,7 @@ public class Model extends Observable implements IModel {
         hero = new Hero(1,1);
         gateC = new GateC(0,0);
         gateO = new GateO(0,0);
-        shoot = new Shoot(5,5);
+        shoot = new Shoot(11,21);
         monster1 = new Monster1(0,0);
         monster2 = new Monster2(0,0);
         monster3 = new Monster3(0,0);
@@ -644,6 +644,7 @@ public class Model extends Observable implements IModel {
             case 1:
                 this.loadMap("MAP2");
                 this.setMapnumber(2);
+                this.death1 = 1;
                 this.death2 = 0;
                 this.death3 = 0;
                 this.death4 = 0;
@@ -661,12 +662,14 @@ public class Model extends Observable implements IModel {
                 this.setMapnumber(4);
                 this.death1 = 0;
                 this.death2 = 0;
+                this.death3 = 0;
                 this.death4 = 0;
                 break;
             case 4:
                 this.loadMap("MAP5");
                 this.setMapnumber(5);
                 this.death1 = 0;
+                this.death2 = 0;
                 this.death3 = 0;
                 this.death4 = 0;
                 break;
@@ -677,6 +680,9 @@ public class Model extends Observable implements IModel {
                 this.loadMap("MAP1");
                 this.setMapnumber(1);
                 this.death1 = 0;
+                this.death2 = 1;
+                this.death3 = 1;
+                this.death4 = 1;
                 break;
             default:
                 break;
