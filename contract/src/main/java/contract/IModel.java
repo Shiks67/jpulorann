@@ -58,6 +58,9 @@ public interface IModel {
 
 	void fireAnimation();
 	void monster1();
+	void monster2();
+	void monster3();
+	void monster4();
 
 	int getMapnumber();
 	void setMapnumber(int mapnumber);
