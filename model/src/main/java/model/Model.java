@@ -22,6 +22,7 @@ public class Model extends Observable implements IModel {
     public String lastMove = "RIGHT";
     public String fireDirection = "RIGHT";
     public int canShoot = 1;
+    private int mapnumber = 1;
 
     public int getOnGate() {
         return OnGate;
@@ -48,7 +49,18 @@ public class Model extends Observable implements IModel {
     /** The map */
     private String map;
 
+    public int getMapnumber() {
+        return this.mapnumber;
+    }
+
+    public void setMapnumber(int mapnumber) {
+        this.mapnumber = mapnumber;
+    }
+
     /** getters **/
+
+
+
     public int getCanShoot() { return this.canShoot;}
 
     public void setCanShoot(int canShoot) {this.canShoot = canShoot;}
@@ -319,7 +331,7 @@ public class Model extends Observable implements IModel {
             pngArray[getGateC().getY()][gateC.getX()] = 'O';
         }
         if(onGate(getHero().getY(), getHero().getX() +1)){
-        OnGate = 1;
+            verifyMapDoor();
         }
         if(isMovePossible(getHero().getY(), getHero().getX()+1)){
             lastHP();
@@ -335,7 +347,7 @@ public class Model extends Observable implements IModel {
             pngArray[getGateC().getY()][gateC.getX()] = 'O';
         }
         if(onGate(getHero().getY() -1, getHero().getX())){
-            OnGate = 1;
+            verifyMapDoor();
         }
         if(isMovePossible(getHero().getY() -1, getHero().getX())) {
             lastHP();
@@ -353,7 +365,7 @@ public class Model extends Observable implements IModel {
             pngArray[getGateC().getY()][gateC.getX()] = 'O';
         }
         if(onGate(getHero().getY()+1, getHero().getX())){
-            OnGate = 1;
+            verifyMapDoor();
         }
         if (isMovePossible(getHero().getY() +1, getHero().getX())) {
             lastHP();
@@ -463,7 +475,7 @@ public class Model extends Observable implements IModel {
             pngArray[getGateC().getY()][gateC.getX()] = 'O';
         }
         if(onGate(getHero().getY(), getHero().getX() -1)){
-            OnGate = 1;
+            verifyMapDoor();
         }
         if(isMovePossible(getHero().getY(), getHero().getX() - 1)){
             lastHP();
@@ -497,6 +509,31 @@ public class Model extends Observable implements IModel {
             lastMP();
             getMonster1().moveUp();
             newMP();
+        }
+    }
+
+    public void verifyMapDoor() {
+        switch(this.getMapnumber()) {
+            case 1:
+                this.loadMap("MAP2");
+                break;
+            case 2:
+                this.loadMap("MAP3");
+                break;
+            case 3:
+                this.loadMap("MAP4");
+                break;
+            case 4:
+                this.loadMap("MAP5");
+                break;
+            case 5:
+                OnGate = 1;
+                break;
+            case 6:
+                OnGate = 1;
+                break;
+            default:
+                break;
         }
     }
 }
