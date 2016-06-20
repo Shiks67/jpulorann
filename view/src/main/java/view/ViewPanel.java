@@ -17,8 +17,14 @@ import javax.swing.*;
  */
 class ViewPanel extends JPanel implements Observer {
 
-	public char[][] map;	/** 2d array when we copy the one from the model **/
-	private int r = 0;	/** used to display highscores log **/
+	/**
+	 * 2d array when we copy the one from the model
+	 */
+	public char[][] map;
+	/**
+	 * r used to display highscores log
+	 */
+	private int r = 0;
 	int GO = 0;
 	int Win = 0;
 
@@ -238,7 +244,7 @@ class ViewPanel extends JPanel implements Observer {
 		}
 		if(this.viewFrame.getModel().getOnGate() == 1 && Win == 0){
 			Win= 1;
-			this.viewFrame.printMap("CONGRATULATIONS !\n You've finished the game !");
+			this.viewFrame.printMap("CONGRATULATIONS !\n You finished the game !");
 			this.endGame();
 		}
 	}

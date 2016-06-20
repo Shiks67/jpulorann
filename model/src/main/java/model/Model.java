@@ -603,7 +603,7 @@ public class Model extends Observable implements IModel {
         }
     }
     /**
-     Used to animate the Fireball at the good position
+     * Used to animate the Fireball at the good position
      */
     public void fireAnimation() {
         if (canShoot == 0) {
@@ -659,8 +659,8 @@ public class Model extends Observable implements IModel {
     }
 
     /**
-     Used to place the Fireball at the good position
-     **/
+     * Used to place the Fireball at the good position
+     */
 
     public void fireBall() {
         if (canShoot == 1) {
@@ -726,17 +726,22 @@ public class Model extends Observable implements IModel {
     }
 
     /**
-     * Lorann's moves
+     * Last hero position
      */
-
     private void lastHP(){
         pngArray[getHero().getY()][getHero().getX()] = ' ';
     }
 
+    /**
+     * New Hero Position
+     */
     private void newHP(){
         pngArray[getHero().getY()][getHero().getX()] = 'L';
     }
 
+    /**
+     * Lorann moves right
+     */
     public void moveRIGHT() {
         if(isPurse(getHero().getY(), getHero().getX()+1)){
             Score += 100;
@@ -753,6 +758,9 @@ public class Model extends Observable implements IModel {
             newHP();        }
     }
 
+    /**
+     * Lorann moves up
+     */
     public void moveUP() {
         if(isPurse(getHero().getY() -1, getHero().getX())){
             Score += 100;
@@ -771,6 +779,9 @@ public class Model extends Observable implements IModel {
 
     }
 
+    /**
+     * Lorann moves down
+     */
     public void moveDOWN() {
         if(isPurse(getHero().getY() +1, getHero().getX())){
             Score += 100;
@@ -788,6 +799,9 @@ public class Model extends Observable implements IModel {
         }
     }
 
+    /**
+     * Lorann moves left
+     */
     public void moveLEFT() {
         if(isPurse(getHero().getY(), getHero().getX() - 1)){
             Score += 100;
@@ -806,10 +820,9 @@ public class Model extends Observable implements IModel {
     }
 
     /**
-     * Monsters IA
+     * Monsters 1 IA
      * They compare their own position with lorann's position then change their position
      */
-
     public void monster1() {
         if (this.getO() == 3) {
             if (this.death1 == 0) {
@@ -845,6 +858,10 @@ public class Model extends Observable implements IModel {
         }
     }
 
+    /**
+     * Monster 2 IA
+     * They compare their own position with lorann's position then change their position
+     */
     public void monster2() {
         if (this.getO() == 3) {
             if (this.death2 == 0) {
@@ -877,6 +894,10 @@ public class Model extends Observable implements IModel {
         }
     }
 
+    /**
+     * Monster 3 IA
+     * They compare their own position with lorann's position then change their position
+     */
     public void monster3() {
         if (this.getO() == 3) {
             if (this.death3 == 0) {
@@ -909,6 +930,10 @@ public class Model extends Observable implements IModel {
         }
     }
 
+    /**
+     * Monster 4 IA
+     * They compare their own position with lorann's position then change their position
+     */
     public void monster4() {
         if (this.getO() == 3) {
             if (this.death4 == 0) {
@@ -943,9 +968,8 @@ public class Model extends Observable implements IModel {
     }
 
     /**
-     * Load next level
+     * Load next level after map and door verification
      */
-
     private void verifyMapDoor() {
         switch(this.getMapnumber()) {
             case 1:
