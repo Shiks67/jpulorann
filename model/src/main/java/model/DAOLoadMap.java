@@ -107,7 +107,10 @@ public class DAOLoadMap extends DAOEntity<LoadMap> {
         return null;
     }
 
-
+    /**
+     * gets the sorted 6 first highscores from the DB
+     * @return
+     */
     public LoadHighscores putHighscores() {
         LoadHighscores loadHighscores = new LoadHighscores();
         try {

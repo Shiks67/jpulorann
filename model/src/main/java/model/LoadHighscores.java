@@ -7,6 +7,24 @@ package model;
  */
 class LoadHighscores extends Entity {
 
+    /** getters */
+    public int[] getScore() {
+        return score;
+    }
+
+    public String[] getName() {
+        return name;
+    }
+
+    /** setters */
+    public void setName(String[] name) {
+        this.name = name;
+    }
+
+    public void setScore(int[] score) {
+        this.score = score;
+    }
+
     /** The name. */
     private String[] name = new String[6];
 
@@ -32,22 +50,6 @@ class LoadHighscores extends Entity {
      */
     public LoadHighscores() {
         //this(0, "", "");
-    }
-
-    public String[] getName() {
-        return name;
-    }
-
-    public void setName(String[] name) {
-        this.name = name;
-    }
-
-    public int[] getScore() {
-        return score;
-    }
-
-    public void setScore(int[] score) {
-        this.score = score;
     }
 }
 

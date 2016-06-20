@@ -17,17 +17,28 @@ import java.util.Observable;
  */
 public class Model extends Observable implements IModel {
 
-    private String[] DBplayerName = new String[6];
-    private int[] DBplayerScore = new int[6];
-    private String lastMove = "RIGHT";
-    private String fireDirection = "RIGHT";
+    /** The array */
+    private final int height = 12;
+    private final int width = 21;
+    private char[][] pngArray = new char[this.getHeight()][this.getWidth()];
+
+    /** other variable */
+    private String[] DBplayerName = new String[6];  /** player name from the DB */
+    private int[] DBplayerScore = new int[6];       /** player score from the DB */
+    private String lastMove = "RIGHT";      /** saving the last move */
+    private String fireDirection = "RIGHT"; /** saving direction of fire */
     private int canShoot = 1;
     private int death1 = 0;
     private int death2 = 0;
     private int death3 = 0;
     private int death4 = 0;
-    private int mapnumber = 1;
+    private int mapnumber = 1;  /** level number to display it down below */
+    private int thatmap = 0;    /** used for the choice of map to be done only once */
+    private int OnGate = 0;     /** boolean if the player is on a gate */
+    private int o = 0;  /** Timer for monsters, incremented to 3 to moves monsters then reset to 0 **/
+    private int Score;  /** ingame score **/
 
+    /** The objects */
     private Shoot shoot;
     private Hero hero;
     private GateC gateC;
@@ -36,28 +47,16 @@ public class Model extends Observable implements IModel {
     private Monster3 monster3;
     private Monster4 monster4;
 
-    private int thatmap = 0;
-    private int OnGate = 0;
-    private int o = 0; /** Timer for monsters, incremented to 3 to moves monsters then reset to 0 **/
-    private int Score;  /** ingame score **/
 
-    /** The array of objects **/
-    private final int height = 12;
-    private final int width = 21;
-    private char[][] pngArray = new char[this.getHeight()][this.getWidth()];
 
     /** The map */
     private String map;
 
-    public int getMapnumber() {
-        return this.mapnumber;
-    }
+    /** getters */
 
-    public void setMapnumber(int mapnumber) {
-        this.mapnumber = mapnumber;
+    public Observable getObservable() {
+        return this;
     }
-
-    /** getters and setters **/
 
     public int getOnGate() {
         return OnGate;
@@ -93,16 +92,16 @@ public class Model extends Observable implements IModel {
         return o;
     }
 
-    public void setO(int o) {
-        this.o = o;
-    }
-
     public int getThatmap() {
         return thatmap;
     }
 
-    public void setThatmap(int thatmap) {
-        this.thatmap = thatmap;
+    public int getMapnumber() {
+        return this.mapnumber;
+    }
+
+    public void setMapnumber(int mapnumber) {
+        this.mapnumber = mapnumber;
     }
 
     public int getHeight() {
@@ -125,12 +124,49 @@ public class Model extends Observable implements IModel {
         return this.DBplayerScore[i];
     }
 
+    public String getLastMove(){
+        return this.lastMove;
+    }
+
+    public String getFireDirection(){
+        return this.fireDirection;
+    }
+
+    /** setters */
+
     public void setDBplayerName(String DBplayerName[]) {
         this.DBplayerName = DBplayerName;
     }
 
     public void setDBplayerScore(int DBplayerScore[]) {
         this.DBplayerScore = DBplayerScore;
+    }
+
+    public void setO(int o) {
+        this.o = o;
+    }
+
+    public void setThatmap(int thatmap) {
+        this.thatmap = thatmap;
+    }
+
+    public void setLastMove(String lastMove){
+        this.lastMove = lastMove;
+    }
+
+    private void setDBplayer(final String[] name, final int[] score) {
+        this.setDBplayerName(name);
+        this.setDBplayerScore(score);
+    }
+
+    /**
+     * Set the map when changed
+     * @param map
+     */
+    private void setMap(final String map) {;
+        this.map = map;
+        this.setChanged();
+        this.notifyObservers();
     }
 
     /**
@@ -147,33 +183,22 @@ public class Model extends Observable implements IModel {
         monster4 = new Monster4(0,0);
     }
 
-    public String getLastMove(){
-        return this.lastMove;
-    }
-
-    public void setLastMove(String lastMove){
-        this.lastMove = lastMove;
-    }
-
-    public String getFireDirection(){
-        return this.fireDirection;
-    }
-
-    /*
-     * (non-Javadoc)
-     *
-     * @see contract.IModel#getObservable()
-     */
-    public Observable getObservable() {
-        return this;
-    }
-
     /** i added the map functions in general here **/
 
+    /**
+     * Puts the char corresponding to a png name in a char[][]
+     * @param i
+     * @param j
+     * @param pngName
+     */
     public void putPngName(int i, int j, char pngName) {    /** puts the right character at the right position in the 2d char array, used in getTabInMap() **/
         pngArray[i][j]= pngName;
     }
 
+    /**
+     * first spmlits the string from the DB into String[] at \n
+     * then puts the String[] into a char[]
+     */
     public void getMapInTab() {    /** put String got from the DB into a 2d char array **/
         String[] tabmap = this.map.split("\n");     /** splitting string into string array **/
         for (int i =0; i < tabmap.length; i++)      /** beginning of the parser to put string array into 2d char array at the same x, y (here j,i) position **/
@@ -243,16 +268,6 @@ public class Model extends Observable implements IModel {
     }
 
     /**
-     * Set the map when changed
-     * @param map
-     */
-    private void setMap(final String map) {;
-        this.map = map;
-        this.setChanged();
-        this.notifyObservers();
-    }
-
-    /**
      * Load the map
      * @param key
      */
@@ -263,11 +278,6 @@ public class Model extends Observable implements IModel {
         } catch (final SQLException e) {
             e.printStackTrace();
         }
-    }
-
-    private void setDBplayer(final String[] name, final int[] score) {
-        this.setDBplayerName(name);
-        this.setDBplayerScore(score);
     }
 
     /**

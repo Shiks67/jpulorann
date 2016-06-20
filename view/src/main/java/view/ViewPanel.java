@@ -262,14 +262,4 @@ class ViewPanel extends JPanel implements Observer {
 
 		System.exit(0);		/** exit game **/
 	}
-
-	public void emptyChar() {
-		for(int i = 0; i < this.map.length; i++)			/** beginning of the parser **/
-		{
-			for (int j = 0; j < this.map[i].length; j++)
-			{
-				map[i][j] = ' ';
-			}
-		}
-	}
 }
