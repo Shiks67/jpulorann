@@ -227,6 +227,7 @@ class ViewPanel extends JPanel implements Observer {
 			graphics.drawString("LEVEL : " + this.viewFrame.getModel().getMapnumber(),200,this.getHeight()-10);
 			graphics.setColor(Color.BLACK);		/** everything next is black again just in case **/
 		}
+		this.viewFrame.getModel().checkFireball();
 		this.viewFrame.getModel().fireAnimation();
 		this.viewFrame.getModel().checkFireball();
 
@@ -242,6 +243,10 @@ class ViewPanel extends JPanel implements Observer {
 		}
 	}
 
+	/**
+	 * What we do at the end of the game :
+	 * ask for player name and put it with the score in the DB
+	 */
 	public void endGame() {
 		JOptionPane jop = new JOptionPane(), jop2 = new JOptionPane();
 		String nom = jop.showInputDialog(null, "Your name", JOptionPane.QUESTION_MESSAGE);

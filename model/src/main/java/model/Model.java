@@ -18,142 +18,316 @@ import java.util.Observable;
 public class Model extends Observable implements IModel {
 
     /** The array */
+    private char[][] pngArray = new char[this.getHeight()][this.getWidth()];
     private final int height = 12;
     private final int width = 21;
-    private char[][] pngArray = new char[this.getHeight()][this.getWidth()];
 
-    /** other variable */
-    private String[] DBplayerName = new String[6];  /** player name from the DB */
-    private int[] DBplayerScore = new int[6];       /** player score from the DB */
-    private String lastMove = "RIGHT";      /** saving the last move */
-    private String fireDirection = "RIGHT"; /** saving direction of fire */
+    /** other variables **/
+    /**
+     * Player name from the DB
+     */
+    private String[] DBplayerName = new String[6];
+    /**
+     * Player score from the DB
+     */
+    private int[] DBplayerScore = new int[6];
+    /**
+     * Saving of the last move
+     */
+    private String lastMove = "RIGHT";
+    /**
+     * Saving of fire direction
+     */
+    private String fireDirection = "RIGHT";
+    /**
+     * Boolean shoot able or not
+     */
     private int canShoot = 1;
+    /**
+     * If monster 1 is dead
+     */
     private int death1 = 0;
+    /**
+     * If monster 2 is dead
+     */
     private int death2 = 0;
+    /**
+     * If monster 3 is dead
+     */
     private int death3 = 0;
+    /**
+     * If monster 4 is dead
+     */
     private int death4 = 0;
-    private int mapnumber = 1;  /** level number to display it down below */
-    private int thatmap = 0;    /** used for the choice of map to be done only once */
-    private int OnGate = 0;     /** boolean if the player is on a gate */
-    private int o = 0;  /** Timer for monsters, incremented to 3 to moves monsters then reset to 0 **/
-    private int Score;  /** ingame score **/
+    /**
+     * Level number
+     */
+    private int mapnumber = 1;
+    /**
+     * Used for the choice of map to be done only once
+     */
+    private int thatmap = 0;
+    /**
+     * Boolean if the player is on a gate
+     */
+    private int OnGate = 0;
+    /**
+     * Timer for monsters, incremented to 3 to moves monsters then reset to 0
+     */
+    private int o = 0;
+    /**
+     * Ingame score
+     */
+    private int Score;
 
-    /** The objects */
+    /** The objects **/
+    /**
+     * Fireball
+     */
     private Shoot shoot;
+    /**
+     * Hero
+     */
     private Hero hero;
+    /**
+     * Gate closed
+     */
     private GateC gateC;
+    /**
+     * Monster 1
+     */
     private Monster1 monster1;
+    /**
+     * Monster 2
+     */
     private Monster2 monster2;
+    /**
+     * Monster 3
+     */
     private Monster3 monster3;
+    /**
+     * Monster 4
+     */
     private Monster4 monster4;
 
 
-
-    /** The map */
+    /**
+     * The map from the DB
+     */
     private String map;
 
-    /** getters */
-
+    /** getters **/
+    /**
+     * Get the observalbe
+     * @return
+     */
     public Observable getObservable() {
         return this;
     }
 
+    /**
+     * Get boolean onGate
+     * @return
+     */
     public int getOnGate() {
         return OnGate;
     }
 
+    /**
+     * Get the Hero
+     * @return
+     */
     public Hero  getHero()  { return this.hero;}
 
+    /**
+     * Get gate closed
+     * @return
+     */
     public GateC getGateC() { return this.gateC;}
 
+    /**
+     * Get the fireball
+     * @return
+     */
     public Shoot getShoot() { return this.shoot;}
 
+    /**
+     * Get monster n°1
+     * @return
+     */
     public Monster1 getMonster1() {
         return monster1;
     }
 
+    /**
+     * Get monster n°2
+     * @return
+     */
     public Monster2 getMonster2() {
         return monster2;
     }
 
+    /**
+     * Get monster n°3
+     * @return
+     */
     public Monster3 getMonster3() {
         return monster3;
     }
 
+    /**
+     * Get monster n°4
+     * @return
+     */
     public Monster4 getMonster4() {
         return monster4;
     }
 
+    /**
+     * Get the char[][] containing the map
+     * @return
+     */
     public char[][] getMap() {  /** return chat 2d array used to display images in view by copy **/
         return pngArray;
     }
 
+    /**
+     * Get timer o
+     * @return
+     */
     public int getO() {
         return o;
     }
 
+    /**
+     * Get the thatmap
+     * @return
+     */
     public int getThatmap() {
         return thatmap;
     }
 
+    /**
+     * Get the actual map number
+     * @return
+     */
     public int getMapnumber() {
         return this.mapnumber;
     }
 
-    public void setMapnumber(int mapnumber) {
-        this.mapnumber = mapnumber;
-    }
-
+    /**
+     * Get map height
+     * @return
+     */
     public int getHeight() {
         return this.height;
     }
 
+    /**
+     * Get map width
+     * @return
+     */
     public int getWidth() {
         return this.width;
     }
 
+    /**
+     * Get the score
+     * @return
+     */
     public int getScore() {
         return Score;
     }
 
+    /**
+     * Get the player name from the DB
+     * @param i
+     * @return
+     */
     public String getDBplayerName(int i) {
         return this.DBplayerName[i];
     }
 
+    /**
+     * Get the player score from the DB
+     * @param i
+     * @return
+     */
     public int getDBplayerScore(int i) {
         return this.DBplayerScore[i];
     }
 
+    /**
+     * Get the last player move
+     * @return
+     */
     public String getLastMove(){
         return this.lastMove;
     }
 
+    /**
+     * Get the direction of the shot
+     * @return
+     */
     public String getFireDirection(){
         return this.fireDirection;
     }
 
-    /** setters */
+    /** setters **/
 
+    /**
+     * Set the player name from the DB
+     * @param DBplayerName
+     */
     public void setDBplayerName(String DBplayerName[]) {
         this.DBplayerName = DBplayerName;
     }
 
+    /**
+     * Set the score of the player from the DB
+     * @param DBplayerScore
+     */
     public void setDBplayerScore(int DBplayerScore[]) {
         this.DBplayerScore = DBplayerScore;
     }
 
+    /**
+     * Set the map number to display it at the bottom of the screen
+     * @param mapnumber
+     */
+    public void setMapnumber(int mapnumber) {
+        this.mapnumber = mapnumber;
+    }
+
+    /**
+     * Set the timer o
+     * @param o
+     */
     public void setO(int o) {
         this.o = o;
     }
 
+    /**
+     * Set the variable for the map selection to be done only once in the beginning of the game
+     * @param thatmap
+     */
     public void setThatmap(int thatmap) {
         this.thatmap = thatmap;
     }
 
+    /**
+     * Set the last move done ingame
+     * @param lastMove
+     */
     public void setLastMove(String lastMove){
         this.lastMove = lastMove;
     }
 
+    /**
+     * Set the player name from the DB
+     * @param name
+     * @param score
+     */
     private void setDBplayer(final String[] name, final int[] score) {
         this.setDBplayerName(name);
         this.setDBplayerScore(score);
@@ -383,7 +557,7 @@ public class Model extends Observable implements IModel {
     }
 
     /**
-     * Fire ball
+     * Check fire-ball's position compared to monster / hero position (to kill ennemies and stuff)
      */
     public void checkFireball(){
         if (getShoot().getX() == getHero().getX() && getShoot().getY() == getHero().getY()) {
@@ -428,11 +602,13 @@ public class Model extends Observable implements IModel {
             this.getShoot().setY(21);
         }
     }
-
+    /**
+     Used to animate the Fireball at the good position
+     */
     public void fireAnimation() {
         if (canShoot == 0) {
-            if (getFireDirection() == "RIGHT" ) {
-                if (this.fMovePossible(this.getShoot().getY(), this.getShoot().getX() + 1)) {
+            if (getFireDirection() == "RIGHT" ) { /** If the firedirection is right ,this fireball will go right **/
+                if (this.fMovePossible(this.getShoot().getY(), this.getShoot().getX()+1)) {
                     this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = ' ';
                     this.getShoot().moveRIGHT();
                     this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = 'M';
@@ -482,32 +658,69 @@ public class Model extends Observable implements IModel {
         }
     }
 
+    /**
+     Used to place the Fireball at the good position
+     **/
+
     public void fireBall() {
         if (canShoot == 1) {
             canShoot = 0;
             if (getLastMove() == "RIGHT") {
-                this.getShoot().setY(this.getHero().getY());
-                this.getShoot().setX(this.getHero().getX() + 1);
-                this.pngArray[this.getHero().getY()][this.getHero().getX() + 1] = 'M';
-                fireDirection = "RIGHT";
+                if(this.fMovePossible(this.getHero().getY(), this.getHero().getX()+1)) {
+                    this.getShoot().setY(this.getHero().getY());
+                    this.getShoot().setX(this.getHero().getX() + 1);
+                    this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = 'M';
+                    fireDirection = "RIGHT";
+                }
+                else {
+                    this.getShoot().setY(this.getHero().getY());
+                    this.getShoot().setX(this.getHero().getX() - 1);
+                    this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = 'M';
+                    fireDirection = "LEFT";
+                }
             }
             if (getLastMove() == "LEFT") {
-                this.getShoot().setY(this.getHero().getY());
-                this.getShoot().setX(this.getHero().getX() - 1);
-                this.pngArray[this.getHero().getY()][this.getHero().getX() - 1] = 'M';
-                fireDirection = "LEFT";
+                if(this.fMovePossible(this.getHero().getY(), this.getHero().getX()-1)) {
+                    this.getShoot().setY(this.getHero().getY());
+                    this.getShoot().setX(this.getHero().getX() - 1);
+                    this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = 'M';
+                    fireDirection = "LEFT";
+                }
+                else {
+                    this.getShoot().setY(this.getHero().getY());
+                    this.getShoot().setX(this.getHero().getX() + 1);
+                    this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = 'M';
+                    fireDirection = "RIGHT";
+                }
             }
             if (getLastMove() == "UP") {
-                this.getShoot().setY(this.getHero().getY() - 1);
-                this.getShoot().setX(this.getHero().getX());
-                this.pngArray[this.getHero().getY() - 1][this.getHero().getX()] = 'M';
-                fireDirection = "UP";
+                if (this.fMovePossible(this.getHero().getY() - 1, this.getHero().getX())) {
+                    this.getShoot().setY(this.getHero().getY() - 1);
+                    this.getShoot().setX(this.getHero().getX());
+                    this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = 'M';
+                    fireDirection = "UP";
+                }
+                else {
+                    this.getShoot().setY(this.getHero().getY() + 1);
+                    this.getShoot().setX(this.getHero().getX());
+                    this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = 'M';
+                    fireDirection = "DOWN";
+                }
+
             }
             if (getLastMove() == "DOWN") {
-                this.getShoot().setY(this.getHero().getY() + 1);
-                this.getShoot().setX(this.getHero().getX());
-                this.pngArray[this.getHero().getY() + 1][this.getHero().getX()] = 'M';
-                fireDirection = "DOWN";
+                if (this.fMovePossible(this.getHero().getY() + 1, this.getHero().getX())) {
+                    this.getShoot().setY(this.getHero().getY() + 1);
+                    this.getShoot().setX(this.getHero().getX());
+                    this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = 'M';
+                    fireDirection = "DOWN";
+                }
+                else {
+                    this.getShoot().setY(this.getHero().getY() - 1);
+                    this.getShoot().setX(this.getHero().getX());
+                    this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = 'M';
+                    fireDirection = "UP";
+                }
             }
         }
     }
