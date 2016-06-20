@@ -331,6 +331,7 @@ public class Model extends Observable implements IModel {
             pngArray[getHero().getY()][getHero().getX()] = ' ';
             return true;
         }
+
         return false;
     }
 
@@ -345,6 +346,8 @@ public class Model extends Observable implements IModel {
             this.death1 = 1;
             this.getMonster1().setX(0);
             this.getMonster1().setY(0);
+            this.getShoot().setX(11);
+            this.getShoot().setY(21);
 
         }
         else if (getShoot().getX() == getMonster2().getX() && getShoot().getY() == getMonster2().getY()) {
@@ -353,6 +356,8 @@ public class Model extends Observable implements IModel {
             this.death2 = 1;
             this.getMonster2().setX(0);
             this.getMonster2().setY(0);
+            this.getShoot().setX(11);
+            this.getShoot().setY(21);
         }
         else if (getShoot().getX() == getMonster3().getX() && getShoot().getY() == getMonster3().getY()) {
             pngArray[getMonster3().getY()][getMonster3().getX()] = ' ';
@@ -360,6 +365,8 @@ public class Model extends Observable implements IModel {
             this.death3 = 1;
             this.getMonster3().setX(0);
             this.getMonster3().setY(0);
+            this.getShoot().setX(11);
+            this.getShoot().setY(21);
         }
         else if (getShoot().getX() == getMonster4().getX() && getShoot().getY() == getMonster4().getY()) {
             pngArray[getMonster4().getY()][getMonster4().getX()] = ' ';
@@ -367,6 +374,8 @@ public class Model extends Observable implements IModel {
             this.death4 = 1;
             this.getMonster4().setX(0);
             this.getMonster4().setY(0);
+            this.getShoot().setX(11);
+            this.getShoot().setY(21);
         }
     }
 
