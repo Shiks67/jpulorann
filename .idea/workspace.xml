@@ -3,11 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="69e7211a-abd9-46ca-9785-cd2ef29c1473" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/src/main/java/controller/Controller.java" afterPath="$PROJECT_DIR$/controller/src/main/java/controller/Controller.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/src/main/java/model/DAOLoadMap.java" afterPath="$PROJECT_DIR$/model/src/main/java/model/DAOLoadMap.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/src/main/java/model/LoadHighscores.java" afterPath="$PROJECT_DIR$/model/src/main/java/model/LoadHighscores.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/src/main/java/model/Model.java" afterPath="$PROJECT_DIR$/model/src/main/java/model/Model.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/src/main/java/view/ViewPanel.java" afterPath="$PROJECT_DIR$/view/src/main/java/view/ViewPanel.java" />
     </list>
     <ignored path="masterpom.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -123,8 +118,8 @@
       <file leaf-file-name="LoadMap.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/model/src/main/java/model/LoadMap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1258">
-              <caret line="84" column="18" selection-start-line="84" selection-start-column="18" selection-end-line="84" selection-end-column="18" />
+            <state relative-caret-position="408">
+              <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -173,7 +168,6 @@
         <option value="$PROJECT_DIR$/model/src/main/java/element/motionless/MotionlessElement.java" />
         <option value="$PROJECT_DIR$/model/src/main/java/model/INettleWorld.java" />
         <option value="$PROJECT_DIR$/model/src/test/java/model/ModelTest.java" />
-        <option value="$PROJECT_DIR$/model/src/main/java/model/LoadMap.java" />
         <option value="$PROJECT_DIR$/model/src/main/java/model/DAOEntity.java" />
         <option value="$PROJECT_DIR$/model/src/main/java/model/DAOHelloWorld.java" />
         <option value="$PROJECT_DIR$/contract/src/main/java/contract/ControllerOrder.java" />
@@ -194,6 +188,7 @@
         <option value="$PROJECT_DIR$/model/src/main/java/model/Model.java" />
         <option value="$PROJECT_DIR$/model/src/main/java/model/DAOLoadMap.java" />
         <option value="$PROJECT_DIR$/model/src/main/java/model/LoadHighscores.java" />
+        <option value="$PROJECT_DIR$/model/src/main/java/model/LoadMap.java" />
       </list>
     </option>
   </component>
@@ -1080,7 +1075,7 @@
       <workItem from="1466178640392" duration="124000" />
       <workItem from="1466244944650" duration="1144000" />
       <workItem from="1466405689134" duration="1690000" />
-      <workItem from="1466413185768" duration="1629000" />
+      <workItem from="1466413185768" duration="1730000" />
     </task>
     <task id="LOCAL-00001" summary="Push test">
       <created>1465804918356</created>
@@ -1334,7 +1329,14 @@
       <option name="project" value="LOCAL" />
       <updated>1466406388659</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="sort code + few comments">
+      <created>1466414872340</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1466414872340</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1346,11 +1348,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113651000" />
+    <option name="totallyTimeSpent" value="113752000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1592" y="-189" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -1360,7 +1362,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33028722" sideWeight="0.5025" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1627907" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26215646" sideWeight="0.4975" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26215646" sideWeight="0.4975" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1418,7 +1420,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add pngs and correct display size" />
     <MESSAGE value="minor bug fix" />
     <MESSAGE value="KeyListenner for lorann" />
     <MESSAGE value="Lorann's motion" />
@@ -1443,7 +1444,8 @@
     <MESSAGE value="100  COMMITS MOTHERFUCKER !!!!!!!!" />
     <MESSAGE value="you can now only load a new map at the beginning ( before that commit everytime was possible to load a map)" />
     <MESSAGE value="DB update to optimise maps" />
-    <option name="LAST_COMMIT_MESSAGE" value="DB update to optimise maps" />
+    <MESSAGE value="sort code + few comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="sort code + few comments" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1724,8 +1726,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/model/src/main/java/model/LoadMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1258">
-          <caret line="84" column="18" selection-start-line="84" selection-start-column="18" selection-end-line="84" selection-end-column="18" />
+        <state relative-caret-position="408">
+          <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
           <folding />
         </state>
       </provider>
