@@ -31,7 +31,6 @@ public class Model extends Observable implements IModel {
     private Shoot shoot;
     private Hero hero;
     private GateC gateC;
-    private GateO gateO;
     private Monster1 monster1;
     private Monster2 monster2;
     private Monster3 monster3;
@@ -141,7 +140,6 @@ public class Model extends Observable implements IModel {
         this.map = "";
         hero = new Hero(1,1);
         gateC = new GateC(0,0);
-        gateO = new GateO(0,0);
         shoot = new Shoot(11,21);
         monster1 = new Monster1(0,0);
         monster2 = new Monster2(0,0);
@@ -207,8 +205,6 @@ public class Model extends Observable implements IModel {
                         break;
                     case 'O':
                         putPngName(i,j,'O');
-                        gateO.setX(j);
-                        gateO.setY(i);
                         break;
                     case 'K' :
                         putPngName(i,j,'K');
@@ -342,6 +338,7 @@ public class Model extends Observable implements IModel {
 
     /**
      * Check if lorann can move
+     * if there isn't the wrong sprite to the next position
      * @param x
      * @param y
      * @return
@@ -509,11 +506,11 @@ public class Model extends Observable implements IModel {
      * Lorann's moves
      */
 
-    public void lastHP(){
+    private void lastHP(){
         pngArray[getHero().getY()][getHero().getX()] = ' ';
     }
 
-    public void newHP(){
+    private void newHP(){
         pngArray[getHero().getY()][getHero().getX()] = 'L';
     }
 
@@ -587,6 +584,7 @@ public class Model extends Observable implements IModel {
 
     /**
      * Monsters IA
+     * They compare their own position with lorann's position then change their position
      */
 
     public void monster1() {
@@ -596,22 +594,25 @@ public class Model extends Observable implements IModel {
                 int hx = getHero().getX();
                 int my = getMonster1().getY();
                 int hy = getHero().getY();
-
+                /** if x is lower than lorann's increments it**/
                 if (mx < hx && mMovePossible(getMonster1().getY(), getMonster1().getX() + 1)) {
                     pngArray[getMonster1().getY()][getMonster1().getX()] = ' ';
                     getMonster1().moveRIGHT();
                     pngArray[getMonster1().getY()][getMonster1().getX()] = '1';
                 }
+                /** if x is higher than lorann's decrement it**/
                 if (mx > hx && mMovePossible(getMonster1().getY(), getMonster1().getX() - 1)) {
                     pngArray[getMonster1().getY()][getMonster1().getX()] = ' ';
                     getMonster1().moveLEFT();
                     pngArray[getMonster1().getY()][getMonster1().getX()] = '1';
                 }
+                /** if y is lower than lorann's increments it**/
                 if (my < hy && mMovePossible(getMonster1().getY() + 1, getMonster1().getX())) {
                     pngArray[getMonster1().getY()][getMonster1().getX()] = ' ';
                     getMonster1().moveDOWN();
                     pngArray[getMonster1().getY()][getMonster1().getX()] = '1';
                 }
+                /** if y is higher than lorann's decrement it **/
                 if (my > hy && mMovePossible(getMonster1().getY() - 1, getMonster1().getX())) {
                     pngArray[getMonster1().getY()][getMonster1().getX()] = ' ';
                     getMonster1().moveUp();

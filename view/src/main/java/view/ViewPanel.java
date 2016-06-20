@@ -237,7 +237,7 @@ class ViewPanel extends JPanel implements Observer {
 		}
 		if(this.viewFrame.getModel().getOnGate() == 1 && Win == 0){
 			Win= 1;
-			this.viewFrame.printMap("GG SUCH A WIN, SO HARD");
+			this.viewFrame.printMap("CONGRATULATIONS !\n You've finished the game !");
 			this.endGame();
 		}
 	}

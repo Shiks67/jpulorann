@@ -133,7 +133,7 @@ class ViewFrame extends JFrame implements KeyListener {
 		this.setContentPane(new ViewPanel(this));
 		this.setSize(649,440);
 		this.setLocationRelativeTo(null);
-		this.setTitle("LORANN RELOADED, SO NEW, VERY FRESH, SUCH BEAUTIFUL, WOW");	/** changed title of the frame to something more fancy **/
+		this.setTitle("LORANN v2.0");	/** changed title of the frame to something more fancy **/
 	}
 
 	/**
