@@ -17,28 +17,18 @@ import java.util.Observable;
  */
 public class Model extends Observable implements IModel {
 
-
-    int thatmap = 0;
-
     private String[] DBplayerName = new String[6];
     private int[] DBplayerScore = new int[6];
-    public String lastMove = "RIGHT";
-    public String fireDirection = "RIGHT";
-    public int canShoot = 1;
-    public int death1 = 0;
-    public int death2 = 0;
-    public int death3 = 0;
-    public int death4 = 0;
+    private String lastMove = "RIGHT";
+    private String fireDirection = "RIGHT";
+    private int canShoot = 1;
+    private int death1 = 0;
+    private int death2 = 0;
+    private int death3 = 0;
+    private int death4 = 0;
     private int mapnumber = 1;
 
-    public int getOnGate() {
-        return OnGate;
-    }
-
-
-    public int OnGate = 0;
-
-    public Shoot shoot;
+    private Shoot shoot;
     private Hero hero;
     private GateC gateC;
     private GateO gateO;
@@ -47,9 +37,9 @@ public class Model extends Observable implements IModel {
     private Monster3 monster3;
     private Monster4 monster4;
 
-
-    private int o = 0;
-
+    private int thatmap = 0;
+    private int OnGate = 0;
+    private int o = 0; /** Timer for monsters, incremented to 3 to moves monsters then reset to 0 **/
     private int Score;  /** ingame score **/
 
     /** The array of objects **/
@@ -68,8 +58,37 @@ public class Model extends Observable implements IModel {
         this.mapnumber = mapnumber;
     }
 
+    /** getters and setters **/
 
-    /** getters **/
+    public int getOnGate() {
+        return OnGate;
+    }
+
+    public Hero  getHero()  { return this.hero;}
+
+    public GateC getGateC() { return this.gateC;}
+
+    public Shoot getShoot() { return this.shoot;}
+
+    public Monster1 getMonster1() {
+        return monster1;
+    }
+
+    public Monster2 getMonster2() {
+        return monster2;
+    }
+
+    public Monster3 getMonster3() {
+        return monster3;
+    }
+
+    public Monster4 getMonster4() {
+        return monster4;
+    }
+
+    public char[][] getMap() {  /** return chat 2d array used to display images in view by copy **/
+        return pngArray;
+    }
 
     public int getO() {
         return o;
@@ -87,9 +106,6 @@ public class Model extends Observable implements IModel {
         this.thatmap = thatmap;
     }
 
-    public int getCanShoot() { return this.canShoot;}
-
-    public void setCanShoot(int canShoot) {this.canShoot = canShoot;}
     public int getHeight() {
         return this.height;
     }
@@ -110,7 +126,6 @@ public class Model extends Observable implements IModel {
         return this.DBplayerScore[i];
     }
 
-    /** setters **/
     public void setDBplayerName(String DBplayerName[]) {
         this.DBplayerName = DBplayerName;
     }
@@ -118,6 +133,7 @@ public class Model extends Observable implements IModel {
     public void setDBplayerScore(int DBplayerScore[]) {
         this.DBplayerScore = DBplayerScore;
     }
+
     /**
      * Instantiates a new model.
      */
@@ -230,41 +246,20 @@ public class Model extends Observable implements IModel {
         }
     }
 
-    public Hero  getHero()  { return this.hero;}
-
-    public GateC getGateC() { return this.gateC;}
-
-    public GateO getGateO() { return this.gateO;}
-
-
-    public Shoot getShoot() { return this.shoot;}
-
-    public Monster1 getMonster1() {
-        return monster1;
-    }
-
-    public Monster2 getMonster2() {
-        return monster2;
-    }
-
-    public Monster3 getMonster3() {
-        return monster3;
-    }
-
-    public Monster4 getMonster4() {
-        return monster4;
-    }
-
-    public char[][] getMap() {  /** return chat 2d array used to display images in view by copy **/
-        return pngArray;
-    }
-
+    /**
+     * Set the map when changed
+     * @param map
+     */
     private void setMap(final String map) {;
         this.map = map;
         this.setChanged();
         this.notifyObservers();
     }
 
+    /**
+     * Load the map
+     * @param key
+     */
     public void loadMap(String key) {
         try {
             final DAOLoadMap daoLoadMap = new DAOLoadMap(DBConnection.getInstance().getConnection());
@@ -279,6 +274,9 @@ public class Model extends Observable implements IModel {
         this.setDBplayerScore(score);
     }
 
+    /**
+     * Load the HighScore
+     */
     public void loadHighscores() {
         try {
             final DAOLoadMap daoLoadMap = new DAOLoadMap(DBConnection.getInstance().getConnection());
@@ -288,9 +286,23 @@ public class Model extends Observable implements IModel {
         }
     }
 
+    /**
+     * Check if the next sprite is a movable sprite for monsters
+     * @param x
+     * @param y
+     * @return
+     */
     private boolean mMovePossible(final int x, final int y){
         return (pngArray[x][y] == ' ' || pngArray[x][y] == 'L');
     }
+
+    /**
+     * Check if the next sprite is not blocking the fireball
+     * @param x
+     * @param y
+     * @return
+     */
+
     private boolean fMovePossible(final int x, final int y) {
         return (pngArray[x][y] != 'V' && pngArray[x][y] != 'H'
                 && pngArray[x][y] != 'B' && pngArray[x][y] != 'C'
@@ -298,18 +310,42 @@ public class Model extends Observable implements IModel {
                 && pngArray[x][y] != 'K');
     }
 
+    /**
+     * Check if lorann is on the crystal to open the gate
+     * @param x
+     * @param y
+     * @return
+     */
     private boolean openGate(final int x, final int y){
         return (pngArray[x][y] == 'K');
     }
 
+    /**
+     * check if lorann is on the purse to get +100 score
+     * @param x
+     * @param y
+     * @return
+     */
     private boolean isPurse(final int x, final int y){
         return (pngArray[x][y] == 'P');
     }
 
+    /**
+     * If lorann is on the gate
+     * @param x
+     * @param y
+     * @return
+     */
     private boolean onGate(final int x, final int y){
         return (pngArray[x][y] == 'O');
     }
 
+    /**
+     * Check if lorann can move
+     * @param x
+     * @param y
+     * @return
+     */
     private boolean isMovePossible(final int x, final int y){
         return (pngArray[x][y] != 'V' && pngArray[x][y] != 'H'
              && pngArray[x][y] != 'B' && pngArray[x][y] != 'C'
@@ -317,6 +353,10 @@ public class Model extends Observable implements IModel {
              && pngArray[x][y] != '3' && pngArray[x][y] != '4');
     }
 
+    /**
+     * check if lorann is dead or not
+     * @return
+     */
     public boolean isDead(){
         if (getMonster1().getX() == getHero().getX() && getMonster1().getY() == getHero().getY()){
             pngArray[getHero().getY()][getHero().getX()] = ' ';
@@ -335,6 +375,9 @@ public class Model extends Observable implements IModel {
         return false;
     }
 
+    /**
+     * Fire ball
+     */
     public void checkFireball(){
         if (getShoot().getX() == getHero().getX() && getShoot().getY() == getHero().getY()) {
             pngArray[getHero().getY()][getHero().getX()] = 'L';
@@ -378,6 +421,93 @@ public class Model extends Observable implements IModel {
             this.getShoot().setY(21);
         }
     }
+
+    public void fireAnimation() {
+        if (canShoot == 0) {
+            if (getFireDirection() == "RIGHT" ) {
+                if (this.fMovePossible(this.getShoot().getY(), this.getShoot().getX() + 1)) {
+                    this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = ' ';
+                    this.getShoot().moveRIGHT();
+                    this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = 'M';
+                } else {
+                    this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = ' ';
+                    this.getShoot().moveLEFT();
+                    this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = 'M';
+                    fireDirection = "LEFT";
+                }
+            } else if (getFireDirection() == "LEFT") {
+                if (this.fMovePossible(this.getShoot().getY(), this.getShoot().getX() - 1)) {
+                    this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = ' ';
+                    this.getShoot().moveLEFT();
+                    this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = 'M';
+                } else {
+                    this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = ' ';
+                    this.getShoot().moveRIGHT();
+                    this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = 'M';
+                    fireDirection = "RIGHT";
+
+                }
+            } else if (getFireDirection() == "UP") {
+                if (this.fMovePossible(this.getShoot().getY() - 1, this.getShoot().getX())) {
+                    this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = ' ';
+                    this.getShoot().moveUP();
+                    this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = 'M';
+                } else {
+                    this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = ' ';
+                    this.getShoot().moveDOWN();
+                    this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = 'M';
+                    fireDirection = "DOWN";
+                }
+            } else if (getFireDirection() == "DOWN") {
+                if (this.fMovePossible(this.getShoot().getY() + 1, this.getShoot().getX())) {
+                    this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = ' ';
+                    this.getShoot().moveDOWN();
+                    this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = 'M';
+                } else {
+                    this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = ' ';
+                    this.getShoot().moveUP();
+                    this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = 'M';
+                    fireDirection = "UP";
+
+                }
+
+            }
+        }
+    }
+
+    public void fireBall() {
+        if (canShoot == 1) {
+            canShoot = 0;
+            if (getLastMove() == "RIGHT") {
+                this.getShoot().setY(this.getHero().getY());
+                this.getShoot().setX(this.getHero().getX() + 1);
+                this.pngArray[this.getHero().getY()][this.getHero().getX() + 1] = 'M';
+                fireDirection = "RIGHT";
+            }
+            if (getLastMove() == "LEFT") {
+                this.getShoot().setY(this.getHero().getY());
+                this.getShoot().setX(this.getHero().getX() - 1);
+                this.pngArray[this.getHero().getY()][this.getHero().getX() - 1] = 'M';
+                fireDirection = "LEFT";
+            }
+            if (getLastMove() == "UP") {
+                this.getShoot().setY(this.getHero().getY() - 1);
+                this.getShoot().setX(this.getHero().getX());
+                this.pngArray[this.getHero().getY() - 1][this.getHero().getX()] = 'M';
+                fireDirection = "UP";
+            }
+            if (getLastMove() == "DOWN") {
+                this.getShoot().setY(this.getHero().getY() + 1);
+                this.getShoot().setX(this.getHero().getX());
+                this.pngArray[this.getHero().getY() + 1][this.getHero().getX()] = 'M';
+                fireDirection = "DOWN";
+            }
+        }
+    }
+
+    /**
+     * Lorann's moves
+     */
 
     public void lastHP(){
         pngArray[getHero().getY()][getHero().getX()] = ' ';
@@ -438,89 +568,6 @@ public class Model extends Observable implements IModel {
         }
     }
 
-   public void fireAnimation() {
-           if (canShoot == 0) {
-               if (getFireDirection() == "RIGHT" ) {
-                   if (this.fMovePossible(this.getShoot().getY(), this.getShoot().getX() + 1)) {
-                       this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = ' ';
-                       this.getShoot().moveRIGHT();
-                       this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = 'M';
-                   } else {
-                       this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = ' ';
-                       this.getShoot().moveLEFT();
-                       this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = 'M';
-                       fireDirection = "LEFT";
-                   }
-               } else if (getFireDirection() == "LEFT") {
-                   if (this.fMovePossible(this.getShoot().getY(), this.getShoot().getX() - 1)) {
-                       this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = ' ';
-                       this.getShoot().moveLEFT();
-                       this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = 'M';
-                   } else {
-                       this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = ' ';
-                       this.getShoot().moveRIGHT();
-                       this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = 'M';
-                       fireDirection = "RIGHT";
-
-                   }
-               } else if (getFireDirection() == "UP") {
-                   if (this.fMovePossible(this.getShoot().getY() - 1, this.getShoot().getX())) {
-                       this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = ' ';
-                       this.getShoot().moveUP();
-                       this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = 'M';
-                   } else {
-                       this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = ' ';
-                       this.getShoot().moveDOWN();
-                       this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = 'M';
-                       fireDirection = "DOWN";
-                   }
-               } else if (getFireDirection() == "DOWN") {
-                   if (this.fMovePossible(this.getShoot().getY() + 1, this.getShoot().getX())) {
-                       this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = ' ';
-                       this.getShoot().moveDOWN();
-                       this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = 'M';
-                   } else {
-                       this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = ' ';
-                       this.getShoot().moveUP();
-                       this.pngArray[this.getShoot().getY()][this.getShoot().getX()] = 'M';
-                       fireDirection = "UP";
-
-                   }
-
-               }
-           }
-       }
-
-    public void fireBall() {
-        if (canShoot == 1) {
-            canShoot = 0;
-            if (getLastMove() == "RIGHT") {
-                this.getShoot().setY(this.getHero().getY());
-                this.getShoot().setX(this.getHero().getX() + 1);
-                this.pngArray[this.getHero().getY()][this.getHero().getX() + 1] = 'M';
-                fireDirection = "RIGHT";
-            }
-            if (getLastMove() == "LEFT") {
-                this.getShoot().setY(this.getHero().getY());
-                this.getShoot().setX(this.getHero().getX() - 1);
-                this.pngArray[this.getHero().getY()][this.getHero().getX() - 1] = 'M';
-                fireDirection = "LEFT";
-            }
-            if (getLastMove() == "UP") {
-                this.getShoot().setY(this.getHero().getY() - 1);
-                this.getShoot().setX(this.getHero().getX());
-                this.pngArray[this.getHero().getY() - 1][this.getHero().getX()] = 'M';
-                fireDirection = "UP";
-            }
-            if (getLastMove() == "DOWN") {
-                this.getShoot().setY(this.getHero().getY() + 1);
-                this.getShoot().setX(this.getHero().getX());
-                this.pngArray[this.getHero().getY() + 1][this.getHero().getX()] = 'M';
-                fireDirection = "DOWN";
-            }
-        }
-    }
-
     public void moveLEFT() {
         if(isPurse(getHero().getY(), getHero().getX() - 1)){
             Score += 100;
@@ -538,6 +585,9 @@ public class Model extends Observable implements IModel {
         }
     }
 
+    /**
+     * Monsters IA
+     */
 
     public void monster1() {
         if (this.getO() == 3) {
@@ -570,7 +620,6 @@ public class Model extends Observable implements IModel {
             }
         }
     }
-
 
     public void monster2() {
         if (this.getO() == 3) {
@@ -669,6 +718,10 @@ public class Model extends Observable implements IModel {
         }
     }
 
+    /**
+     * Load next level
+     */
+
     private void verifyMapDoor() {
         switch(this.getMapnumber()) {
             case 1:
@@ -717,6 +770,9 @@ public class Model extends Observable implements IModel {
             default:
                 break;
         }
+        /**
+         * FireBall remover when lvl up
+         */
         this.getShoot().setY(this.getHero().getY());
         this.getShoot().setX(this.getHero().getX());
     }
