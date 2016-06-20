@@ -247,6 +247,12 @@ class ViewPanel extends JPanel implements Observer {
 			this.viewFrame.printMap("CONGRATULATIONS !\n You finished the game !");
 			this.endGame();
 		}
+		try {
+			Image img = ImageIO.read(new File("sprite/exia.png"));
+			graphics.drawImage(img, this.getWidth()-72, this.getHeight()-35, this);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 
 	/**
