@@ -89,6 +89,9 @@ class ViewPanel extends JPanel implements Observer {
 
 		this.map = this.viewFrame.getModel().getMap();		/** we copy the 2D array from the model to use it to display images **/
 
+		/**
+		 * Instantiate the monsters with their timer
+		 */
 		this.viewFrame.getModel().monster1();
 		this.viewFrame.getModel().monster2();
 		this.viewFrame.getModel().monster3();
@@ -233,15 +236,25 @@ class ViewPanel extends JPanel implements Observer {
 			graphics.drawString("LEVEL : " + this.viewFrame.getModel().getMapnumber(),200,this.getHeight()-10);
 			graphics.setColor(Color.BLACK);		/** everything next is black again just in case **/
 		}
+
+		/**
+		 * Fireball
+		 */
 		this.viewFrame.getModel().checkFireball();
 		this.viewFrame.getModel().fireAnimation();
 		this.viewFrame.getModel().checkFireball();
 
+		/**
+		 * If Lorann is dead
+		 */
 		if(this.viewFrame.getModel().isDead() && GO == 0){
 			GO = 1;
 			this.viewFrame.printMap("GAME OVER");
 			this.endGame();
 		}
+		/**
+		 * if Lorann is on the gate
+		 */
 		if(this.viewFrame.getModel().getOnGate() == 1 && Win == 0){
 			Win= 1;
 			this.viewFrame.printMap("CONGRATULATIONS !\n You finished the game !");
