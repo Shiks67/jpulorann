@@ -2,30 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69e7211a-abd9-46ca-9785-cd2ef29c1473" name="Default" comment="Modify unit tests">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/contract/src/test/java/contract/IControllerTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/contract/src/test/java/contract/IModelTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/contract/src/test/java/contract/IViewTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/controller/src/test/java/controller/ControllerTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/main/src/test/java/main/MainTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/model/src/test/java/element/mobile/Monster2Test.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/model/src/test/java/element/mobile/Monster3Test.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/model/src/test/java/element/mobile/Monster4Test.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/model/src/test/java/model/DAOEntityTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/model/src/test/java/model/DAOHelloWorldTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/model/src/test/java/model/DAOLoadMapTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/model/src/test/java/model/DBConnectionTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/model/src/test/java/model/DBPropertiesTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/model/src/test/java/model/HelloWorldTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/model/src/test/java/model/LoadHighscoresTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/model/src/test/java/model/LoadMapTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/src/test/java/view/ViewFrameTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/src/test/java/view/ViewPanelTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/src/test/java/view/ViewTest.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/src/test/java/element/mobile/HeroTest.java" afterPath="$PROJECT_DIR$/model/src/test/java/element/mobile/HeroTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/src/test/java/element/mobile/Monster1Test.java" afterPath="$PROJECT_DIR$/model/src/test/java/element/mobile/Monster1Test.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/src/test/java/element/mobile/ShootTest.java" afterPath="$PROJECT_DIR$/model/src/test/java/element/mobile/ShootTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/src/test/java/element/motionless/GateCTest.java" afterPath="$PROJECT_DIR$/model/src/test/java/element/motionless/GateCTest.java" />
     </list>
     <ignored path="masterpom.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -155,8 +132,8 @@
       <file leaf-file-name="ShootTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/model/src/test/java/element/mobile/ShootTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+            <state relative-caret-position="119">
+              <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -1391,7 +1368,7 @@
       <workItem from="1466420034156" duration="985000" />
       <workItem from="1466421215930" duration="2278000" />
       <workItem from="1466432064153" duration="2821000" />
-      <workItem from="1466492397026" duration="3508000" />
+      <workItem from="1466492397026" duration="3576000" />
     </task>
     <task id="LOCAL-00001" summary="Push test">
       <created>1465804918356</created>
@@ -1666,7 +1643,14 @@
       <option name="project" value="LOCAL" />
       <updated>1466434130048</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Modify unit tests">
+      <created>1466495931139</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1466495931139</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1702,7 +1686,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="125948000" />
+    <option name="totallyTimeSpent" value="126016000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1936" height="1056" extended-state="0" />
@@ -2598,8 +2582,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/model/src/test/java/element/mobile/ShootTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        <state relative-caret-position="119">
+          <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
           <folding />
         </state>
       </provider>
