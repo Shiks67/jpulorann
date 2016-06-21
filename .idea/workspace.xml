@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69e7211a-abd9-46ca-9785-cd2ef29c1473" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/src/main/java/view/ViewPanel.java" afterPath="$PROJECT_DIR$/view/src/main/java/view/ViewPanel.java" />
     </list>
@@ -44,7 +43,13 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1292">
               <caret line="83" column="22" selection-start-line="83" selection-start-column="22" selection-end-line="83" selection-end-column="22" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#915#916#0" expanded="false" />
+                <element signature="e#938#939#0" expanded="false" />
+                <element signature="e#1062#1063#0" expanded="false" />
+                <element signature="e#1087#1088#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -55,7 +60,7 @@
             <state relative-caret-position="8160">
               <caret line="544" column="0" selection-start-line="544" selection-start-column="0" selection-end-line="544" selection-end-column="0" />
               <folding>
-                <marker date="1466515737924" expanded="true" signature="213:239" ph="/**...*/" />
+                <marker date="1466527843050" expanded="true" signature="213:239" ph="/**...*/" />
               </folding>
             </state>
           </provider>
@@ -64,8 +69,8 @@
       <file leaf-file-name="ViewPanel.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/view/src/main/java/view/ViewPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
-              <caret line="286" column="51" selection-start-line="286" selection-start-column="51" selection-end-line="286" selection-end-column="51" />
+            <state relative-caret-position="201">
+              <caret line="278" column="91" selection-start-line="278" selection-start-column="91" selection-end-line="278" selection-end-column="91" />
               <folding />
             </state>
           </provider>
@@ -76,7 +81,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1819">
               <caret line="110" column="23" selection-start-line="110" selection-start-column="23" selection-end-line="110" selection-end-column="23" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -86,7 +93,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="680">
               <caret line="48" column="17" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
-              <folding />
+              <folding>
+                <element signature="e#199#200#0" expanded="false" />
+                <element signature="e#227#228#0" expanded="false" />
+                <element signature="e#311#312#0" expanded="false" />
+                <element signature="e#338#339#0" expanded="false" />
+                <element signature="e#435#436#0" expanded="false" />
+                <element signature="e#467#468#0" expanded="false" />
+                <element signature="e#565#566#0" expanded="false" />
+                <element signature="e#599#600#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -96,7 +112,20 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="578">
               <caret line="34" column="7" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
-              <folding />
+              <folding>
+                <element signature="e#752#753#0" expanded="false" />
+                <element signature="e#783#784#0" expanded="false" />
+                <element signature="e#874#875#0" expanded="false" />
+                <element signature="e#904#905#0" expanded="false" />
+                <element signature="e#1030#1031#0" expanded="false" />
+                <element signature="e#1058#1059#0" expanded="false" />
+                <element signature="e#1155#1156#0" expanded="false" />
+                <element signature="e#1186#1187#0" expanded="false" />
+                <element signature="e#1320#1321#0" expanded="false" />
+                <element signature="e#1350#1351#0" expanded="false" />
+                <element signature="e#1645#1646#0" expanded="false" />
+                <element signature="e#1675#1676#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -106,7 +135,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
               <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -1145,7 +1176,7 @@
       <workItem from="1466420034156" duration="985000" />
       <workItem from="1466421215930" duration="6681000" />
       <workItem from="1466515679652" duration="2599000" />
-      <workItem from="1466526966153" duration="664000" />
+      <workItem from="1466526966153" duration="888000" />
     </task>
     <task id="LOCAL-00001" summary="Push test">
       <created>1465804918356</created>
@@ -1462,7 +1493,14 @@
       <option name="project" value="LOCAL" />
       <updated>1466518237236</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="correcting SQL request crash problem when you put no nickname to send highscore to DB">
+      <created>1466527794899</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1466527794899</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1474,7 +1512,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="127285000" />
+    <option name="totallyTimeSpent" value="127509000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -1550,8 +1588,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="DB script update : stored procedures to use highscore table" />
-    <MESSAGE value="SEMI-MAJOR UPDATE : added lots of comments and a part of every score display !" />
     <MESSAGE value="display ingame score at the right moment" />
     <MESSAGE value="Added fonctionnality to get highscores from DB (some things are to correct) if commit twice it's a bug from maven" />
     <MESSAGE value="Re-open door, last commit bugged" />
@@ -1575,7 +1611,9 @@
     <MESSAGE value="Remove what puts the highscore send to DB in commentary" />
     <MESSAGE value="DB script update (remove Helloworld things)" />
     <MESSAGE value="DB script update (map 1 update)" />
-    <option name="LAST_COMMIT_MESSAGE" value="DB script update (map 1 update)" />
+    <MESSAGE value="correcting SQL request crash problem when you put no nickname to send highscore to DB" />
+    <MESSAGE value="Correcting SQL request crash problem when you put no nickname to send highscore to DB" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correcting SQL request crash problem when you put no nickname to send highscore to DB" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2234,7 +2272,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
           <caret line="48" column="17" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
-          <folding />
+          <folding>
+            <element signature="e#199#200#0" expanded="false" />
+            <element signature="e#227#228#0" expanded="false" />
+            <element signature="e#311#312#0" expanded="false" />
+            <element signature="e#338#339#0" expanded="false" />
+            <element signature="e#435#436#0" expanded="false" />
+            <element signature="e#467#468#0" expanded="false" />
+            <element signature="e#565#566#0" expanded="false" />
+            <element signature="e#599#600#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2242,7 +2289,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1292">
           <caret line="83" column="22" selection-start-line="83" selection-start-column="22" selection-end-line="83" selection-end-column="22" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#915#916#0" expanded="false" />
+            <element signature="e#938#939#0" expanded="false" />
+            <element signature="e#1062#1063#0" expanded="false" />
+            <element signature="e#1087#1088#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2250,7 +2303,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1819">
           <caret line="110" column="23" selection-start-line="110" selection-start-column="23" selection-end-line="110" selection-end-column="23" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2258,7 +2313,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
           <caret line="34" column="7" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
-          <folding />
+          <folding>
+            <element signature="e#752#753#0" expanded="false" />
+            <element signature="e#783#784#0" expanded="false" />
+            <element signature="e#874#875#0" expanded="false" />
+            <element signature="e#904#905#0" expanded="false" />
+            <element signature="e#1030#1031#0" expanded="false" />
+            <element signature="e#1058#1059#0" expanded="false" />
+            <element signature="e#1155#1156#0" expanded="false" />
+            <element signature="e#1186#1187#0" expanded="false" />
+            <element signature="e#1320#1321#0" expanded="false" />
+            <element signature="e#1350#1351#0" expanded="false" />
+            <element signature="e#1645#1646#0" expanded="false" />
+            <element signature="e#1675#1676#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2266,7 +2334,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2275,7 +2345,7 @@
         <state relative-caret-position="8160">
           <caret line="544" column="0" selection-start-line="544" selection-start-column="0" selection-end-line="544" selection-end-column="0" />
           <folding>
-            <marker date="1466515737924" expanded="true" signature="213:239" ph="/**...*/" />
+            <marker date="1466527843050" expanded="true" signature="213:239" ph="/**...*/" />
           </folding>
         </state>
       </provider>
@@ -2289,8 +2359,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/view/src/main/java/view/ViewPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="286" column="51" selection-start-line="286" selection-start-column="51" selection-end-line="286" selection-end-column="51" />
+        <state relative-caret-position="201">
+          <caret line="278" column="91" selection-start-line="278" selection-start-column="91" selection-end-line="278" selection-end-column="91" />
           <folding />
         </state>
       </provider>
