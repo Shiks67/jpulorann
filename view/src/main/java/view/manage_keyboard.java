@@ -15,7 +15,6 @@ public class manage_keyboard extends TimerTask{
             }
             else {
                 ViewFrame.getController().orderPerform(View.keyCodeToControllerOrder((Integer) ViewFrame.l.get(0)));
-                System.out.print("1");
                 ViewPanel.m = 0;
             }
         } else if (p == 2) {

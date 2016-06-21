@@ -54,10 +54,4 @@ public class HeroTest extends TestCase {
         assertEquals(2,hero.getX());
     }
 
-    public void testHeroDeath() throws Exception {
-        hero.heroDeath();
-        assertEquals(-5,hero.getX());
-        assertEquals(-5,hero.getY());
-    }
-
 }

@@ -66,6 +66,14 @@ public class View implements IView, Runnable {
 				return ControllerOrder.SHOOT;
 			case KeyEvent.VK_ENTER:
 				System.exit(0);
+			case 1406:
+				return ControllerOrder.DIAGONALUPLEFT;
+			case 1482:
+				return ControllerOrder.DIAGONALUPRIGHT;
+			case 1480:
+				return ControllerOrder.DIAGONALDOWNLEFT;
+			case 1560:
+				return ControllerOrder.DIAGONALDOWNRIGHT;
 			default:
 				return ControllerOrder.nthng;
 		}

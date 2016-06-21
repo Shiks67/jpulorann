@@ -136,6 +136,7 @@ public class Controller implements IController {
 				break;
 			case DIAGONALDOWNRIGHT:
 				this.model.moveDIAGONALDOWNRIGHT();
+				break;
 			case SHOOT:
 				this.model.fireBall();
 				break;
