@@ -827,69 +827,69 @@ public class Model extends Observable implements IModel {
     }
 
     public void moveDIAGONALUPLEFT() {
-        if(this.isPurse(this.getHero().getY() - 1, this.getHero().getX() - 1)){
+        if(isPurse(getHero().getY() - 1, getHero().getX() - 1)){
             Score += 100;
         }
-        if(this.openGate(this.getHero().getY() - 1, this.getHero().getX() -1)){
-            this.pngArray[this.getGateC().getY()][this.gateC.getX()] = 'O';
+        if(openGate(getHero().getY() - 1, getHero().getX() -1)){
+            pngArray[getGateC().getY()][gateC.getX()] = 'O';
         }if(onGate(getHero().getY()-1, getHero().getX() -1)){
             verifyMapDoor();
         }
-        if(isMovePossible(this.getHero().getY() - 1, this.getHero().getX() - 1)){
-            this.lastHP();
-            this.getHero().moveDIAGONALUPLEFT();
-            this.newHP();
+        if(isMovePossible(getHero().getY() - 1, getHero().getX() - 1)){
+            lastHP();
+            getHero().moveDIAGONALUPLEFT();
+            newHP();
         }
     }
 
     public void moveDIAGONALUPRIGHT() {
-        if(this.isPurse(this.getHero().getY() - 1, this.getHero().getX() + 1)){
+        if(isPurse(getHero().getY() - 1, getHero().getX() + 1)){
             Score += 100;
         }
-        if(this.openGate(this.getHero().getY() - 1, this.getHero().getX() + 1)){
-            this.pngArray[this.getGateC().getY()][this.gateC.getX()] = 'O';
+        if(openGate(getHero().getY() - 1, getHero().getX() + 1)){
+            pngArray[getGateC().getY()][gateC.getX()] = 'O';
         }
         if(onGate(getHero().getY()-1, getHero().getX() +1)){
             verifyMapDoor();
         }
-        if(isMovePossible(this.getHero().getY() - 1, this.getHero().getX() + 1)){
-            this.lastHP();
-            this.getHero().moveDIAGONALUPRIGHT();
-            this.newHP();
+        if(isMovePossible(getHero().getY() - 1, getHero().getX() + 1)){
+            lastHP();
+            getHero().moveDIAGONALUPRIGHT();
+            newHP();
         }
     }
 
     public void moveDIAGONALDOWNLEFT() {
-        if(this.isPurse(this.getHero().getY() + 1, this.getHero().getX() - 1)){
+        if(isPurse(getHero().getY() + 1, getHero().getX() - 1)){
             Score += 100;
         }
-        if(this.openGate(this.getHero().getY() + 1, this.getHero().getX() - 1)){
-            this.pngArray[this.getGateC().getY()][this.gateC.getX()] = 'O';
+        if(openGate(getHero().getY() + 1, getHero().getX() - 1)){
+            pngArray[getGateC().getY()][gateC.getX()] = 'O';
         }
         if(onGate(getHero().getY()+1, getHero().getX() -1)){
             verifyMapDoor();
         }
-        if(isMovePossible(this.getHero().getY() + 1, this.getHero().getX() - 1)){
-            this.lastHP();
-            this.getHero().moveDIAGONALDOWNLEFT();
-            this.newHP();
+        if(isMovePossible(getHero().getY() + 1, getHero().getX() - 1)){
+            lastHP();
+            getHero().moveDIAGONALDOWNLEFT();
+            newHP();
         }
     }
 
     public void moveDIAGONALDOWNRIGHT() {
-        if(this.isPurse(this.getHero().getY() + 1, this.getHero().getX() + 1)){
+        if(isPurse(getHero().getY() + 1, getHero().getX() + 1)){
             Score += 100;
         }
-        if(this.openGate(this.getHero().getY() + 1, this.getHero().getX() + 1)){
-            this.pngArray[this.getGateC().getY()][this.gateC.getX()] = 'O';
+        if(openGate(getHero().getY() + 1, getHero().getX() + 1)){
+            pngArray[getGateC().getY()][gateC.getX()] = 'O';
         }
         if(onGate(getHero().getY()+1, getHero().getX() +1)){
             verifyMapDoor();
         }
-        if(isMovePossible(this.getHero().getY() + 1, this.getHero().getX() + 1)){
-            this.lastHP();
-            this.getHero().moveDIAGONALDOWNRIGHT();
-            this.newHP();
+        if(isMovePossible(getHero().getY() + 1, getHero().getX() + 1)){
+            lastHP();
+            getHero().moveDIAGONALDOWNRIGHT();
+            newHP();
         }
     }
 
