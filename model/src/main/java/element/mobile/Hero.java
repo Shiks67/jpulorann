@@ -43,9 +43,24 @@ public class Hero {
         this.setX(this.getX() + 1);
     }
 
-    public void heroDeath(){
-        this.setX(-5);
-        this.setY(-5);
+    public void moveDIAGONALUPLEFT() {
+        this.setX(this.getX() - 1);
+        this.setY(this.getY() - 1);
     }
 
+    public void moveDIAGONALUPRIGHT() {
+        this.setX(this.getX() + 1);
+        this.setY(this.getY() - 1);
+    }
+
+    public void moveDIAGONALDOWNLEFT() {
+        this.setX(this.getX() - 1);
+        this.setY(this.getY() + 1);
+    }
+
+    public void moveDIAGONALDOWNRIGHT() {
+        this.setX(this.getX() + 1);
+        this.setY(this.getY() + 1);
+    }
 }
+

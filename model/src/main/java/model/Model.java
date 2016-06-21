@@ -12,8 +12,6 @@ import java.util.Observable;
 
 /**
  * The Class Model.
- *
- * @author Jean-Aymeric Diet
  */
 public class Model extends Observable implements IModel {
 
@@ -828,6 +826,74 @@ public class Model extends Observable implements IModel {
         }
     }
 
+    public void moveDIAGONALUPLEFT() {
+        if(this.isPurse(this.getHero().getY() - 1, this.getHero().getX() - 1)){
+            Score += 100;
+        }
+        if(this.openGate(this.getHero().getY() - 1, this.getHero().getX() -1)){
+            this.pngArray[this.getGateC().getY()][this.gateC.getX()] = 'O';
+        }if(onGate(getHero().getY()-1, getHero().getX() -1)){
+            verifyMapDoor();
+        }
+        if(isMovePossible(this.getHero().getY() - 1, this.getHero().getX() - 1)){
+            this.lastHP();
+            this.getHero().moveDIAGONALUPLEFT();
+            this.newHP();
+        }
+    }
+
+    public void moveDIAGONALUPRIGHT() {
+        if(this.isPurse(this.getHero().getY() - 1, this.getHero().getX() + 1)){
+            Score += 100;
+        }
+        if(this.openGate(this.getHero().getY() - 1, this.getHero().getX() + 1)){
+            this.pngArray[this.getGateC().getY()][this.gateC.getX()] = 'O';
+        }
+        if(onGate(getHero().getY()-1, getHero().getX() +1)){
+            verifyMapDoor();
+        }
+        if(isMovePossible(this.getHero().getY() - 1, this.getHero().getX() + 1)){
+            this.lastHP();
+            this.getHero().moveDIAGONALUPRIGHT();
+            this.newHP();
+        }
+    }
+
+    public void moveDIAGONALDOWNLEFT() {
+        if(this.isPurse(this.getHero().getY() + 1, this.getHero().getX() - 1)){
+            Score += 100;
+        }
+        if(this.openGate(this.getHero().getY() + 1, this.getHero().getX() - 1)){
+            this.pngArray[this.getGateC().getY()][this.gateC.getX()] = 'O';
+        }
+        if(onGate(getHero().getY()+1, getHero().getX() -1)){
+            verifyMapDoor();
+        }
+        if(isMovePossible(this.getHero().getY() + 1, this.getHero().getX() - 1)){
+            this.lastHP();
+            this.getHero().moveDIAGONALDOWNLEFT();
+            this.newHP();
+        }
+    }
+
+    public void moveDIAGONALDOWNRIGHT() {
+        if(this.isPurse(this.getHero().getY() + 1, this.getHero().getX() + 1)){
+            Score += 100;
+        }
+        if(this.openGate(this.getHero().getY() + 1, this.getHero().getX() + 1)){
+            this.pngArray[this.getGateC().getY()][this.gateC.getX()] = 'O';
+        }
+        if(onGate(getHero().getY()+1, getHero().getX() +1)){
+            verifyMapDoor();
+        }
+        if(isMovePossible(this.getHero().getY() + 1, this.getHero().getX() + 1)){
+            this.lastHP();
+            this.getHero().moveDIAGONALDOWNRIGHT();
+            this.newHP();
+        }
+    }
+
+
     /**
      * Monsters AI
      * They compare their own position with Lorann's position then change their position to get closer then kill Lorann
@@ -839,6 +905,7 @@ public class Model extends Observable implements IModel {
                 int hx = getHero().getX();
                 int my = getMonster1().getY();
                 int hy = getHero().getY();
+
                 /** if monster's x is lower than lorann's increments it**/
                 if (mx < hx && mMovePossible(getMonster1().getY(), getMonster1().getX() + 1)) {
                     pngArray[getMonster1().getY()][getMonster1().getX()] = ' ';
@@ -944,7 +1011,7 @@ public class Model extends Observable implements IModel {
      * They compare their own position with lorann's position then change their position
      */
     public void monster4() {
-        if (this.getO() == 3) {
+        if (this.getO() == 4) {
             if (this.death4 == 0) {
                 int m4x = getMonster4().getX();
                 int h4x = getHero().getX();

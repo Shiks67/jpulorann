@@ -125,6 +125,17 @@ public class Controller implements IController {
 				this.model.moveDOWN();
 				this.model.setLastMove("DOWN");
 				break;
+			case DIAGONALUPLEFT:
+				this.model.moveDIAGONALUPLEFT();
+				break;
+			case DIAGONALUPRIGHT:
+				this.model.moveDIAGONALUPRIGHT();
+				break;
+			case DIAGONALDOWNLEFT:
+				this.model.moveDIAGONALDOWNLEFT();
+				break;
+			case DIAGONALDOWNRIGHT:
+				this.model.moveDIAGONALDOWNRIGHT();
 			case SHOOT:
 				this.model.fireBall();
 				break;

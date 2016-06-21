@@ -28,6 +28,8 @@ class ViewPanel extends JPanel implements Observer {
 	int GO = 0;
 	int Win = 0;
 
+	public static int m = 0;
+
 
 	/** The view frame. */
 	private ViewFrame					viewFrame;

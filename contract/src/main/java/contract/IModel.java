@@ -53,6 +53,11 @@ public interface IModel {
 	void moveDOWN();
 	void fireBall();
 
+	void moveDIAGONALDOWNRIGHT();
+	void moveDIAGONALDOWNLEFT();
+	void moveDIAGONALUPRIGHT();
+	void moveDIAGONALUPLEFT();
+
 	void setLastMove(String lastMove);
 	String getLastMove();
 

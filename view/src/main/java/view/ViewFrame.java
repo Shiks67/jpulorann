@@ -4,6 +4,8 @@ import java.awt.GraphicsConfiguration;
 import java.awt.HeadlessException;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
+import java.util.ArrayList;
+import java.util.Timer;
 
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
@@ -22,9 +24,11 @@ class ViewFrame extends JFrame implements KeyListener {
 	private IModel						model;
 
 	/** The controller. */
-	private IController				controller;
+	private static IController				controller;
 	/** The Constant serialVersionUID. */
 	private static final long	serialVersionUID	= -697358409737458175L;
+
+	public static ArrayList l = new ArrayList();
 
 	/**
 	 * Instantiates a new view frame.
@@ -86,8 +90,8 @@ class ViewFrame extends JFrame implements KeyListener {
 	 *
 	 * @return the controller
 	 */
-	private IController getController() {
-		return this.controller;
+	public static IController getController() {
+		return controller;
 	}
 
 	/**
@@ -134,6 +138,8 @@ class ViewFrame extends JFrame implements KeyListener {
 		this.setSize(649,440);
 		this.setLocationRelativeTo(null);
 		this.setTitle("LORANN v2.0");	/** changed title of the frame to something more fancy **/
+		Timer timer = new Timer();
+		timer.schedule(new manage_keyboard(), 0, 50);
 	}
 
 	/**
@@ -160,39 +166,15 @@ class ViewFrame extends JFrame implements KeyListener {
 	 *
 	 * @see java.awt.event.KeyListener#keyPressed(java.awt.event.KeyEvent)
 	 */
-	public void keyPressed(final KeyEvent e) {
-		this.getController().orderPerform(View.keyCodeToControllerOrder(e.getKeyCode()));
-		/**try {
-			for(int i = 0; i < this.l.size(); i++)
+	public void keyPressed(final KeyEvent keyEvent) {
+		for (int i = 0; i < this.l.size(); i++)
 
-			{
-				if ((int) this.l.get(i) == keyEvent.getKeyCode()) {
-					this.l.remove(i);
-				}
+		{
+			if ((Integer) this.l.get(i) == keyEvent.getKeyCode()) {
+				this.l.remove(i);
 			}
-			this.l.add(keyEvent.getKeyCode());
-			//NettleView.displayMessage("" + keyEvent.getKeyCode());
-			if (this.l.size() == 1) {
-				this.getNettlePlay().orderPerform(NettleView.keyCodeToUserOrder(keyEvent.getKeyCode()));
-			} else if (this.l.size() == 2) {
-				int i = 0;
-				i = (int) this.l.get(0) * (int) this.l.get(1);
-				this.getNettlePlay().orderPerform(NettleView.keyCodeToUserOrder(i));
-				//NettleView.displayMessage("Deux touches sont utilisées en même temps !");
-			}
-			**/
-
-			/*for(int i = 0; i < this.l.size(); i++)
-
-			{
-				if ((int) this.l.get(i) == keyEvent.getKeyCode()) {
-					this.l.remove(i);
-				}
-			}*/
-
-		/**} catch (final IOException e) {
-			e.printStackTrace();
-		}**/
+		}
+		this.l.add(keyEvent.getKeyCode());
 	}
 
 	/*
@@ -200,7 +182,13 @@ class ViewFrame extends JFrame implements KeyListener {
 	 *
 	 * @see java.awt.event.KeyListener#keyReleased(java.awt.event.KeyEvent)
 	 */
-	public void keyReleased( KeyEvent e) {
-		//this.getController().orderPerform(View.keyCodeToControllerOrder(e.getKeyCode()));
+	public void keyReleased( KeyEvent keyEvent) {
+		for (int i = 0; i < this.l.size(); i++)
+
+		{
+			if ((Integer) this.l.get(i) == keyEvent.getKeyCode()) {
+				this.l.remove(i);
+			}
+		}
 	}
 }
