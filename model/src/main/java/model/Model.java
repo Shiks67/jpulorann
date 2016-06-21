@@ -728,6 +728,9 @@ public class Model extends Observable implements IModel {
     /**
      * Last hero position
      */
+    /**
+     * Lorann's last position (Hero Position)
+     */
     private void lastHP(){
         pngArray[getHero().getY()][getHero().getX()] = ' ';
     }
@@ -735,12 +738,18 @@ public class Model extends Observable implements IModel {
     /**
      * New Hero Position
      */
+    /**
+     * New lorann's position
+     */
     private void newHP(){
         pngArray[getHero().getY()][getHero().getX()] = 'L';
     }
 
     /**
      * Lorann moves right
+     */
+    /**
+     * Move right if he can + if there is a purse get +100score if it's a crystal he will open the door and if it's the opened door go to the next level
      */
     public void moveRIGHT() {
         if(isPurse(getHero().getY(), getHero().getX()+1)){
@@ -759,7 +768,7 @@ public class Model extends Observable implements IModel {
     }
 
     /**
-     * Lorann moves up
+     * Move rup if he can + if there is a purse get +100score if it's a crystal he will open the door and if it's the opened door go to the next level
      */
     public void moveUP() {
         if(isPurse(getHero().getY() -1, getHero().getX())){
@@ -780,7 +789,7 @@ public class Model extends Observable implements IModel {
     }
 
     /**
-     * Lorann moves down
+     * Move down if he can + if there is a purse get +100score if it's a crystal he will open the door and if it's the opened door go to the next level
      */
     public void moveDOWN() {
         if(isPurse(getHero().getY() +1, getHero().getX())){
@@ -800,7 +809,7 @@ public class Model extends Observable implements IModel {
     }
 
     /**
-     * Lorann moves left
+     * Move left if he can + if there is a purse get +100score if it's a crystal he will open the door and if it's the opened door go to the next level
      */
     public void moveLEFT() {
         if(isPurse(getHero().getY(), getHero().getX() - 1)){
@@ -820,8 +829,8 @@ public class Model extends Observable implements IModel {
     }
 
     /**
-     * Monsters 1 IA
-     * They compare their own position with lorann's position then change their position
+     * Monsters AI
+     * They compare their own position with Lorann's position then change their position to get closer then kill Lorann
      */
     public void monster1() {
         if (this.getO() == 3) {
@@ -830,25 +839,25 @@ public class Model extends Observable implements IModel {
                 int hx = getHero().getX();
                 int my = getMonster1().getY();
                 int hy = getHero().getY();
-                /** if x is lower than lorann's increments it**/
+                /** if monster's x is lower than lorann's increments it**/
                 if (mx < hx && mMovePossible(getMonster1().getY(), getMonster1().getX() + 1)) {
                     pngArray[getMonster1().getY()][getMonster1().getX()] = ' ';
                     getMonster1().moveRIGHT();
                     pngArray[getMonster1().getY()][getMonster1().getX()] = '1';
                 }
-                /** if x is higher than lorann's decrement it**/
+                /** if monster's x is higher than lorann's decrement it**/
                 if (mx > hx && mMovePossible(getMonster1().getY(), getMonster1().getX() - 1)) {
                     pngArray[getMonster1().getY()][getMonster1().getX()] = ' ';
                     getMonster1().moveLEFT();
                     pngArray[getMonster1().getY()][getMonster1().getX()] = '1';
                 }
-                /** if y is lower than lorann's increments it**/
+                /** if monster's y is lower than lorann's increments it**/
                 if (my < hy && mMovePossible(getMonster1().getY() + 1, getMonster1().getX())) {
                     pngArray[getMonster1().getY()][getMonster1().getX()] = ' ';
                     getMonster1().moveDOWN();
                     pngArray[getMonster1().getY()][getMonster1().getX()] = '1';
                 }
-                /** if y is higher than lorann's decrement it **/
+                /** if monster's y is higher than lorann's decrement it **/
                 if (my > hy && mMovePossible(getMonster1().getY() - 1, getMonster1().getX())) {
                     pngArray[getMonster1().getY()][getMonster1().getX()] = ' ';
                     getMonster1().moveUp();
@@ -1018,6 +1027,7 @@ public class Model extends Observable implements IModel {
             default:
                 break;
         }
+
         /**
          * FireBall remover when lvl up
          */
