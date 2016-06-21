@@ -7,8 +7,7 @@ import java.awt.event.KeyListener;
 import java.util.ArrayList;
 import java.util.Timer;
 
-import javax.swing.JFrame;
-import javax.swing.JOptionPane;
+import javax.swing.*;
 
 import contract.IController;
 import contract.IModel;
@@ -41,6 +40,10 @@ class ViewFrame extends JFrame implements KeyListener {
 		this.buildViewFrame(model);
 	}
 
+	/**
+	 * Frame's icon
+	 */
+	ImageIcon img = new ImageIcon("sprite/L_icon.png");
 	/**
 	 * Instantiates a new view frame.
 	 *
@@ -131,6 +134,7 @@ class ViewFrame extends JFrame implements KeyListener {
 	private void buildViewFrame(final IModel model) {
 		this.setModel(model);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		this.setIconImage(img.getImage());
 		this.setResizable(false);
 		this.addKeyListener(this);
 		this.setContentPane(new ViewPanel(this));
