@@ -7,6 +7,9 @@ import element.mobile.*;
 import element.motionless.*;
 
 
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Clip;
+import java.io.File;
 import java.sql.SQLException;
 import java.util.Observable;
 
@@ -356,6 +359,7 @@ public class Model extends Observable implements IModel {
      * Instantiates a new model.
      */
     public Model() {
+        play("sound/csgosong.wav");
         this.map = "";
         hero = new Hero(1,1);
         gateC = new GateC(0,0);
@@ -1117,5 +1121,19 @@ public class Model extends Observable implements IModel {
          */
         this.getShoot().setY(this.getHero().getY());
         this.getShoot().setX(this.getHero().getX());
+    }
+
+    public static void play(String filename)
+    {
+        try
+        {
+            Clip clip = AudioSystem.getClip();
+            clip.open(AudioSystem.getAudioInputStream(new File(filename)));
+            clip.start();
+        }
+        catch (Exception exc)
+        {
+            exc.printStackTrace(System.out);
+        }
     }
 }

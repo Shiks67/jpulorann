@@ -4,10 +4,6 @@ import controller.Controller;
 import model.Model;
 import view.View;
 
-import javax.swing.*;
-import java.sql.CallableStatement;
-import java.sql.SQLException;
-
 /**
  * The Class Main.
  *
