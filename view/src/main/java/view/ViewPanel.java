@@ -283,7 +283,12 @@ class ViewPanel extends JPanel implements Observer {
 			Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/jpublankproject?autoReconnect=true&useSSL=false", "root", "");
 			String sql = "{call putHighscoreInDB(?,?)}";
 			PreparedStatement statement = conn.prepareStatement(sql);
-			statement.setString(2, nom);
+			if (nom == null){
+				statement.setString(2, "No nickname");
+			}
+			else {
+				statement.setString(2, nom);
+			}
 			statement.setInt(1, score);
 			statement.execute();
 		 	jop2.showMessageDialog(null, "Score saved", null, JOptionPane.INFORMATION_MESSAGE);
