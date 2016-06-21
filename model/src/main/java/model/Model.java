@@ -1009,7 +1009,7 @@ public class Model extends Observable implements IModel {
                         }
                         break;
                     case 3 :
-                        if(mMovePossible(getMonster3().getY(), getMonster3().getX())){
+                        if(mMovePossible(getMonster3().getY() -1, getMonster3().getX())){
                             pngArray[getMonster3().getY()][getMonster3().getX()] = ' ';
                             getMonster3().moveUp();
                             pngArray[getMonster3().getY()][getMonster3().getX()] = '3';
