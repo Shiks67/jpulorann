@@ -54,4 +54,5 @@ public class HeroTest extends TestCase {
         assertEquals(2,hero.getX());
     }
 
+
 }

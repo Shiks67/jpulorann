@@ -113,6 +113,9 @@ public class ModelTest {
 	 */
 	@Test
 	public void testGetMessageString() {
+		/**
+		 * map edited, that's why it fail
+		 */
 		this.model.loadMap("MAP1");
 		Assert.assertEquals("BHHHHHHHHHHHHHHHHHHB\nV    V             V\nV    V             V\nV    V     P       V\nV  P BHHHHHB       V\nV P P1     K  L  KCV\nV  P BHHHHHB       V\nV    V     P       V\nV    V             V\nV    V             V\nV    V             V\nBHHHHHHHHHHHHHHHHHHB", this.model.getMap());
 		this.model.loadMap("MAP2");

@@ -21,6 +21,17 @@ public class Model extends Observable implements IModel {
     private final int width = 21;
 
     /** other variables **/
+
+    /**
+     * lower random for monster 3AI
+     */
+    int lower = 1;
+
+    /**
+     * Higer random for monster 3 AI (actually it will be 4)
+     */
+    int higher = 5;
+
     /**
      * Player name from the DB
      */
@@ -48,15 +59,15 @@ public class Model extends Observable implements IModel {
     /**
      * If monster 2 is dead
      */
-    private int death2 = 0;
+    private int death2 = 1;
     /**
      * If monster 3 is dead
      */
-    private int death3 = 0;
+    private int death3 = 1;
     /**
      * If monster 4 is dead
      */
-    private int death4 = 0;
+    private int death4 = 1;
     /**
      * Level number
      */
@@ -977,30 +988,36 @@ public class Model extends Observable implements IModel {
     public void monster3() {
         if (this.getO() == 3) {
             if (this.death3 == 0) {
-                int m3x = getMonster3().getX();
-                int h3x = getHero().getX();
-                int m3y = getMonster3().getY();
-                int h3y = getHero().getY();
-
-                if (m3x < h3x && mMovePossible(getMonster3().getY(), getMonster3().getX() + 1)) {
-                    pngArray[getMonster3().getY()][getMonster3().getX()] = ' ';
-                    getMonster3().moveRIGHT();
-                    pngArray[getMonster3().getY()][getMonster3().getX()] = '3';
-                }
-                if (m3x > h3x && mMovePossible(getMonster3().getY(), getMonster3().getX() - 1)) {
-                    pngArray[getMonster3().getY()][getMonster3().getX()] = ' ';
-                    getMonster3().moveLEFT();
-                    pngArray[getMonster3().getY()][getMonster3().getX()] = '3';
-                }
-                if (m3y < h3y && mMovePossible(getMonster3().getY() + 1, getMonster3().getX())) {
-                    pngArray[getMonster3().getY()][getMonster3().getX()] = ' ';
-                    getMonster3().moveDOWN();
-                    pngArray[getMonster3().getY()][getMonster3().getX()] = '3';
-                }
-                if (m3y > h3y && mMovePossible(getMonster3().getY() - 1, getMonster3().getX())) {
-                    pngArray[getMonster3().getY()][getMonster3().getX()] = ' ';
-                    getMonster3().moveUp();
-                    pngArray[getMonster3().getY()][getMonster3().getX()] = '3';
+                int random = (int)(Math.random()*(higher-lower)) +lower;
+                switch (random){
+                    case 1 :
+                        if(mMovePossible(getMonster3().getY(), getMonster3().getX() + 1)){
+                            pngArray[getMonster3().getY()][getMonster3().getX()] = ' ';
+                            getMonster3().moveRIGHT();
+                            pngArray[getMonster3().getY()][getMonster3().getX()] = '3';
+                        }
+                        break;
+                    case 2 :
+                        if(mMovePossible(getMonster3().getY(), getMonster3().getX() - 1)){
+                            pngArray[getMonster3().getY()][getMonster3().getX()] = ' ';
+                            getMonster3().moveLEFT();
+                            pngArray[getMonster3().getY()][getMonster3().getX()] = '3';
+                        }
+                        break;
+                    case 3 :
+                        if(mMovePossible(getMonster3().getY(), getMonster3().getX())){
+                            pngArray[getMonster3().getY()][getMonster3().getX()] = ' ';
+                            getMonster3().moveUp();
+                            pngArray[getMonster3().getY()][getMonster3().getX()] = '3';
+                        }
+                        break;
+                    case 4 :
+                        if(mMovePossible(getMonster3().getY()+1, getMonster3().getX())){
+                            pngArray[getMonster3().getY()][getMonster3().getX()] = ' ';
+                            getMonster3().moveDOWN();
+                            pngArray[getMonster3().getY()][getMonster3().getX()] = '3';
+                        }
+                        break;
                 }
             }
         }
