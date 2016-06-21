@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.5.1
+-- version 4.5.2
 -- http://www.phpmyadmin.net
 --
--- Client :  127.0.0.1
--- Généré le :  Lun 20 Juin 2016 à 12:42
--- Version du serveur :  5.7.9
--- Version de PHP :  5.6.15
+-- Host: 127.0.0.1
+-- Generation Time: Jun 21, 2016 at 01:31 PM
+-- Server version: 5.7.9
+-- PHP Version: 5.6.16
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -17,25 +17,15 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de données :  `jpublankproject`
+-- Database: `jpublankproject`
 --
 CREATE DATABASE IF NOT EXISTS `jpublankproject` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
 USE `jpublankproject`;
 
 DELIMITER $$
 --
--- Procédures
+-- Procedures
 --
-DROP PROCEDURE IF EXISTS `helloworldById`$$
-CREATE DEFINER=`root`@`localhost` PROCEDURE `helloworldById` (IN `p_id` INT)  READS SQL DATA
-  SQL SECURITY INVOKER
-  SELECT * FROM helloworld WHERE id = p_id$$
-
-DROP PROCEDURE IF EXISTS `HelloworldByKey`$$
-CREATE DEFINER=`root`@`localhost` PROCEDURE `HelloworldByKey` (IN `p_key` VARCHAR(2))  READS SQL DATA
-  SQL SECURITY INVOKER
-  SELECT * FROM jpublankproject.helloworld where `key`=p_key$$
-
 DROP PROCEDURE IF EXISTS `loadmapById`$$
 CREATE DEFINER=`root`@`localhost` PROCEDURE `loadmapById` (IN `idmap` INT(11))  NO SQL
   SELECT * FROM map WHERE id = idmap$$
@@ -59,32 +49,7 @@ DELIMITER ;
 -- --------------------------------------------------------
 
 --
--- Structure de la table `helloworld`
---
-
-DROP TABLE IF EXISTS `helloworld`;
-CREATE TABLE IF NOT EXISTS `helloworld` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `key` varchar(2) NOT NULL,
-  `message` varchar(100) NOT NULL,
-  PRIMARY KEY (`id`),
-  UNIQUE KEY `key_UNIQUE` (`key`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
-
---
--- Contenu de la table `helloworld`
---
-
-INSERT INTO `helloworld` (`id`, `key`, `message`) VALUES
-  (1, 'GB', 'Hello world'),
-  (2, 'FR', 'Bonjour le monde'),
-  (3, 'DE', 'Hallo Welt'),
-  (4, 'ID', 'Salamat pagi dunia');
-
--- --------------------------------------------------------
-
---
--- Structure de la table `highscore`
+-- Table structure for table `highscore`
 --
 
 DROP TABLE IF EXISTS `highscore`;
@@ -96,7 +61,7 @@ CREATE TABLE IF NOT EXISTS `highscore` (
 ) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
 
 --
--- Contenu de la table `highscore`
+-- Dumping data for table `highscore`
 --
 
 INSERT INTO `highscore` (`score_id`, `score`, `nickname`) VALUES
@@ -110,7 +75,7 @@ INSERT INTO `highscore` (`score_id`, `score`, `nickname`) VALUES
 -- --------------------------------------------------------
 
 --
--- Structure de la table `map`
+-- Table structure for table `map`
 --
 
 DROP TABLE IF EXISTS `map`;
@@ -122,15 +87,15 @@ CREATE TABLE IF NOT EXISTS `map` (
 ) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
 
 --
--- Contenu de la table `map`
+-- Dumping data for table `map`
 --
 
 INSERT INTO `map` (`id`, `map_name`, `map`) VALUES
-  (1, 'MAP1', 'BHHHHHHHHHHHHHHHHHHB\nV    V             V\nV    V             V\nV    V     P       V\nV  P BHHHHHB       V\nV P P1     P  L  KCV\nV  P BHHHHHB       V\nV    V     P       V\nV    V             V\nV    V             V\nV    V             V\nBHHHHHHHHHHHHHHHHHHB'),
+  (1, 'MAP1', 'BHHHHHHHHHHHHHHHHHHB\nV    V             V\nV    V             V\nV    V     P       V\nV  P BHHHHHB       V\nV P P1     K  L  KCV\nV  P BHHHHHB       V\nV    V     P       V\nV    V             V\nV    V             V\nV    V             V\nBHHHHHHHHHHHHHHHHHHB'),
   (2, 'MAP2', '        BHHB        \n        VP V        \nBHHHHHB V  BHHHHHHB \nV4    BHB L  P   2V \nV       K  BHBHBBHB \nV     BHB  B V VV V \nVP    V V  BHBHBBHB \nV P   V V  BHBHBBHB \nVP    V V  V V VV V \nV PBHHBHB  BHBHBBHBB\nV               3 CV\nBHHHHHHHHHHHHHHHHHHB'),
-  (3, 'MAP3', 'BHHHHHHHB    BHHHHHB\nVP      V    V1   3V\nV BHHHB V    V  B  V\nV V     V    V  P  V\nB V BHHHBHHHHB  P  V\nC V V   V  L V BPB V\nB V B B B    V  P  V\nVKV   V      V  P  V\nV BHHHHHBHHHHB  P  V\nV       P       B  V\nV       BHHHHB2   4V\nBHHHHHHHB    BHHHHHB'),
-  (4, 'MAP4', 'BHHHHHHHHHHHHHHHHHB \nV                 BB\nV BHHHHHHHHHHHHHB  V\nV P          2  BB V\nV BHHHHHHHHHHHB  V V\nV V4           B V V\nVKV            B V V\nV BHHHHHHHHHHHB  V V\nV P   1         BB V\nV BHHHHHHHHHHHHHBL B\nBB                 C\n BHHHHHHHHHHHHHHHHHB'),
-  (5, 'MAP5', 'BHHHHHHHHHHHBHHHHB  \nVP P        V    BB \nV  B  B3 B  V     V \nV  V4 P  P1 V   B V \nV  V  P  P  V   V V \nV  V  P  P  V   V V \nV  V  B  B  V   V V \nV  V        V   V V \nV  BHHHHHHHHB   V V \nV  K        L BHB V \nBB               CBB\n BHHHHHHHHHHHHHHHHHB'),
+  (3, 'MAP3', 'BHHHHHHHB    BHHHHHB\nVP      V    V1   3V\nV BHHHB V    V  B  V\nV V     V    V  P  V\nB V BHHHBHHHHB  P  V\nC V V   V  L V BPB V\nBKV B B B    V  P  V\nV V   V      V  P  V\nV BHHHHHBHHHHB  P  V\nV               B  V\nV       BHHHHB2   4V\nBHHHHHHHB    BHHHHHB'),
+  (4, 'MAP4', 'BHHHHHHHHHHHHHHHHHB \r\nV                 BB\r\nV BHHHHHHHHHHHHHB  V\r\nV P          2  BB V\r\nV BHHHHHHHHHHHB  V V\r\nV V4           B V V\r\nVKV            B V V\r\nV BHHHHHHHHHHHB  V V\r\nV P   1         BB V\r\nV BHHHHHHHHHHHHHBL B\r\nBB                 C\r\n BHHHHHHHHHHHHHHHHHB'),
+  (5, 'MAP5', 'BHHHHHHHHHHHBHHHHB  \r\nVP P        V    BB \r\nV  B  B3 B  V     V \r\nV  V4 P  P1 V   B V \r\nV  V  P  P  V   V V \r\nV  V  P  P  V   V V \r\nV  V  B  B  V   V V \r\nV  V        V   V V \r\nV  BHHHHHHHHB   V V \r\nV  K        L BHB V \r\nBB               CBB\r\n BHHHHHHHHHHHHHHHHHB'),
   (6, 'MAP6', 'BHHBHHHHHHHHHHHHBHHB\r\nV1 B            B 2V\r\nV  B            B  V\r\nBBBB      C     BBBB\r\nV                  V\r\nV       P L P      V\r\nV                  V\r\nV         K        V\r\nBBBB            BBBB\r\nV  B            B  V\r\nV4 B            B 3V\r\nBHHBHHHHHHHHHHHHBHHB');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
