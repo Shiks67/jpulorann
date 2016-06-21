@@ -278,7 +278,7 @@ class ViewPanel extends JPanel implements Observer {
 		JOptionPane jop = new JOptionPane(), jop2 = new JOptionPane();
 		String nom = jop.showInputDialog(null, "Your name", JOptionPane.QUESTION_MESSAGE);
 
-		/**int score = this.viewFrame.getModel().getScore();
+		int score = this.viewFrame.getModel().getScore();
 		try {
 			Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/jpublankproject?autoReconnect=true&useSSL=false", "root", "");
 			String sql = "{call putHighscoreInDB(?,?)}";
@@ -290,7 +290,7 @@ class ViewPanel extends JPanel implements Observer {
 		} catch (SQLException e) {
 			e.printStackTrace();
 		 	jop2.showMessageDialog(null, "Score not saved", null, JOptionPane.INFORMATION_MESSAGE);
-		}**/
+		}
 
 		System.exit(0);		/** exit game **/
 	}
