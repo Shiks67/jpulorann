@@ -16,6 +16,46 @@ import org.junit.Test;
  * @author Jean-Aymeric Diet
  */
 public class ModelTest {
+	@Test
+	public void loadMap() throws Exception {
+
+	}
+
+	@Test
+	public void loadHighscores() throws Exception {
+
+	}
+
+	@Test
+	public void isDead() throws Exception {
+
+	}
+
+	@Test
+	public void checkFireball() throws Exception {
+
+	}
+
+	@Test
+	public void fireAnimation() throws Exception {
+
+	}
+
+	@Test
+	public void fireBall() throws Exception {
+
+	}
+
+	@Test
+	public void moveUP() throws Exception {
+
+	}
+
+	@Test
+	public void monster1() throws Exception {
+
+	}
+
 	private Model model;
 
 	/**
