@@ -41,7 +41,7 @@
       <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller/src/main/java/controller/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1292">
+            <state relative-caret-position="0">
               <caret line="83" column="22" selection-start-line="83" selection-start-column="22" selection-end-line="83" selection-end-column="22" />
               <folding>
                 <element signature="e#915#916#0" expanded="false" />
@@ -68,8 +68,8 @@
       <file leaf-file-name="ViewPanel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view/src/main/java/view/ViewPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="293" column="0" selection-start-line="293" selection-start-column="0" selection-end-line="293" selection-end-column="0" />
+            <state relative-caret-position="221">
+              <caret line="262" column="27" selection-start-line="262" selection-start-column="27" selection-end-line="262" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -1297,7 +1297,7 @@
       <workItem from="1466415008692" duration="2604000" />
       <workItem from="1466420034156" duration="985000" />
       <workItem from="1466421215930" duration="6681000" />
-      <workItem from="1466515679652" duration="289000" />
+      <workItem from="1466515679652" duration="1968000" />
     </task>
     <task id="LOCAL-00001" summary="Push test">
       <created>1465804918356</created>
@@ -1593,7 +1593,14 @@
       <option name="project" value="LOCAL" />
       <updated>1466500144156</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="DB script update (remove Helloworld things)">
+      <created>1466516030078</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1466516030078</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1605,7 +1612,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124311000" />
+    <option name="totallyTimeSpent" value="125990000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1592" y="-189" width="1936" height="1056" extended-state="6" />
@@ -1681,7 +1688,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Lorann moveUP" />
     <MESSAGE value="Loot purse + score" />
     <MESSAGE value="DB script update : stored procedures to use highscore table" />
     <MESSAGE value="SEMI-MAJOR UPDATE : added lots of comments and a part of every score display !" />
@@ -1706,7 +1712,8 @@
     <MESSAGE value="another javadoc comments update" />
     <MESSAGE value="exia logo" />
     <MESSAGE value="Remove what puts the highscore send to DB in commentary" />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove what puts the highscore send to DB in commentary" />
+    <MESSAGE value="DB script update (remove Helloworld things)" />
+    <option name="LAST_COMMIT_MESSAGE" value="DB script update (remove Helloworld things)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2380,7 +2387,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/src/main/java/controller/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1292">
+        <state relative-caret-position="0">
           <caret line="83" column="22" selection-start-line="83" selection-start-column="22" selection-end-line="83" selection-end-column="22" />
           <folding>
             <element signature="e#915#916#0" expanded="false" />
@@ -2444,8 +2451,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/view/src/main/java/view/ViewPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="293" column="0" selection-start-line="293" selection-start-column="0" selection-end-line="293" selection-end-column="0" />
+        <state relative-caret-position="221">
+          <caret line="262" column="27" selection-start-line="262" selection-start-column="27" selection-end-line="262" selection-end-column="27" />
           <folding />
         </state>
       </provider>
