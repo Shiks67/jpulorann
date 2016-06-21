@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69e7211a-abd9-46ca-9785-cd2ef29c1473" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/src/main/java/model/Model.java" afterPath="$PROJECT_DIR$/model/src/main/java/model/Model.java" />
     </list>
     <ignored path="masterpom.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,7 +40,7 @@
       <file leaf-file-name="Model.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/model/src/main/java/model/Model.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-368">
+            <state relative-caret-position="0">
               <caret line="1058" column="25" selection-start-line="1058" selection-start-column="25" selection-end-line="1058" selection-end-column="25" />
               <folding>
                 <element signature="method#monster1#0;class#Model#0" expanded="false" />
@@ -135,8 +133,8 @@
         <option value="$PROJECT_DIR$/model/src/test/java/element/mobile/HeroTest.java" />
         <option value="$PROJECT_DIR$/model/src/test/java/model/ModelTest.java" />
         <option value="$PROJECT_DIR$/view/src/main/java/view/ViewFrame.java" />
-        <option value="$PROJECT_DIR$/model/src/main/java/model/Model.java" />
         <option value="$PROJECT_DIR$/model/src/main/java/model/PlayMusic.java" />
+        <option value="$PROJECT_DIR$/model/src/main/java/model/Model.java" />
       </list>
     </option>
   </component>
@@ -1054,7 +1052,7 @@
       <workItem from="1466494309244" duration="3023000" />
       <workItem from="1466497652765" duration="1965000" />
       <workItem from="1466499709635" duration="4244000" />
-      <workItem from="1466510625986" duration="3937000" />
+      <workItem from="1466510625986" duration="3987000" />
     </task>
     <task id="LOCAL-00001" summary="Push test">
       <created>1465804918356</created>
@@ -1364,7 +1362,14 @@
       <option name="project" value="LOCAL" />
       <updated>1466501542472</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="Fix bug">
+      <created>1466519282301</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1466519282301</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1400,7 +1405,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="149331000" />
+    <option name="totallyTimeSpent" value="149381000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1423,7 +1428,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30227518" sideWeight="0.36993605" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22707888" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26218852" sideWeight="0.49583334" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30227518" sideWeight="0.63006395" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30227518" sideWeight="0.63006395" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1458,7 +1463,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="DB script update : stored procedures to use highscore table" />
     <MESSAGE value="SEMI-MAJOR UPDATE : added lots of comments and a part of every score display !" />
     <MESSAGE value="display ingame score at the right moment" />
     <MESSAGE value="Added fonctionnality to get highscores from DB (some things are to correct) if commit twice it's a bug from maven" />
@@ -1483,7 +1487,8 @@
     <MESSAGE value="More comments" />
     <MESSAGE value="moves" />
     <MESSAGE value="3 monsters AI" />
-    <option name="LAST_COMMIT_MESSAGE" value="3 monsters AI" />
+    <MESSAGE value="Fix bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix bug" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1895,7 +1900,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/model/src/main/java/model/Model.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-368">
+        <state relative-caret-position="0">
           <caret line="1058" column="25" selection-start-line="1058" selection-start-column="25" selection-end-line="1058" selection-end-column="25" />
           <folding>
             <element signature="method#monster1#0;class#Model#0" expanded="false" />
