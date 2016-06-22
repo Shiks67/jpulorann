@@ -58,7 +58,7 @@ public class Model extends Observable implements IModel {
     /**
      * If monster 1 is dead
      */
-    private int death1 = 0;
+    public int death1 = 0;
     /**
      * If monster 2 is dead
      */
@@ -126,7 +126,7 @@ public class Model extends Observable implements IModel {
     /**
      * The map from the DB
      */
-    private String map;
+    public String map;
 
     /** getters **/
     /**
@@ -359,7 +359,8 @@ public class Model extends Observable implements IModel {
      * Instantiates a new model.
      */
     public Model() {
-        play("sound/csgosong.wav");
+        //play("sound/csgosong.wav");
+        this.loadHighscores();
         this.map = "";
         hero = new Hero(1,1);
         gateC = new GateC(0,0);
